@@ -2,24 +2,12 @@
 
 ## 1. Összefoglaló 
 
-`A hatékony szállítmányozás lényege, hogy a küldemény a lehető legkisebb költséggel, legbiztonságosabban, és legoptimálisabb időben jusson el a rendeltetési helyére. Ez tipikusan megkövetel egy online is elérhető nyilvántartást, ahol rugalmasan és egyszerűen lehet kezelni a kapcsolódó feladatokat. Éppen ezért ennek a projektnek a célja, hogy a szállítmányozással foglalkozó cégek számára egy webalkalmazást fejlesszünk, amely képes leváltani a hagyományos, papír alapú nyilvántartásokat. Legyen szó árukészletről, sofőrökről vagy útvonalakról, a cél, hogy a kapcsolódó funkciókat egy letisztult felületen keresztül tudja elérni a szállítmányozással foglalkozó cég adminisztrátorai.`
+`Projektünk alapja a Fiverr nevű külföldi oldal, amit hazánkban kevesen ismernek. Ezzel az oldallal próbáljuk meg betölteni azt a piaci rést, ami jelenleg a magyar szabadúszó piacon általánosnak mondható. Projektünk célja egy olyan weboldalt létrehozni, ami egyaránt nyújt helyet a szabadúszó munkavállalóknak és munkások keresésének. `
 
 ```
-Ide írj egy tömör és általános leírást (4-6 mondatban), hogy miről szól a projekt és miért van a weboldalra szükség. 
-Itt konkrét funkciót még nem kell megemlíteni.
-
-A dokumentumban a szürke háttérrel rendelkező szövegnek illetve a blokkokkal (keretben) kiemelt szövegeknek két jelentése van: 
-(a) minta/sablon szöveg, amit le kell cserélni (pl. gyakorlatvezető neve).
-(b) segítő/magyarázó szöveg. 
-
-Az átadott (beadott) dokumentumban már nem szerepelhetnek se szürke hátterű, se blokkban szereplő részek!
-Azaz a dokumentum kitöltése közben ezeket formázás nélküli szövegre kell cserélni.
-Az eredetileg is feketével írt részek törlése tilos, azok közösek.
-```
-
 ## 2. A projekt bemutatása
 
-`Ez a projektterv a Szallítmányozás projektet mutatja be, amely 2021-09-20-től 2021-11-27-ig tart, azaz összesen 68 napon keresztül fog futni. A projekten három fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek, annak érdekében, hogy biztosítsuk a projekt folyamatos előrehaladását.`
+`Ez a projektterv egy Fiverr-alapú projektet mutat be, amely 2023-09-20-tól, 2023-12-04-ig tart, összesen 75 napig , a projekten 7 fejlesztő fog dolgozni, az elvégzett feladatainkat pedig négy alkalommal fogjuk prezentálni, ezáltal biztosítjuk a projekt előrehaladását.`
 
 ```
 A megvalósítás további általános leírása, pl. mennyi ideig tart a projekt, mennyi főből áll a csapat, 
