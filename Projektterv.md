@@ -45,7 +45,7 @@ A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
-A projekt megrendelője `Dr. Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban pályakezdő webprogramozók vannak.`
+A projekt megrendelője `Dr. Márkus András`. A `JobCompass` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban pályakezdő webprogramozók vannak.`
  - `Fodor Döme (3 év ipari tapasztalat a Számító Gép Kft.-nél)`
  - `Kovács Bence (3 év egyetemi tapasztalat)`
  - `Zsemberi Izabella (<1 év tapasztalatő)`
