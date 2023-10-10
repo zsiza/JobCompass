@@ -4,20 +4,15 @@
 
 `Projektünk alapja a Fiverr nevű külföldi oldal, amit hazánkban kevesen ismernek. Ezzel az oldallal próbáljuk meg betölteni azt a piaci rést, ami jelenleg a magyar szabadúszó piacon általánosnak mondható. Projektünk célja egy olyan weboldalt létrehozni, ami egyaránt nyújt helyet a szabadúszó munkavállalóknak és munkások keresésének. `
 
-```
 ## 2. A projekt bemutatása
 
 `Ez a projektterv egy Fiverr-alapú projektet mutat be, neve : JobCompass, amely 2023-09-20-tól, 2023-12-04-ig tart, összesen 75 napig, a projekten 7 fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni, ezáltal biztosítjuk a projekt előrehaladását.`
 
-```
-```
 
 ### 2.1. Rendszerspecifikáció
 
 `A rendszerünknek képesnek kell lennie arra, hogy elsosorban a felhasználó könnyedséggel tudjon navigálni az oldalon. A rendszer célja az, hogy a felhasználó tudjon számára megfelelő informatikai munkaerőt találni, azáltal, hogy létrehozunk egy számára könnyedén kezelhető és átlátható webalkalmazást. Ezenfelül a rendszernek képesnek kell lennie arra, hogy befogadja az új munkaerő jelentkezését (regisztráció kezelése, bejelentkezés kezelése, a jelentkezett ember személyes leírását, milyen típusú informatikai háttérrel jelentkezik). A webalkalmazásnak ezeket az adatokat fel kell használnia a jelentkező rendszerinti besorolásához. A felhasználónak képesnek kell lennie a rendszeren belül rákeresni és rátalálni, illetve üzenetet küldeni az általa kiválasztott emberre`
 
-```
-```
 
 ### 2.2. Funkcionális követelmények
 
