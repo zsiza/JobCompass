@@ -25,11 +25,6 @@
  - `Üzenet írás lehetősége a munkaerőnek`
  - `Munkaerő "tag-jeinek" megfelelő eltárolása és azáltali szortírozása`
 
-```
-
-A CRUD rövidítés a következőt jelenti: Create, Read, Update, Delete.
-Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlése.
-```
 
 ### 2.3. Nem funkcionális követelmények
 
@@ -40,10 +35,6 @@ Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlé
  - `Az oldal gyorsan fut`
  - `modern és friss megjelenés`
 
-```
-A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
-milyen megjelenéssel kell rendelkeznie. Ha lehetséges, akkor ezeket a feladatokat is ki kell osztani a csapattagok között.
-```
 
 ## 3. Költség- és erőforrás-szükségletek
 
@@ -51,8 +42,6 @@ Az erőforrásigényünk összesen `60` személynap, átlagosan `20` személynap
 
 A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 
-```
-```
 
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
