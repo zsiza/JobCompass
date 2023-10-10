@@ -7,37 +7,30 @@
 ```
 ## 2. A projekt bemutatása
 
-`Ez a projektterv egy Fiverr-alapú projektet mutat be, amely 2023-09-20-tól, 2023-12-04-ig tart, összesen 75 napig , a projekten 7 fejlesztő fog dolgozni, az elvégzett feladatainkat pedig négy alkalommal fogjuk prezentálni, ezáltal biztosítjuk a projekt előrehaladását.`
+`Ez a projektterv egy Fiverr-alapú projektet mutat be, neve : JobCompass, amely 2023-09-20-tól, 2023-12-04-ig tart, összesen 75 napig, a projekten 7 fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni, ezáltal biztosítjuk a projekt előrehaladását.`
 
 ```
-A megvalósítás további általános leírása, pl. mennyi ideig tart a projekt, mennyi főből áll a csapat, 
-mennyi átadandó lesz a megrendelőnek átadva a félév során (szintén 2-3 mondattal leírva).
 ```
 
 ### 2.1. Rendszerspecifikáció
 
-`A rendszernek képesnek kell lennie arra, hogy egy adott szállítmányozó cég raktárait illetve a raktárak állapotát (telítettség, fizikai pozíció, speciális tulajdonság pl. veszélyes anyag tárolás) nyilvántartsa annak érdekében, hogy az adminisztrátorok képesek legyenek egy-egy bejövő szállítmányozási kérést kiszolgálni a raktárak vagy külső helyszín között. Ezenkívül a szállítmányozó cég alkalmazásában álló sofőröket, illetve a cég kamionjait is kezelnie kell (pl. van-e képzettsége veszélyes anyag szállítására, elérhető-e éppen a megfelelő pótkocsi a szállításhoz). A bejövő szállítmányozási kérés alapján az alkalmazás számolja ki leghamarabb mikor teljesíthető a kérés, majd jelenítsük meg grafikusan egy útvonalat, amely alapján - akár több raktár érintésével - a külső helyszínre szállítja az anyagot. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.`
+`A rendszerünknek képesnek kell lennie arra, hogy elsosorban a felhasználó könnyedséggel tudjon navigálni az oldalon. A rendszer célja az, hogy a felhasználó tudjon számára megfelelő informatikai munkaerőt találni, azáltal, hogy létrehozunk egy számára könnyedén kezelhető és átlátható webalkalmazást. Ezenfelül a rendszernek képesnek kell lennie arra, hogy befogadja az új munkaerő jelentkezését (regisztráció kezelése, bejelentkezés kezelése, a jelentkezett ember személyes leírását, milyen típusú informatikai háttérrel jelentkezik). A webalkalmazásnak ezeket az adatokat fel kell használnia a jelentkező rendszerinti besorolásához. A felhasználónak képesnek kell lennie a rendszeren belül rákeresni és rátalálni, illetve üzenetet küldeni az általa kiválasztott emberre`
 
 ```
-Itt már specifikusabban, részletesebben írd le, hogy mik a fő célok, mit fog tudni a rendszer (4-6 mondatban), 
-ami a projekt keretében kerül megvalósításra. Mik a megrendelő és a felhasználók igényei?
 ```
 
 ### 2.2. Funkcionális követelmények
 
- - `Felhasználók kezelése (admin, raktáros, sofőr) (CRUD)`
+ - `Felhasználók kezelése (önmagát hirdető jelentkező, munkaerő kereső, admin)(CRUD)`
  - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel `
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Biztonsági mentés automatikus létrehozása`
+ - `Jelentkezések kezelése (CRUD)`
+ - `Keresések kezelése`
+ - `Személyes információk (pl.: elérhetőség) tárolása`
+ - `Személyes leírások kezelése (CRUD)`
+ - `Üzenet írás lehetősége a munkaerőnek`
+ - `Munkaerő "tag-jeinek" megfelelő eltárolása és azáltali szortírozása`
 
 ```
-Itt lehet pontosan felsorolni a rendszerrel szemben támasztott funkcionális igényeket, azaz amit a rendszernek tudnia kell. 
-Ezeket a feladatokat kell majd a csapattagok között szétosztani a 8-as fejezetben.
 
 A CRUD rövidítés a következőt jelenti: Create, Read, Update, Delete.
 Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlése.
@@ -46,9 +39,11 @@ Azaz a funkcióhoz tartozó adat létrehozása, olvasása, frissítése, törlé
 ### 2.3. Nem funkcionális követelmények
 
  - `A kliens oldal böngészőfüggetlen legyen`
- - `Reszponzív megjelenés`
+ - `Reszponzív és igényes megjelenés`
  - `Az érzékeny adatokat biztonságosan tároljuk`
- - `A legfrissebb technológiákat használja a rendszer`
+ - `Az oldal könnyen kezelhető és átlátható`
+ - `Az oldal gyorsan fut`
+ - `modern és friss megjelenés`
 
 ```
 A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
@@ -57,24 +52,27 @@ milyen megjelenéssel kell rendelkeznie. Ha lehetséges, akkor ezeket a feladato
 
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen `57` személynap, átlagosan `19` személynap/fő.
+Az erőforrásigényünk összesen `60` személynap, átlagosan `20` személynap/fő.
 
-A rendelkezésünkre áll összesen `3 * 70 = 210` pont.
+A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 
 ```
-Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-21 személynap, 
-a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
 ```
 
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
-A projekt megrendelője `Dr. Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg három fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Teszt Elek (3 év ipari tapasztalat a Számító Gép Kft.-nél)`
- - `Remek Elek (3 év egyetemi tapasztalat)`
- - `Lev Elek (<1 év tapasztalatő)`
+A projekt megrendelője `Dr. Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban pályakezdő webprogramozók vannak.`
+ - `Fodor Döme (3 év ipari tapasztalat a Számító Gép Kft.-nél)`
+ - `Kovács Bence (3 év egyetemi tapasztalat)`
+ - `Zsemberi Izabella (<1 év tapasztalatő)`
+ - `Nagy Kamilla (<1 év tapasztalatő)`
+ - `Kromek Dani (<1 év tapasztalatő)`
+ - `Madai Zsuzsi (<1 év tapasztalatő)`
+ - `Sötét Petra (<1 év tapasztalatő)`
 
 ```
 Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni.
+IDE MINDENKI IRJA BE MAGANAK!!
 ```
 
 ### 4.1 Projektcsapat
