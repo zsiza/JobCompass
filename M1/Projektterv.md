@@ -51,7 +51,7 @@ A projekt megrendelője `Dr. Márkus András`. A `JobCompass` projektet a projek
  - `Zsemberi Izabella (1 év tapasztalat - Javascript, Angular, HTML, PHP)`
  - `Nagy Kamilla (2 év tapasztalat - HTML, CSS, Javascript, PHP, SQL, 1 év: Java, Python)`
  - `Kromek Dániel (2 év tapasztalat - HTML, CSS, Javascript, git, 1 év tapasztalat: TypeScript, Angular)`
- - `Madai Zsuzsanna Jusztina (több mint 3 év tapasztalat))`
+ - `Madai Zsuzsanna Jusztina (1 év egyetemi tapasztalat - HTML, CSS, MySQL)`
  - `Sötét Petra (2 év egyetemi tapasztalat - HTML, CSS, PHP, Java, C++, MySQL)`
 
 
