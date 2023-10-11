@@ -189,4 +189,5 @@ D - dokumentáció, P - prototípus
 
 ## 8. Feladatlista
 
-A következőkben a tervezett feladatok részletes összefoglalása található.
+A részletes feladatlistát lásd a Gantt diagramon.
+https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/blob/main/M1/Gantt.xlsx
