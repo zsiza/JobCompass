@@ -52,7 +52,7 @@ A projekt megrendelője `Dr. Márkus András`. A `JobCompass` projektet a projek
  - `Nagy Kamilla (2 év tapasztalat - HTML, CSS, Javascript, PHP, SQL, 1 év: Java, Python)`
  - `Kromek Dániel (2 év tapasztalat - HTML, CSS, Javascript, git, 1 év tapasztalat: TypeScript, Angular)`
  - `Madai Zsuzsanna Jusztina (több mint 3 év tapasztalat))`
- - `Sötét Petra (több mint 3 év tapasztalat)`
+ - `Sötét Petra (2 év egyetemi tapasztalat - HTML, CSS, PHP, Java, C++, MySQL)`
 
 
 ### 4.1 Projektcsapat
@@ -97,6 +97,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `JetBrains IDE fejlesztőkörnyezetek`
  - `Visual Studio Code fejlesztőkörnyezet`
  - `Orace VM VirtualBox Xubuntu OS`
+ - `Railway által biztosított PostgreSQL adatbázisszerver`
 
 
 ### 5.2. Rizikómenedzsment
