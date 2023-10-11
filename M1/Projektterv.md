@@ -1,4 +1,4 @@
-# `Rendszerfejlesztés projektterv`
+# `Rendszerfejlesztés projektterv 2023_ib153i-11_d`
 
 ## 1. Összefoglaló 
 
@@ -50,7 +50,7 @@ A projekt megrendelője `Dr. Márkus András`. A `JobCompass` projektet a projek
  - `Kovács Bence (1 év tapasztalat - PHP, Java, Python)`
  - `Zsemberi Izabella (1 év tapasztalat - Javascript, Angular, HTML, PHP)`
  - `Nagy Kamilla (2 év tapasztalat - HTML, CSS, Javascript, PHP, SQL, 1 év: Java, Python)`
- - `Kromek Dániel (3 év tapasztalat)`
+ - `Kromek Dániel (2 év tapasztalat - HTML, CSS, Javascript, git, 1 év tapasztalat: TypeScript, Angular)`
  - `Madai Zsuzsanna Jusztina (több mint 3 év tapasztalat))`
  - `Sötét Petra (több mint 3 év tapasztalat)`
 
@@ -76,7 +76,7 @@ A projekt a következő emberekből áll:
 A projekt a következő munkaállomásokat fogja használni a munka során:
 
  - `Dell Inspiron 5558 laptop (CPU: i5 5200U, RAM: 8 GB, GPU: Nvidia 920M)`
- - `Asztali számítógép (CPU: i3-9100F, RAM: 16GB, GPU: Nvidia GTX 960 Windows 10 Pro)`
+ - `Asztali számítógép (CPU: i3-9100F, RAM: 16GB, GPU: Nvidia GTX 960, Windows 10 Pro)`
  - `Acer Aspire 573g laptop (CPU: i3 5005U, RAM: 4 GB, GPU: Nvidia 920M)`
  - `Dell Precision M3800 (CPU: i7-4712HQ CPU, RAM: 16GB, GPU: Nvidia Quadro K1100M)`
  - `Asztali számítógép (CPU: i7 7700k, RAM: 16GB, GPU: Nvidia GTX1070)`
@@ -95,6 +95,8 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `HTML/CSS/JavaScript (frontend)`
  - `Java/PHP (backend)`
  - `JetBrains IDE fejlesztőkörnyezetek`
+ - `Visual Studio Code fejlesztőkörnyezet`
+ - `Orace VM VirtualBox Xubuntu OS`
 
 
 ### 5.2. Rizikómenedzsment
