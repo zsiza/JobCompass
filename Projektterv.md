@@ -1,29 +1,29 @@
-# `Szallítmányozás` Projektterv `2021`
+# `Rendszerfejlesztés projektterv`
 
 ## 1. Összefoglaló 
 
-`Projektünk alapja a Fiverr nevű külföldi oldal, amit hazánkban kevesen ismernek. Ezzel az oldallal próbáljuk meg betölteni azt a piaci rést, ami jelenleg a magyar szabadúszó piacon általánosnak mondható. Projektünk célja egy olyan weboldalt létrehozni, ami egyaránt nyújt helyet a szabadúszó munkavállalóknak és munkások keresésének. `
+`Projektünk alapja a Fiverr nevű külföldi oldal, amit hazánkban kevesen ismernek. Ezzel az oldallal próbáljuk meg betölteni azt a piaci rést, ami jelenleg a magyar szabadúszó piacon általánosnak mondható. Projektünk célja egy olyan weboldalt létrehozni, ami egyaránt nyújt helyet a szabadúszó munkavállalóknak és munkások keresésének.`
 
 ## 2. A projekt bemutatása
 
-`Ez a projektterv egy Fiverr-alapú projektet mutat be, neve : JobCompass, amely 2023-09-20-tól, 2023-12-04-ig tart, összesen 75 napig, a projekten 7 fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni, ezáltal biztosítjuk a projekt előrehaladását.`
+`Ez a projektterv egy Fiverr-alapú projektet mutat be, neve: JobCompass, amely 2023-09-27-től 2023-12-06-ig tart, összesen 70 napig, a projekten 7 fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni, ezáltal biztosítjuk a projekt előrehaladását.`
 
 
 ### 2.1. Rendszerspecifikáció
 
-`A rendszerünknek képesnek kell lennie arra, hogy elsosorban a felhasználó könnyedséggel tudjon navigálni az oldalon. A rendszer célja az, hogy a felhasználó tudjon számára megfelelő informatikai munkaerőt találni, azáltal, hogy létrehozunk egy számára könnyedén kezelhető és átlátható webalkalmazást. Ezenfelül a rendszernek képesnek kell lennie arra, hogy befogadja az új munkaerő jelentkezését (regisztráció kezelése, bejelentkezés kezelése, a jelentkezett ember személyes leírását, milyen típusú informatikai háttérrel jelentkezik). A webalkalmazásnak ezeket az adatokat fel kell használnia a jelentkező rendszerinti besorolásához. A felhasználónak képesnek kell lennie a rendszeren belül rákeresni és rátalálni, illetve üzenetet küldeni az általa kiválasztott emberre`
+`A rendszerünknek képesnek kell lennie arra, hogy elsősorban a felhasználó könnyedséggel tudjon navigálni az oldalon. A rendszer célja az, hogy a felhasználó tudjon számára megfelelő informatikai munkaerőt találni, azáltal, hogy létrehozunk egy számára könnyedén kezelhető és átlátható webalkalmazást. Ezen felül a rendszernek képesnek kell lennie arra, hogy befogadja az új munkaerő jelentkezését (regisztráció kezelése, bejelentkezés kezelése, a jelentkezett ember személyes leírását, milyen típusú informatikai háttérrel jelentkezik). A webalkalmazásnak ezeket az adatokat fel kell használnia a jelentkező rendszer szerinti besorolásához. A felhasználónak képesnek kell lennie a rendszeren belül rákeresni és rátalálni egy másik felhasználóra, illetve üzenetet küldeni az általa kiválasztott személynek.`
 
 
 ### 2.2. Funkcionális követelmények
 
- - `Felhasználók kezelése (önmagát hirdető jelentkező, munkaerő kereső, admin)(CRUD)`
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel `
+ - `Felhasználók kezelése (önmagát hirdető jelentkező, munkaerő kereső, admin) (CRUD)`
+ - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel`
  - `Jelentkezések kezelése (CRUD)`
  - `Keresések kezelése`
  - `Személyes információk (pl.: elérhetőség) tárolása`
  - `Személyes leírások kezelése (CRUD)`
- - `Üzenet írás lehetősége a munkaerőnek`
- - `Munkaerő "tag-jeinek" megfelelő eltárolása és azáltali szortírozása`
+ - `Üzenetírás lehetősége a munkaerőnek`
+ - `Címkék létrehozása a munkaerőhöz, keresés címkék alapján`
 
 
 ### 2.3. Nem funkcionális követelmények
@@ -33,12 +33,12 @@
  - `Az érzékeny adatokat biztonságosan tároljuk`
  - `Az oldal könnyen kezelhető és átlátható`
  - `Az oldal gyorsan fut`
- - `modern és friss megjelenés`
+ - `Modern és friss megjelenés`
 
 
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen `60` személynap, átlagosan `20` személynap/fő.
+Az erőforrásigényünk összesen `70` személynap, átlagosan `10` személynap/fő.
 
 A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 
@@ -46,32 +46,28 @@ A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 ## 4. Szervezeti felépítés és felelősségmegosztás
 
 A projekt megrendelője `Dr. Márkus András`. A `JobCompass` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban pályakezdő webprogramozók vannak.`
- - `Fodor Döme (3 év ipari tapasztalat a Számító Gép Kft.-nél)`
- - `Kovács Bence (3 év egyetemi tapasztalat)`
- - `Zsemberi Izabella (<1 év tapasztalatő)`
- - `Nagy Kamilla (<1 év tapasztalatő)`
- - `Kromek Dani (<1 év tapasztalatő)`
- - `Madai Zsuzsi (<1 év tapasztalatő)`
- - `Sötét Petra (<1 év tapasztalatő)`
+ - `Fodor Döme (1 év egyetemi tapasztalat, 1 év ipari tapasztalat)`
+ - `Kovács Bence (1 év tapasztalat - PHP, Java, Python)`
+ - `Zsemberi Izabella (1 év tapasztalat - Javascript, Angular, HTML, PHP)`
+ - `Nagy Kamilla (2 év tapasztalat - HTML, CSS, Javascript, PHP, SQL, 1 év: Java, Python)`
+ - `Kromek Dániel (3 év tapasztalat)`
+ - `Madai Zsuzsanna Jusztina (több mint 3 év tapasztalat))`
+ - `Sötét Petra (több mint 3 év tapasztalat)`
 
-```
-Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni.
-IDE MINDENKI IRJA BE MAGANAK!!
-```
 
 ### 4.1 Projektcsapat
 
 A projekt a következő emberekből áll:
 
-| Név          | Pozíció          |   E-mail cím (stud-os)        |
-|--------------|------------------|-------------------------------|
-| `Teszt Elek` | Projektmenedzser | `h123456@stud.u-szeged.hu`    |
-| `Remek Elek` | Projekt tag      | `h654321@stud.u-szeged.hu`    |
-| `Lev Elek`   | Projekt tag      | `h000000@stud.u-szeged.hu`    |
-
-```
-Betölthető pozíciók: projektmenedzser, projekt tag.
-```
+| Név                        | Pozíció          |   E-mail cím (stud-os)        |
+|----------------------------|------------------|-------------------------------|
+| `Fodor Döme`               | Projektmenedzser | `h258792@stud.u-szeged.hu`    |
+| `Kovács Bence`             | Projekt tag      | `h266039@stud.u-szeged.hu`    |
+| `Kromek Bálint Dániel`     | Projekt tag      | `h266845@stud.u-szeged.hu`    |
+| `Zsemberi Izabella`        | Projekt tag      | `h270872@stud.u-szeged.hu`    |
+| `Nagy Szilvia Kamilla`     | Projekt tag      | `h879779@stud.u-szeged.hu`    |
+| `Sötét Petra`              | Projekt tag      | `h164941@stud.u-szeged.hu`    |
+| `Madai Zsuzsanna Jusztina` | Projekt tag      | `h768437@stud.u-szeged.hu`    |
 
 ## 5. A munka feltételei
 
@@ -79,24 +75,27 @@ Betölthető pozíciók: projektmenedzser, projekt tag.
 
 A projekt a következő munkaállomásokat fogja használni a munka során:
 
- - `Munkaállomások: 3 db, Windows 10-es operációs rendszerrel`
  - `Dell Inspiron 5558 laptop (CPU: i5 5200U, RAM: 8 GB, GPU: Nvidia 920M)`
+ - `Asztali számítógép (CPU: i3-9100F, RAM: 16GB, GPU: Nvidia GTX 960 Windows 10 Pro)`
  - `Acer Aspire 573g laptop (CPU: i3 5005U, RAM: 4 GB, GPU: Nvidia 920M)`
+ - `Dell Precision M3800 (CPU: i7-4712HQ CPU, RAM: 16GB, GPU: Nvidia Quadro K1100M)`
  - `Asztali számítógép (CPU: i7 7700k, RAM: 16GB, GPU: Nvidia GTX1070)`
+ - `MSI Katana GF66 laptop (CPU: i5-12500H, RAM: 16GB, GPU: Nvidia GeForce RTX 3050 Ti, OS: Windows 11 Pro)`
+ - `Asztali számítógép (CPU: i3-9100F, RAM: 16GB, GPU: Nvidia GeForce GTX 1660, OS: Windows 11 Pro)`
+ - `Acer Nitro 5 (CPU: i7-10750H, RAM: 16GB, GPU: Nvidia GeForce GTX 1650, OS: Windows 11 Pro)`
+ - `Huawei Matebook 14 (CPU: i5-1135G7, RAM: 8GB, GPU: Intel)`
+ - `Asztali számítógép (CPU: AMD Ryzen 5 5600X, RAM: 16GB, GPU: Nvidia GeForce RTX 4060, OS: Windows 11 Pro)`
+ - `Lenovo Legion laptop (CPU: I7-9750H, RAM: 16GB, GPU: Nvidia GeForce GTX 1650 4GB, OS: Windows 11 Home)`
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
 
- - `Heroku platformszolgáltatás a webalkalmazás hosztolásához`
- - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot keretrendszer`
- - `Thymeleaf dinamikus tartalom megjelenítés a felhasználói felületen`
- - `Maven szoftverprojekt menedzselő szoftver`
- - `Eclipse IDE fejlesztőkörnyezet`
  - `Git verziókövető (GitLab)`
- 
-```
-Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejlesztenek, milyen szoftverkörnyezetben, stb.
-```
+ - `Angular a frontend fejlesztéshez`
+ - `Figma design készítéshez`
+ - `HTML/CSS/JavaScript (frontend)`
+ - `Java/PHP (backend)`
+ - `JetBrains IDE fejlesztőkörnyezetek`
+
 
 ### 5.2. Rizikómenedzsment
 
@@ -105,23 +104,13 @@ Milyen gépet használnak a projekttagok, milyen operációs rendszeren fejleszt
 | `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `nagy`       | `erős` |
 | `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
 
-```
-A rizikótényezők bemutatása, amely hátráltathatja a projekt befejezését. 
-Minden rizikót érdemes megemlíteni, részletezve, hogy mit jelent, 
-milyen valószínűséggel következhet be (kis, közepes és nagy), 
-mekkora a várható hatása (gyenge, közepes és erős) 
-és hogy milyen tervvel készültök, amennyiben egy ilyen esemény bekövetkezik. 
-Pl.: betegség, szoftver-hardver probléma, tag kiesése, extrém ZH időszak, pandémia, stb. 
-```
+
 
 ## 6. Jelentések
 
 ### 6.1. Munka menedzsment
-A munkát `Teszt Elek` koordinálja. `Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújhat a projekt csúszásának elkerülése végett. További feladata a heti szinten tartandó csoportgyűlések időpontjának és helyszínének leszervezése, erről email-ben tájékoztatja a projektcsapatot.`
+`A munkát Fodor Döme koordinálja. Fő feladata, hogy folyamatosan egyeztessen a csapattagokkal az előrehaladásról és a fellépő problémákról, esetlegesen a megoldásban is segítséget nyújt a projekt csúszásának elkerülése végett. További feladata a heti szinten tartandó csoport gyűlések időpontjának és helyszínének szervezése, erről discordon/messengeren tájékoztatja a projekt csapatot.`
 
-```
-Írd le, hogy ki menedzseli a munkát (tipikusan a projekt menedzser), mik a feladatai, és azokat hogyan hajtja végre.
-```
 
 ### 6.2. Csoportgyűlések
 
@@ -130,26 +119,26 @@ A munkát `Teszt Elek` koordinálja. `Fő feladata, hogy folyamatosan egyeztesse
 `1. megbeszélés:`
  - `Időpont: 2021.09.15.`
  - `Hely: SZTE Irinyi épület - Szeged, Tisza Lajos krt. 103`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: Ismerkedés, projekttéma kiválasztása`
+ - `Résztvevők: Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella,Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Ismerkedés, ötletelés`
 
 `2. megbeszélés:`
- - `Időpont: 2021.09.22.`
- - `Hely: Pivovár - Szeged, Vitéz utca 26.`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: A projektben használt technológiák rögzítése, a projektterv áttekintése, szerepkörök és vállalások kiosztása`
+ - `Időpont: 2023.09.21.`
+ - `Hely: Cool Club - Szeged, Londoni krt. 22`
+ - `Résztvevők: Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Projekt téma kitalálása. A projektben használt technológiák rögzítése, a projektterv áttekintése, szerepkörök és vállalások kiosztása`
 
 `3. Megbeszélés:`
- - `Időpont: 2021.09.29.`
- - `Hely: TIK – Szeged, Ady tér 10.`
- - `Résztvevők: Teszt Elek, Remek Elek`
- - `Érintett témák: Egyeztetés az UML diagramokról, illetve az adatbázis táblák és kapcsolatok meghatározása`
+ - `Időpont: 2023.09.28.`
+ - `Hely: SZTE TIK – Szeged`
+ - `Résztvevők:  Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella,Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Egyeztetések, látványtervről való egyeztetés`
 
-```
-A memókat a teljes projekt során vezetni kell, amely tartalmazza a következőket: 
-jelenlévők listája, megbeszélés helye és ideje, megbeszélt tevékenységek, felmerült kérdések és igények. 
-Lényege, hogy betekintést kapjunk hogyan szerveződnek, zajlanak a csoportgyűlések, milyen problémák, kérdések merültek fel.
-```
+`4. Megbeszélés:`
+ - `Időpont: 2023.10.05.`
+ - `Hely: SZTE TIK – Szeged`
+ - `Résztvevők: Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Sötét Petra`
+ - `Érintett témák: 1. mérföldkő feladatainak részletes megbeszélése, kiosztása; a megkezdett feladatok átnézése`
 
 ### 6.3. Minőségbiztosítás
 
@@ -173,14 +162,11 @@ Minden mérföldkő leadásnál a projekten dolgozók jelentést tesznek a mérf
 
 ### 7.1. Tervezett szoftverfolyamat modell és architektúra
 
-`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk, mivel a fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.`
+`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk, mivel a fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikációra. A fejlesztés során a szoftver specifikáció rugalmasan változhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.`
 
-`A webalkalmazás az MVC (modell-view-controller) felépítést követi, a szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak.`
+`A webalkalmazás az MVC (model-view-controller) felépítést követi, a szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak..`
 
-```
-Milyen szoftverfolyamat modellt követve állítja elő a csapat a specifikációnak megfelelő prototípusokat? Miért ezt választja? 
-A csapat milyen architektúrát választ a projekt megvalósításához? Milyen rétegek (logikai, adat, GUI) lesznek?`
-```
+
 
 ### 7.2. Átadandók és határidők
 
@@ -189,10 +175,10 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 | Szállítandó |                 Neve                                                        |   Határideje  |
 |:-----------:|:---------------------------------------------------------------------------:|:-------------:|
-|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | `2021-10-04`  |
-|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | `2021-10-18`  |
-|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2021-11-08`  |
-|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2021-11-27`  |
+|      D1     |      Projektterv és Gantt chart, prezentáció, egyéni jelentés               | `2023-10-11`  |
+|    P1+D2    |      UML, adatbázis- és képernyőtervek, prezentáció, egyéni jelentés        | `2023-10-25`  |
+|    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2023-11-15`  |
+|    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2023-12-06`  |
 
 ```
 D - dokumentáció, P - prototípus
@@ -201,8 +187,3 @@ D - dokumentáció, P - prototípus
 ## 8. Feladatlista
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
-
-```
-Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat, mivel az első mérföldkőben
-2 kötelező feladat van, ezt nem bontjuk részfeladatokra.
-```
