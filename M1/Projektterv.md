@@ -189,3 +189,439 @@ D - dokumentáció, P - prototípus
 ## 8. Feladatlista
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
+
+```
+Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat, mivel az első mérföldkőben
+2 kötelező feladat van, ezt nem bontjuk részfeladatokra.
+```
+
+### 8.1. Projektterv (1. mérföldkő)
+
+Ennek a feladatnak az a célja, hogy `megvalósításhoz szükséges lépéseket, az erőforrásigényeket, az ütemezést, a felelősöket és a feladatok sorrendjét meghatározzuk, majd vizualizáljuk Gantt diagram segítségével.`
+
+Részfeladatai a következők:
+
+#### 8.1.1. Projektterv kitöltése
+
+Felelős: `Mindenki`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `1 személynap/fő`
+
+
+#### 8.1.2. Bemutató elkészítése
+
+Felelős: `Kovács Bence, Fodor Döme, Sz. Kamilla`
+
+Tartam:  `2 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+```
+A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, tervezett funkciók, tagok, Gantt diagram.`
+```
+
+### 8.2. UML és adatbázis- és képernyőtervek (2. mérföldkő)
+
+Ennek a feladatnak az a célja, hogy `a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.`
+
+Részfeladatai a következők:
+
+#### 8.2.1. Use Case diagram
+
+Felelős: `Kovács Bence`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### 8.2.2. Class diagram
+
+Felelős: `Fodor Döme`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.2.3. Sequence diagram
+
+Felelős: `Madai Zsuzsanna J.`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
+
+Felelős: `Sötét Petra`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.2.5. Package diagram
+
+Felelős: `Zsemberi Izabella`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### 8.2.6. Weboldal Design Figmában
+
+Felelős: `Kromek Bálint Dániel`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### 8.2.7. Bemutató elkészítése
+
+Felelős: `Nagy Sz. Kamilla`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+```
+A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült diagramok és képernyőtervek)`
+
+```
+
+### 8.3. Prototípus I. (3. mérföldkő)
+
+Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.` 
+
+Részfeladatai a következők:
+
+#### `8.3.0. Projekt létrehozása Angular-ban`
+
+Felelős: `Zsemberi Izabella`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.1. Felhasználók kezelése (admin, raktáros, sofőr) (CR)`
+
+Felelős: `Sötét Petra`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.2. Felhasználók kezelése (admin, raktáros, sofőr) (UD)`
+
+Felelős: `Nagy Sz Kamilla`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.3. Felhasználók kezeléséhez szükséges adatok létrehozása az adatbázisban`
+
+Felelős: `Nagy Sz Kamilla`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### `8.3.4. Felhasználói munkamenet megvalósítása több jogosultsági szinttel`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `10 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.5. Raktárak kezelése (CRUD)`
+
+Felelős: `Zsemberi Izabella`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### `8.3.6. Raktárkezeléshez szükséges adatok létrehozása az adatbázisban`
+
+Felelős: `Madai Zsuzsanna J.`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.7. Árukészletek kezelése (C)`
+
+Felelős: `Fodor Döme `
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.8. Árukészletek kezelése (R)`
+
+Felelős: `Fodor Döme`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### `8.3.9. Árukészletek kezelése (UD)`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.10. Árukészletek kezeléséhez szükséges adatok létrehozása az adatbázisban`
+
+Felelős: `Nagy Sz Kamilla`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.11. Járművek kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban`
+
+Felelős: `Sötét Petra`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.12. Fuvarok/szállítmányok kezelése (CR)`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.13. Fuvarok/szállítmányok kezelése (UD)`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.14. Fuvarok/szállítmányok szükséges adatok létrehozása az adatbázisban`
+
+Felelős: `Sötét Petra`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### `8.3.15. Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
+
+Felelős: `Fodor Döme`
+
+Tartam:  `4 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### `8.3.16. Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `3 személynap`
+
+#### `8.3.17. Biztonsági mentés automatikus létrehozása`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### 8.3.18. Tesztelési dokumentum az összes funkcióhoz (TP, TC)
+
+Felelős: `Mindenki`
+
+Tartam:  `7 nap`
+
+Erőforrásigény:  `1 személynap/fő`
+
+```
+Itt csak a könnyebb áttekinthetőség végett szerepel mindenki felelősként, azonban ezt a feladatot is részfeladatokra kell bontani.
+```
+
+#### `8.3.19. A prototípus kitelepítése éles környezetbe` 
+
+Felelős: `Kromek Bálint Dániel`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `1 személynap`
+
+```
+A feladatokat a 2.2-es és a 2.3-as pont alapján kell meghatározni és lehető legrészletesebben definiálni.
+Lehetőség szerint az összetett feladatokat bontsuk fel részfeladatokra. 
+A bemutató során a prototípus aktuális állását kell prezentálni.
+```
+
+### 8.4. Prototípus II. (4. mérföldkő)
+
+Ennek a feladatnak az a célja, hogy `az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik az előző mérföldkőben összeállított tesztesetek alapján.`
+
+Részfeladatai a következők:
+
+#### 8.4.1. Javított minőségű prototípus új funkciókkal
+
+Felelős: `Sötét Petra`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2.5 személynap`
+
+#### 8.4.2. Javított minőségű prototípus javított funkciókkal
+
+Felelős: `Zsemberi Izabella`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
+
+Felelős: `Fodor Döme`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `1.5 személynap`
+
+#### `8.4.4. Felhasználói munkamenet tesztelése (TR)`
+
+Felelős: `Kovács Bence`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### `8.4.5. Raktárak kezelésének tesztelése (TR)`
+
+Felelős: `Kromek Bálint Dániel`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### `8.4.6. Árukészletek kezelésének tesztelése (TR)`
+
+Felelős: `Madai Zsuzsanna J.`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `1 személynap`
+
+#### `8.4.7. Járművek kezelésének tesztelése (TR)`
+
+Felelős: `Nagy Sz Kamilla`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### `8.4.8. Fuvarok kezelésének tesztelése (TR)`
+
+Felelős: `Nagy Sz Kamilla`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### `8.4.9. Email-es funkciók tesztelése (TR)`
+
+Felelős: `Fodor Döme`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### `8.4.10. Térképes funkciók tesztelése (TR)`
+
+Felelős: `Kromek Bálint Dániel`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### `8.4.11. Biztonsági mentés tesztelése (TR)`
+
+Felelős: `Kromek Bálint Dániel`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+#### `8.4.12. A prototípus kitelepítésének frissítése`
+
+Felelős: `Zsemberi Izabella`
+
+Tartam:  `1 nap`
+
+Erőforrásigény:  `0.5 személynap`
+
+## 9. Részletes időbeosztás
+
+![image](./MINTA-gantt-diagram.png)
+
+```
+Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfeladatokat tartalmazza felelős/tartam bontásban.
+```
+
+## 10. Projekt költségvetés
+
+```
+Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt feladatok számát 
+és az adott mérföldkőben végzett munkáért szerezhető pontszámot kell beírni minden emberre külön-külön.
+Figyeljünk arra, hogy mivel mindenkinek minden mérföldkövön dolgoznia kell, ezért a 10.3-as táblázat
+minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
+```
+
+### 10.1. Részletes erőforrásigény (személynap)
+
+
+| Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
+|------------------------|-------|-------|------|-------|----------|
+| `Sötét Petra`          | `1`   | `2`   | `13` | `5`   | `21`     |
+| `Nagy Sz Kamilla`      | `1`   | `4`   | `13` | `3`   | `21`     |
+| `Fodor Döme`           | `1`   | `2.5` | `14` | `3.5` | `21`     |
+| `Kromek Bálint Dániel` | `2`   | `2`   | `12` | `5`   | `21`     |
+| `Kovács Bence`         | `2`   | `4`   | `12` | `3`   | `21`     |
+| `Madai Zsuzsanna J.`   | `1`   | `2.5` | `14` | `3.5` | `21`     |
+| `Zsemberi Izabella`    | `2`   | `2.5` | `13` | `3.5` | `21`     |
+
+
+
+### 10.2. Részletes feladatszámok
+
+| Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
+|------------------------|-------|-------|------|------|----------|
+| `Sötét Petra`          | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `Nagy Sz Kamilla`      | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `Fodor Döme`           | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `Kromek Bálint Dániel` | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `Kovács Bence`         | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `Madai Zsuzsanna J.`   | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `semberi Izabella`     | `2`   | `2`   | `7`  | `4`  | `15`     |
+
+### 10.3. Részletes költségvetés
+
+| Név                                 | M1      | M2       | M3       | M4       | Összesen  |
+|-------------------------------------|---------|----------|----------|----------|-----------|
+| Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
+| `Sötét Petra`                       | `7`     | `10`     | `28`     |  `25`    | 70        |
+| `Nagy Sz Kamilla`                   | `4`     | `15`     | `35`     |  `16`    | 70        |
+| `Fodor Döme`                        | `4`     | `12`     | `30`     |  `24`    | 70        |
+| `Kromek Bálint Dániel`              | `7`     | `10`     | `28`     |  `25`    | 70        |
+| `Kovács Bence`                      | `4`     | `15`     | `35`     |  `16`    | 70        |
+| `Madai Zsuzsanna J.`                | `4`     | `12`     | `30`     |  `24`    | 70        |
+| `Zsemberi Izabella`                 | `4`     | `12`     | `30`     |  `24`    | 70        |
+
+Szeged, `2023-10-11`.
