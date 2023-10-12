@@ -190,10 +190,6 @@ D - dokumentáció, P - prototípus
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
 
-```
-Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat, mivel az első mérföldkőben
-2 kötelező feladat van, ezt nem bontjuk részfeladatokra.
-```
 
 ### 8.1. Projektterv (1. mérföldkő)
 
@@ -212,7 +208,7 @@ Erőforrásigény:  `1 személynap/fő`
 
 #### 8.1.2. Bemutató elkészítése
 
-Felelős: `Kovács Bence, Fodor Döme, Sz. Kamilla`
+Felelős: `Kovács Bence, Fodor Döme, Nagy Sz. Kamilla`
 
 Tartam:  `2 nap`
 
@@ -295,7 +291,7 @@ Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre,
 
 Részfeladatai a következők:
 
-#### `8.3.0. Projekt létrehozása Angular-ban`
+#### 8.3.1. Projekt létrehozása Angular-ban
 
 Felelős: `Zsemberi Izabella`
 
@@ -303,31 +299,23 @@ Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.1. Felhasználók kezelése (admin, raktáros, sofőr) (CR)`
+#### 8.3.2. Felhasználók kezelése (UD)
 
 Felelős: `Sötét Petra`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### `8.3.2. Felhasználók kezelése (admin, raktáros, sofőr) (UD)`
-
-Felelős: `Nagy Sz Kamilla`
 
 Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.3. Felhasználók kezeléséhez szükséges adatok létrehozása az adatbázisban`
+#### 8.3.3. Felhasználók kezeléséhez szükséges adatok létrehozása az adatbázisban
 
-Felelős: `Nagy Sz Kamilla`
+Felelős: `Nagy Sz. Kamilla`
 
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.4. Felhasználói munkamenet megvalósítása több jogosultsági szinttel`
+#### 8.3.4. Felhasználói munkamenet megvalósítása több jogosultsági szinttel
 
 Felelős: `Kovács Bence`
 
@@ -335,7 +323,7 @@ Tartam:  `10 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.5. Raktárak kezelése (CRUD)`
+#### 8.3.5. Oldalak kezelése (CRUD)
 
 Felelős: `Zsemberi Izabella`
 
@@ -343,7 +331,7 @@ Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.6. Raktárkezeléshez szükséges adatok létrehozása az adatbázisban`
+#### 8.3.6. Oldalakhoz szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Madai Zsuzsanna J.`
 
@@ -351,7 +339,7 @@ Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.7. Árukészletek kezelése (C)`
+#### 8.3.7. Hirdetések kezelése (C)
 
 Felelős: `Fodor Döme `
 
@@ -359,7 +347,7 @@ Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.8. Árukészletek kezelése (R)`
+#### 8.3.8. Hirdetések kezelése (R)
 
 Felelős: `Fodor Döme`
 
@@ -367,7 +355,7 @@ Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.9. Árukészletek kezelése (UD)`
+#### 8.3.9. Hirdetések kezelése (UD)
 
 Felelős: `Kovács Bence`
 
@@ -375,15 +363,15 @@ Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.10. Árukészletek kezeléséhez szükséges adatok létrehozása az adatbázisban`
+#### 8.3.10. Hirdetések kezeléséhez szükséges adatok létrehozása az adatbázisban
 
-Felelős: `Nagy Sz Kamilla`
+Felelős: `Nagy Sz. Kamilla`
 
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.11. Járművek kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban`
+#### 8.3.11. Pénzmozgás kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Sötét Petra`
 
@@ -391,7 +379,7 @@ Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.12. Fuvarok/szállítmányok kezelése (CR)`
+#### 8.3.12. Értékelések és megjegyzések kezelése (CR)
 
 Felelős: `Kovács Bence`
 
@@ -399,7 +387,7 @@ Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.13. Fuvarok/szállítmányok kezelése (UD)`
+#### 8.3.13. Értékelések és megjegyzések kezelése (UD)
 
 Felelős: `Kovács Bence`
 
@@ -407,7 +395,7 @@ Tartam:  `5 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.14. Fuvarok/szállítmányok szükséges adatok létrehozása az adatbázisban`
+#### 8.3.14. Értékelésekhez és megjeggyzésekhez szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Sötét Petra`
 
@@ -415,7 +403,7 @@ Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.3.15. Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
+#### 8.3.15. Email-es kiértesítés megbízásról és elfogadásról
 
 Felelős: `Fodor Döme`
 
@@ -423,7 +411,7 @@ Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### `8.3.16. Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
+#### 8.3.16. Automatikus biztonsági mentés létrehozása
 
 Felelős: `Kovács Bence`
 
@@ -431,15 +419,7 @@ Tartam:  `5 nap`
 
 Erőforrásigény:  `3 személynap`
 
-#### `8.3.17. Biztonsági mentés automatikus létrehozása`
-
-Felelős: `Kovács Bence`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### 8.3.18. Tesztelési dokumentum az összes funkcióhoz (TP, TC)
+#### 8.3.17. Tesztelési dokumentum az összes funkcióhoz
 
 Felelős: `Mindenki`
 
@@ -451,9 +431,9 @@ Erőforrásigény:  `1 személynap/fő`
 Itt csak a könnyebb áttekinthetőség végett szerepel mindenki felelősként, azonban ezt a feladatot is részfeladatokra kell bontani.
 ```
 
-#### `8.3.19. A prototípus kitelepítése éles környezetbe` 
+#### 8.3.18. A prototípus kitelepítése éles környezetbe
 
-Felelős: `Kromek Bálint Dániel`
+Felelős: `Kromek Dániel B`
 
 Tartam:  `1 nap`
 
@@ -495,7 +475,7 @@ Tartam:  `5 nap`
 
 Erőforrásigény:  `1.5 személynap`
 
-#### `8.4.4. Felhasználói munkamenet tesztelése (TR)`
+#### 8.4.4. Felhasználói munkamenet tesztelése (TR)
 
 Felelős: `Kovács Bence`
 
@@ -503,15 +483,15 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.4.5. Raktárak kezelésének tesztelése (TR)`
+#### 8.4.5. Oldalak kezelésének tesztelése (TR)
 
-Felelős: `Kromek Bálint Dániel`
+Felelős: `Kromek Dániel B`
 
 Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-#### `8.4.6. Árukészletek kezelésének tesztelése (TR)`
+#### 8.4.6. Hirdetések kezelésének tesztelése (TR)
 
 Felelős: `Madai Zsuzsanna J.`
 
@@ -519,7 +499,7 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### `8.4.7. Járművek kezelésének tesztelése (TR)`
+#### 8.4.7. Értékelések és megjegyzések kezelésének tesztelése (TR)
 
 Felelős: `Nagy Sz Kamilla`
 
@@ -527,7 +507,7 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-#### `8.4.8. Fuvarok kezelésének tesztelése (TR)`
+#### 8.4.8. Email-es funkciók tesztelése (TR)
 
 Felelős: `Nagy Sz Kamilla`
 
@@ -535,7 +515,7 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-#### `8.4.9. Email-es funkciók tesztelése (TR)`
+#### 8.4.9. Pénzmozgás tesztelése (TR)
 
 Felelős: `Fodor Döme`
 
@@ -543,23 +523,15 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-#### `8.4.10. Térképes funkciók tesztelése (TR)`
+#### 8.4.10. Biztonsági mentés tesztelése (TR)
 
-Felelős: `Kromek Bálint Dániel`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.5 személynap`
-
-#### `8.4.11. Biztonsági mentés tesztelése (TR)`
-
-Felelős: `Kromek Bálint Dániel`
+Felelős: `Kromek Dániel B.`
 
 Tartam:  `1 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-#### `8.4.12. A prototípus kitelepítésének frissítése`
+#### 8.4.11. A prototípus kitelepítésének frissítése
 
 Felelős: `Zsemberi Izabella`
 
@@ -569,11 +541,7 @@ Erőforrásigény:  `0.5 személynap`
 
 ## 9. Részletes időbeosztás
 
-![image](./MINTA-gantt-diagram.png)
-
-```
-Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfeladatokat tartalmazza felelős/tartam bontásban.
-```
+![image](./gantt_diagram.png)
 
 ## 10. Projekt költségvetés
 
