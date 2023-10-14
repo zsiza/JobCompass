@@ -38,7 +38,7 @@
 
 ## 3. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen `70` személynap, átlagosan `10` személynap/fő.
+Az erőforrásigényünk összesen `86.5` személynap, átlagosan `12.5` személynap/fő.
 
 A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 
@@ -182,9 +182,9 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 |    P1+D3    |      Prototípus I. és tesztelési dokumentáció, egyéni jelentés              | `2023-11-15`  |
 |    P2+D4    |      Prototípus II. és frissített tesztelési dokumentáció, egyéni jelentés  | `2023-12-06`  |
 
-```
-D - dokumentáció, P - prototípus
-```
+
+
+
 
 ## 8. Feladatlista
 
@@ -214,9 +214,7 @@ Tartam:  `2 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, tervezett funkciók, tagok, Gantt diagram.`
-```
+
 
 ### 8.2. UML és adatbázis- és képernyőtervek (2. mérföldkő)
 
@@ -228,7 +226,7 @@ Részfeladatai a következők:
 
 Felelős: `Kovács Bence`
 
-Tartam:  `3 nap`
+Tartam:  `1 nap`
 
 Erőforrásigény:  `1 személynap`
 
@@ -236,33 +234,33 @@ Erőforrásigény:  `1 személynap`
 
 Felelős: `Fodor Döme`
 
-Tartam:  `4 nap`
+Tartam:  `2 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `1 személynap`
 
 #### 8.2.3. Sequence diagram
 
-Felelős: `Madai Zsuzsanna J.`
+Felelős: `Zsemberi Izabella`
 
-Tartam:  `3 nap`
+Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: `Sötét Petra`
+Felelős: `Sötét Petra & Nagy Sz. Kamilla`
 
-Tartam:  `4 nap`
+Tartam:  `1 nap`
 
 Erőforrásigény:  `2 személynap`
 
 #### 8.2.5. Package diagram
 
-Felelős: `Zsemberi Izabella`
+Felelős: `Madai Zsuzsanna J.`
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.2.6. Weboldal Design Figmában
 
@@ -270,20 +268,17 @@ Felelős: `Kromek Bálint Dániel`
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  `2 személynap`
 
 #### 8.2.7. Bemutató elkészítése
 
 Felelős: `Nagy Sz. Kamilla`
 
-Tartam:  `1 nap`
+Tartam:  `2 nap`
 
 Erőforrásigény:  `0.5 személynap`
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült diagramok és képernyőtervek)`
 
-```
 
 ### 8.3. Prototípus I. (3. mérföldkő)
 
@@ -295,21 +290,21 @@ Részfeladatai a következők:
 
 Felelős: `Zsemberi Izabella`
 
-Tartam:  `5 nap`
+Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.3.2. Felhasználók kezelése (UD)
+#### 8.3.2. Felhasználók kezelése (CRUD)
 
-Felelős: `Sötét Petra`
+Felelős: `Kovács Bence`
 
-Tartam:  `4 nap`
+Tartam:  `3 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.3.3. Felhasználók kezeléséhez szükséges adatok létrehozása az adatbázisban
 
-Felelős: `Nagy Sz. Kamilla`
+Felelős: `Madai Zsuzsanna J.`
 
 Tartam:  `3 nap`
 
@@ -317,13 +312,53 @@ Erőforrásigény:  `1 személynap`
 
 #### 8.3.4. Felhasználói munkamenet megvalósítása több jogosultsági szinttel
 
-Felelős: `Kovács Bence`
+Felelős: `Sötét Petra`
 
-Tartam:  `10 nap`
+Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.3.5. Oldalak kezelése (CRUD)
+#### 8.3.5. Oldalak stílusa frontendben 
+
+Felelős: `Kromek Dániel`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.6. Oldalak kezelése (CRUD)
+
+Felelős: `Kovács Bence`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `2.5 személynap`
+
+#### 8.3.7. Oldalakhoz szükséges adatok létrehozása az adatbázisban
+
+Felelős: `Madai Zsuzsanna J.`
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `3 személynap`
+
+#### 8.3.8. Hirdetések kezelése frontendben
+
+Felelős: `Madai Zsuzsanna J. `
+
+Tartam:  `5 nap`
+
+Erőforrásigény:  `4 személynap`
+
+#### 8.3.9. Hirdetések kezelése (C)
+
+Felelős: `Kromek Dániel `
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.10. Hirdetések kezelése (R)
 
 Felelős: `Zsemberi Izabella`
 
@@ -331,119 +366,95 @@ Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
-#### 8.3.6. Oldalakhoz szükséges adatok létrehozása az adatbázisban
+#### 8.3.11. Hirdetések kezelése (UD)
 
-Felelős: `Madai Zsuzsanna J.`
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 8.3.7. Hirdetések kezelése (C)
-
-Felelős: `Fodor Döme `
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 8.3.8. Hirdetések kezelése (R)
-
-Felelős: `Fodor Döme`
+Felelős: `Kromek Dániel`
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `1 személynap`
-
-#### 8.3.9. Hirdetések kezelése (UD)
-
-Felelős: `Kovács Bence`
-
-Tartam:  `5 nap`
-
 Erőforrásigény:  `2 személynap`
 
-#### 8.3.10. Hirdetések kezeléséhez szükséges adatok létrehozása az adatbázisban
+#### 8.3.12. Hirdetések kezeléséhez szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Nagy Sz. Kamilla`
 
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 8.3.11. Pénzmozgás kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban
-
-Felelős: `Sötét Petra`
-
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.3.12. Értékelések és megjegyzések kezelése (CR)
+#### 8.3.13. Pénzmozgás kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban
 
-Felelős: `Kovács Bence`
+Felelős: `Sötét Petra`
 
 Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.3.13. Értékelések és megjegyzések kezelése (UD)
+#### 8.3.14. Értékelések és megjegyzések létrehozása frontendben
 
-Felelős: `Kovács Bence`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 8.3.14. Értékelésekhez és megjeggyzésekhez szükséges adatok létrehozása az adatbázisban
-
-Felelős: `Sötét Petra`
+Felelős: `Zsemberi Izabella`
 
 Tartam:  `3 nap`
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  `2 személynap`
 
-#### 8.3.15. Email-es kiértesítés megbízásról és elfogadásról
+#### 8.3.15. Értékelések és megjegyzések kezelése (CR)
+
+Felelős: `Kovács Bence`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.16. Értékelések és megjegyzések kezelése (UD)
+
+Felelős: `Kovács Bence`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.17. Értékelésekhez és megjeggyzésekhez szükséges adatok létrehozása az adatbázisban
+
+Felelős: `Nagy Sz. Kamilla`
+
+Tartam:  `3 nap`
+
+Erőforrásigény:  `2 személynap`
+
+#### 8.3.18. Email-es kiértesítés megbízásról és elfogadásról
 
 Felelős: `Fodor Döme`
 
-Tartam:  `4 nap`
+Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 8.3.16. Automatikus biztonsági mentés létrehozása
+#### 8.3.19. Automatikus biztonsági mentés létrehozása
 
-Felelős: `Kovács Bence`
+Felelős: `Fodor Döme`
 
-Tartam:  `5 nap`
+Tartam:  `3 nap`
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  `2 személynap`
 
-#### 8.3.17. Tesztelési dokumentum az összes funkcióhoz
+#### 8.3.20. Tesztelési dokumentum az összes funkcióhoz
 
 Felelős: `Mindenki`
 
-Tartam:  `7 nap`
+Tartam:  `4 nap`
 
 Erőforrásigény:  `1 személynap/fő`
 
-```
-Itt csak a könnyebb áttekinthetőség végett szerepel mindenki felelősként, azonban ezt a feladatot is részfeladatokra kell bontani.
-```
+#### 8.3.21. A prototípus kitelepítése éles környezetbe
 
-#### 8.3.18. A prototípus kitelepítése éles környezetbe
+Felelős: `Sötét Petra`
 
-Felelős: `Kromek Dániel B`
-
-Tartam:  `1 nap`
+Tartam:  `2 nap`
 
 Erőforrásigény:  `1 személynap`
 
-```
-A feladatokat a 2.2-es és a 2.3-as pont alapján kell meghatározni és lehető legrészletesebben definiálni.
-Lehetőség szerint az összetett feladatokat bontsuk fel részfeladatokra. 
-A bemutató során a prototípus aktuális állását kell prezentálni.
-```
+
 
 ### 8.4. Prototípus II. (4. mérföldkő)
 
@@ -463,9 +474,9 @@ Erőforrásigény:  `2.5 személynap`
 
 Felelős: `Zsemberi Izabella`
 
-Tartam:  `5 nap`
+Tartam:  `6 nap`
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  `3 személynap`
 
 #### 8.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
 
@@ -473,67 +484,67 @@ Felelős: `Fodor Döme`
 
 Tartam:  `5 nap`
 
-Erőforrásigény:  `1.5 személynap`
+Erőforrásigény:  `3.5 személynap`
 
 #### 8.4.4. Felhasználói munkamenet tesztelése (TR)
 
-Felelős: `Kovács Bence`
+Felelős: `Nagy Sz. Kamilla`
 
-Tartam:  `1 nap`
+Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
 #### 8.4.5. Oldalak kezelésének tesztelése (TR)
 
-Felelős: `Kromek Dániel B`
+Felelős: `Fodor Döme`
 
-Tartam:  `1 nap`
+Tartam:  `3 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.6. Hirdetések kezelésének tesztelése (TR)
 
 Felelős: `Madai Zsuzsanna J.`
 
-Tartam:  `1 nap`
+Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
 #### 8.4.7. Értékelések és megjegyzések kezelésének tesztelése (TR)
 
-Felelős: `Nagy Sz Kamilla`
+Felelős: `Zsemberi Izabella`
 
-Tartam:  `1 nap`
+Tartam:  `3 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.8. Email-es funkciók tesztelése (TR)
 
 Felelős: `Nagy Sz Kamilla`
 
-Tartam:  `1 nap`
+Tartam:  `3 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.9. Pénzmozgás tesztelése (TR)
 
-Felelős: `Fodor Döme`
+Felelős: `Kromek Dániel`
 
-Tartam:  `1 nap`
+Tartam:  `3 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.10. Biztonsági mentés tesztelése (TR)
 
-Felelős: `Kromek Dániel B.`
+Felelős: `Kovács Bence`
 
-Tartam:  `1 nap`
+Tartam:  `4 nap`
 
-Erőforrásigény:  `0.5 személynap`
+Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.11. A prototípus kitelepítésének frissítése
 
-Felelős: `Zsemberi Izabella`
+Felelős: `Madai Zsuzsanna J.`
 
 Tartam:  `1 nap`
 
@@ -551,19 +562,20 @@ Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt fel
 Figyeljünk arra, hogy mivel mindenkinek minden mérföldkövön dolgoznia kell, ezért a 10.3-as táblázat
 minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
 ```
+-
 
 ### 10.1. Részletes erőforrásigény (személynap)
 
 
 | Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
 |------------------------|-------|-------|------|-------|----------|
-| `Sötét Petra`          | `1`   | `2`   | `13` | `5`   | `21`     |
-| `Nagy Sz Kamilla`      | `1`   | `4`   | `13` | `3`   | `21`     |
-| `Fodor Döme`           | `1`   | `2.5` | `14` | `3.5` | `21`     |
-| `Kromek Bálint Dániel` | `2`   | `2`   | `12` | `5`   | `21`     |
-| `Kovács Bence`         | `2`   | `4`   | `12` | `3`   | `21`     |
-| `Madai Zsuzsanna J.`   | `1`   | `2.5` | `14` | `3.5` | `21`     |
-| `Zsemberi Izabella`    | `2`   | `2.5` | `13` | `3.5` | `21`     |
+| `Sötét Petra`          | `1`   | `2`   | `6`  | `2.5` | `11.5`   |
+| `Nagy Sz Kamilla`      | `1.5` | `2.5` | `5`  | `2.5` | `11.5`   |
+| `Fodor Döme`           | `1.5` | `1`   | `5`  | `5`   | `12.5`   |
+| `Kromek Bálint Dániel` | `1`   | `2`   | `7`  | `1.5` | `11.5`   |
+| `Kovács Bence`         | `1.5` | `1`   | `9`  | `1.5` | `13`     |
+| `Madai Zsuzsanna J.`   | `1`   | `1.5` | `9`  | `1.5` | `13`     |
+| `Zsemberi Izabella`    | `1`   | `2`   | `6`  | `4.5` | `13.5`   |
 
 
 
@@ -571,25 +583,25 @@ minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
 
 | Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
 |------------------------|-------|-------|------|------|----------|
-| `Sötét Petra`          | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Nagy Sz Kamilla`      | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Fodor Döme`           | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Kromek Bálint Dániel` | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Kovács Bence`         | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `Madai Zsuzsanna J.`   | `2`   | `2`   | `7`  | `4`  | `15`     |
-| `semberi Izabella`     | `2`   | `2`   | `7`  | `4`  | `15`     |
+| `Sötét Petra`          | `1`   | `1`   | `4`  | `1`  | `7`      |
+| `Nagy Sz Kamilla`      | `2`   | `2`   | `3`  | `2`  | `9`      |
+| `Fodor Döme`           | `2`   | `1`   | `3`  | `2`  | `8`      |
+| `Kromek Bálint Dániel` | `1`   | `1`   | `4`  | `1`  | `7`      |
+| `Kovács Bence`         | `2`   | `1`   | `5`  | `1`  | `9`      |
+| `Madai Zsuzsanna J.`   | `1`   | `1`   | `4`  | `2`  | `8`      |
+| `Zsemberi Izabella`    | `1`   | `1`   | `4`  | `2`  | `8`      |
 
 ### 10.3. Részletes költségvetés
 
 | Név                                 | M1      | M2       | M3       | M4       | Összesen  |
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
-| `Sötét Petra`                       | `7`     | `10`     | `28`     |  `25`    | 70        |
-| `Nagy Sz Kamilla`                   | `4`     | `15`     | `35`     |  `16`    | 70        |
-| `Fodor Döme`                        | `4`     | `12`     | `30`     |  `24`    | 70        |
-| `Kromek Bálint Dániel`              | `7`     | `10`     | `28`     |  `25`    | 70        |
-| `Kovács Bence`                      | `4`     | `15`     | `35`     |  `16`    | 70        |
-| `Madai Zsuzsanna J.`                | `4`     | `12`     | `30`     |  `24`    | 70        |
-| `Zsemberi Izabella`                 | `4`     | `12`     | `30`     |  `24`    | 70        |
+| `Sötét Petra`                       | `4`     | `18`     | `30`     |  `18`    | 70        |
+| `Nagy Sz Kamilla`                   | `7`     | `17`     | `30`     |  `16`    | 70        |
+| `Fodor Döme`                        | `7`     | `13`     | `30`     |  `20`    | 70        |
+| `Kromek Bálint Dániel`              | `4`     | `17`     | `32`     |  `17`    | 70        |
+| `Kovács Bence`                      | `7`     | `13`     | `35`     |  `15`    | 70        |
+| `Madai Zsuzsanna J.`                | `4`     | `15`     | `35`     |  `16`    | 70        |
+| `Zsemberi Izabella`                 | `7`     | `14`     | `31`     |  `18`    | 70        |
 
 Szeged, `2023-10-11`.
