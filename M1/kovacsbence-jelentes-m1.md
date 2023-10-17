@@ -8,7 +8,9 @@ ___
 
  - 8.1.1. Projektterv kitöltése
 
-    ##### A feladathoz tartozó issue(k):
+    ##### A feladathoz tartozó issue(k): 
+	
+	nincs
 
     ##### A feladat elvégzését alátámasztó commit(ok):
 
@@ -25,6 +27,8 @@ ___
     ##### A feladat elvégzését alátámasztó commit(ok):
 
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/f1f51df1807ebf46580aaed2f432a93abbd46db3
+	 - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/70dbe742743213f06cae8d7a4c35d8538285cde6
+	 - 
 
 ___
 
