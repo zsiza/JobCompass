@@ -47,7 +47,7 @@ A rendelkezésünkre áll összesen `7 * 70 = 490` pont.
 
 A projekt megrendelője `Dr. Márkus András`. A `JobCompass` projektet a projektcsapat fogja végrehajtani, amely `jelenleg hét fejlesztőből áll. A csapatban pályakezdő webprogramozók vannak.`
  - `Fodor Döme (1 év egyetemi tapasztalat, 1 év ipari tapasztalat)`
- - `Kovács Bence (1 év tapasztalat - PHP, Java, Python)`
+ - `Kovács Bence (1 év tapasztalat - PHP, Java, Python, C, C++)`
  - `Zsemberi Izabella (1 év tapasztalat - Javascript, Angular, HTML, PHP)`
  - `Nagy Kamilla (2 év tapasztalat - HTML, CSS, Javascript, PHP, SQL, 1 év: Java, Python)`
  - `Kromek Dániel (2 év tapasztalat - HTML, CSS, Javascript, git, 1 év tapasztalat: TypeScript, Angular)`
@@ -93,7 +93,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `Angular a frontend fejlesztéshez`
  - `Figma design készítéshez`
  - `HTML/CSS/JavaScript (frontend)`
- - `Java/PHP (backend)`
+ - `Java/Python (backend)`
  - `JetBrains IDE fejlesztőkörnyezetek`
  - `Visual Studio Code fejlesztőkörnyezet`
  - `Orace VM VirtualBox Xubuntu OS`
@@ -555,14 +555,6 @@ Erőforrásigény:  `0.5 személynap`
 ![image](./gantt_diagram.png)
 
 ## 10. Projekt költségvetés
-
-```
-Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt feladatok számát 
-és az adott mérföldkőben végzett munkáért szerezhető pontszámot kell beírni minden emberre külön-külön.
-Figyeljünk arra, hogy mivel mindenkinek minden mérföldkövön dolgoznia kell, ezért a 10.3-as táblázat
-minden módosítható oszlopában legalább 1 pontnak szerepelni kell.
-```
--
 
 ### 10.1. Részletes erőforrásigény (személynap)
 
