@@ -94,6 +94,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `Figma design készítéshez`
  - `HTML/CSS/JavaScript (frontend)`
  - `Java/Python (backend)`
+ - `PostgreSQL adatbázisszerver`
  - `JetBrains IDE fejlesztőkörnyezetek`
  - `Visual Studio Code fejlesztőkörnyezet`
  - `Orace VM VirtualBox Xubuntu OS`
