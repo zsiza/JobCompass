@@ -200,7 +200,9 @@ Részfeladatai a következők:
 
 #### 8.1.1. Projektterv kitöltése
 
-Felelős: `Mindenki`
+Felelős: `Fodor Döme`
+
+Feladaton dolgozik: `Mindenki`
 
 Tartam:  `4 nap`
 
@@ -209,7 +211,9 @@ Erőforrásigény:  `1 személynap/fő`
 
 #### 8.1.2. Bemutató elkészítése
 
-Felelős: `Kovács Bence, Fodor Döme, Nagy Sz. Kamilla`
+Felelős: `Fodor Döme`
+
+Feladaton dolgozik: `Kovács Bence, Fodor Döme, Nagy Sz. Kamilla`
 
 Tartam:  `2 nap`
 
@@ -227,6 +231,8 @@ Részfeladatai a következők:
 
 Felelős: `Kovács Bence`
 
+Feladaton dolgozik: `Kovács Bence`
+
 Tartam:  `1 nap`
 
 Erőforrásigény:  `1 személynap`
@@ -234,6 +240,8 @@ Erőforrásigény:  `1 személynap`
 #### 8.2.2. Class diagram
 
 Felelős: `Fodor Döme`
+
+Feladaton dolgozik: `Fodor Döme`
 
 Tartam:  `2 nap`
 
@@ -243,13 +251,17 @@ Erőforrásigény:  `1 személynap`
 
 Felelős: `Zsemberi Izabella`
 
+Feladaton dolgozik: `Zsemberi Izabella`
+
 Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
 #### 8.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: `Sötét Petra & Nagy Sz. Kamilla`
+Felelős: `Sötét Petra`
+
+Feladaton dolgozik: `Sötét Petra & Nagy Sz. Kamilla`
 
 Tartam:  `1 nap`
 
@@ -259,6 +271,8 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Madai Zsuzsanna J.`
 
+Feladaton dolgozik: `Madai Zsuzsanna J.`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1.5 személynap`
@@ -267,6 +281,8 @@ Erőforrásigény:  `1.5 személynap`
 
 Felelős: `Kromek Bálint Dániel`
 
+Feladaton dolgozik: `Kromek Bálint Dániel`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
@@ -274,6 +290,8 @@ Erőforrásigény:  `2 személynap`
 #### 8.2.7. Bemutató elkészítése
 
 Felelős: `Nagy Sz. Kamilla`
+
+Feladaton dolgozik: `Nagy Sz. Kamilla`
 
 Tartam:  `2 nap`
 
@@ -291,6 +309,8 @@ Részfeladatai a következők:
 
 Felelős: `Zsemberi Izabella`
 
+Feladaton dolgozik: `Zsemberi Izabella`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
@@ -298,6 +318,8 @@ Erőforrásigény:  `2 személynap`
 #### 8.3.2. Felhasználók kezelése (CRUD)
 
 Felelős: `Kovács Bence`
+
+Feladaton dolgozik: `Kovács Bence`
 
 Tartam:  `3 nap`
 
@@ -307,6 +329,8 @@ Erőforrásigény:  `1.5 személynap`
 
 Felelős: `Madai Zsuzsanna J.`
 
+Feladaton dolgozik: `Madai Zsuzsanna J.`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
@@ -315,13 +339,17 @@ Erőforrásigény:  `1 személynap`
 
 Felelős: `Sötét Petra`
 
+Feladaton dolgozik: `Sötét Petra`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
 #### 8.3.5. Oldalak stílusa frontendben 
 
-Felelős: `Kromek Dániel`
+Felelős: `Kromek Bálint Dániel`
+
+Feladaton dolgozik: `Kromek Bálint Dániel`
 
 Tartam:  `3 nap`
 
@@ -331,6 +359,8 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Kovács Bence`
 
+Feladaton dolgozik: `Kovács Bence`
+
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2.5 személynap`
@@ -338,6 +368,8 @@ Erőforrásigény:  `2.5 személynap`
 #### 8.3.7. Oldalakhoz szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Madai Zsuzsanna J.`
+
+Feladaton dolgozik: `Madai Zsuzsanna J.`
 
 Tartam:  `5 nap`
 
@@ -347,13 +379,17 @@ Erőforrásigény:  `3 személynap`
 
 Felelős: `Madai Zsuzsanna J. `
 
+Feladaton dolgozik: `Madai Zsuzsanna J.`
+
 Tartam:  `5 nap`
 
 Erőforrásigény:  `4 személynap`
 
 #### 8.3.9. Hirdetések kezelése (C)
 
-Felelős: `Kromek Dániel `
+Felelős: `Kromek Bálint Dániel`
+
+Feladaton dolgozik: `Kromek Bálint Dániel`
 
 Tartam:  `3 nap`
 
@@ -363,13 +399,17 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Zsemberi Izabella`
 
+Feladaton dolgozik: `Zsemberi Izabella`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1 személynap`
 
 #### 8.3.11. Hirdetések kezelése (UD)
 
-Felelős: `Kromek Dániel`
+Felelős: `Kromek Bálint Dániel`
+
+Feladaton dolgozik: `Kromek Bálint Dániel`
 
 Tartam:  `3 nap`
 
@@ -379,6 +419,8 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Nagy Sz. Kamilla`
 
+Feladaton dolgozik: `Nagy Sz. Kamilla`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
@@ -386,6 +428,8 @@ Erőforrásigény:  `2 személynap`
 #### 8.3.13. Pénzmozgás kezelése (CRUD) és a szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Sötét Petra`
+
+Feladaton dolgozik: `Sötét Petra`
 
 Tartam:  `4 nap`
 
@@ -395,6 +439,8 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Zsemberi Izabella`
 
+Feladaton dolgozik: `Zsemberi Izabella`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
@@ -402,6 +448,8 @@ Erőforrásigény:  `2 személynap`
 #### 8.3.15. Értékelések és megjegyzések kezelése (CR)
 
 Felelős: `Kovács Bence`
+
+Feladaton dolgozik: `Kovács Bence`
 
 Tartam:  `3 nap`
 
@@ -411,6 +459,8 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Kovács Bence`
 
+Feladaton dolgozik: `Kovács Bence`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
@@ -418,6 +468,8 @@ Erőforrásigény:  `2 személynap`
 #### 8.3.17. Értékelésekhez és megjeggyzésekhez szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Nagy Sz. Kamilla`
+
+Feladaton dolgozik: `Nagy Sz. Kamilla`
 
 Tartam:  `3 nap`
 
@@ -427,6 +479,8 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Fodor Döme`
 
+Feladaton dolgozik: `Fodor Döme`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
@@ -435,13 +489,17 @@ Erőforrásigény:  `2 személynap`
 
 Felelős: `Fodor Döme`
 
+Feladaton dolgozik: `Fodor Döme`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `2 személynap`
 
 #### 8.3.20. Tesztelési dokumentum az összes funkcióhoz
 
-Felelős: `Mindenki`
+Felelős: `Fodor Döme`
+
+Feladaton dolgozik: `Mindenki`
 
 Tartam:  `4 nap`
 
@@ -450,6 +508,8 @@ Erőforrásigény:  `1 személynap/fő`
 #### 8.3.21. A prototípus kitelepítése éles környezetbe
 
 Felelős: `Sötét Petra`
+
+Feladaton dolgozik: `Sötét Petra`
 
 Tartam:  `2 nap`
 
@@ -467,6 +527,8 @@ Részfeladatai a következők:
 
 Felelős: `Sötét Petra`
 
+Feladaton dolgozik: `Sötét Petra`
+
 Tartam:  `5 nap`
 
 Erőforrásigény:  `2.5 személynap`
@@ -474,6 +536,8 @@ Erőforrásigény:  `2.5 személynap`
 #### 8.4.2. Javított minőségű prototípus javított funkciókkal
 
 Felelős: `Zsemberi Izabella`
+
+Feladaton dolgozik: `Zsemberi Izabella`
 
 Tartam:  `6 nap`
 
@@ -483,6 +547,8 @@ Erőforrásigény:  `3 személynap`
 
 Felelős: `Fodor Döme`
 
+Feladaton dolgozik: `Fodor Döme`
+
 Tartam:  `5 nap`
 
 Erőforrásigény:  `3.5 személynap`
@@ -490,6 +556,8 @@ Erőforrásigény:  `3.5 személynap`
 #### 8.4.4. Felhasználói munkamenet tesztelése (TR)
 
 Felelős: `Nagy Sz. Kamilla`
+
+Feladaton dolgozik: `Nagy Sz. Kamilla`
 
 Tartam:  `3 nap`
 
@@ -499,6 +567,8 @@ Erőforrásigény:  `1 személynap`
 
 Felelős: `Fodor Döme`
 
+Feladaton dolgozik: `Fodor Döme`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1.5 személynap`
@@ -506,6 +576,8 @@ Erőforrásigény:  `1.5 személynap`
 #### 8.4.6. Hirdetések kezelésének tesztelése (TR)
 
 Felelős: `Madai Zsuzsanna J.`
+
+Feladaton dolgozik: `Madai Zsuzsanna J.`
 
 Tartam:  `3 nap`
 
@@ -515,6 +587,8 @@ Erőforrásigény:  `1 személynap`
 
 Felelős: `Zsemberi Izabella`
 
+Feladaton dolgozik: `Zsemberi Izabella`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1.5 személynap`
@@ -523,13 +597,17 @@ Erőforrásigény:  `1.5 személynap`
 
 Felelős: `Nagy Sz Kamilla`
 
+Feladaton dolgozik: `Nagy Sz Kamilla`
+
 Tartam:  `3 nap`
 
 Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.9. Pénzmozgás tesztelése (TR)
 
-Felelős: `Kromek Dániel`
+Felelős: `Kromek Bálint Dániel`
+
+Feladaton dolgozik: `Kromek Bálint Dániel`
 
 Tartam:  `3 nap`
 
@@ -539,6 +617,8 @@ Erőforrásigény:  `1.5 személynap`
 
 Felelős: `Kovács Bence`
 
+Feladaton dolgozik: `Kovács Bence`
+
 Tartam:  `4 nap`
 
 Erőforrásigény:  `1.5 személynap`
@@ -546,6 +626,8 @@ Erőforrásigény:  `1.5 személynap`
 #### 8.4.11. A prototípus kitelepítésének frissítése
 
 Felelős: `Madai Zsuzsanna J.`
+
+Feladaton dolgozik: `Madai Zsuzsanna J.`
 
 Tartam:  `1 nap`
 
