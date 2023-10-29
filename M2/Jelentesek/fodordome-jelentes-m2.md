@@ -18,15 +18,15 @@ ___
 
 ___
 
-- 8.2.3. Sequence diagram - saját kedvenc funkció
+- 8.2.3. Sequence diagram - backup saving
 
     ##### A feladathoz tartozó issue(k): 
 	
-	- TODO
+	- https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/issues/31
 
     ##### A feladat elvégzését alátámasztó commit(ok):
 
-     - TODO
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/92368ea7751b05897416b2eac058d3fc66588e8d
 
 ___
 
