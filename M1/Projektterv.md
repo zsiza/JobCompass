@@ -34,7 +34,7 @@
     - `Személyes leírások kezelése (CRUD)`
  - `Üzenetírás lehetősége a munkaerőnek`
     - `Felhasználók közötti üzenetküldés`
-    - `Üzenetek tárolása, legetőség az üzenetek szerkesztésére`
+    - `Üzenetek tárolása, lehetőség az üzenetek szerkesztésére`
  
 
 
@@ -109,15 +109,20 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `PostgreSQL adatbázisszerver`
  - `JetBrains IDE fejlesztőkörnyezetek`
  - `Visual Studio Code fejlesztőkörnyezet`
- - `Orace VM VirtualBox Xubuntu OS`
+ - `Oracle VM VirtualBox Xubuntu OS`
 
 
 ### 5.2. Rizikómenedzsment
 
-| Kockázat                                    | Leírás                                                                                                                                                                                     | Valószínűség | Hatás  |
-|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------|
-| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`        | `nagy`       | `erős` |
-| `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések` | `kis`        | `erős` |
+| Kockázat                                    | Leírás                                                                                                                                                                                                             | Valószínűség   | Hatás     |
+|---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-----------|
+| `Betegség`                                  | `Súlyosságtól függően hátráltatja vagy bizonyos esetekben teljes mértékben korlátozza a munkavégzőt, így az egész projektre kihatással van. Megoldás: a feladatok átcsoportosítása`                                | `nagy`         | `erős`    |
+| `Kommunikációs fennakadás a csapattagokkal` | `A csapattagok között nem elégséges az információ áramlás, nem pontosan, esetleg késve vagy nem egyértelműen tájékoztatjuk egymást. Megoldás: még gyakoribb megbeszélések és ellenőrzések`                         | `nagy`         | `gyenge`  |
+| `Szabadság, tanulmányi szünet`              | `Ha valaki pihenés miatt nem elérhető, akkor vagy át kell ütemezni a feladatait, vagy bizonyos teendőket át kell adni másnak`                                                                                      | `kicsi`        | `közepes` |
+| `Informatikai problémák`                    | `Egy vagy több csapattagnak meghibásodik valamelyik fejlesztéshez használt eszköze, ami akár adatvesztéshez is vezethet. Megoldás: a hibás eszköz cseréje, az elveszett implementáció pótlása`                     | `közepes`      | `erős`    |
+| `Feladatokra szánt idő rossz beosztása`     | `Ha a feladatok nem a projekttervben leírt határidőkre készülnek el, később feltorlódhatnak a feladatok, és az egymásra épülő elemek sem készülnek el időben. Megoldás: határidők betartása, feladatok átruházása` | `kis`          | `erős`    |
+| `Csapattag kilépése`                        | `Egy vagy több csapattaggal véletlenül vagy szándékosan megszűnik a kommunkáció, vagy a tag(ok) kilép(nek) a csapatból. Megoldás: feladatok átruházása és átütemezése`                                             | `nagyon kicsi` | `erős`    |
+| `GitLab szerver összeomlása`                | `A repository tárolására szolgáló Gitlab szerver elérhetetlenné válik. Megoldás: projekt visszaállítása biztonsági mentésből, új tárhely keresése a repository számára`                                            | `nagyon kicsi` | `erős`    |
 
 
 
@@ -607,9 +612,9 @@ Erőforrásigény:  `1.5 személynap`
 
 #### 8.4.8. Email-es funkciók tesztelése (TR)
 
-Felelős: `Nagy Sz Kamilla`
+Felelős: `Nagy Sz. Kamilla`
 
-Feladaton dolgozik: `Nagy Sz Kamilla`
+Feladaton dolgozik: `Nagy Sz. Kamilla`
 
 Tartam:  `3 nap`
 
@@ -657,7 +662,7 @@ Erőforrásigény:  `0.5 személynap`
 | Név                    |   M1  |   M2  |   M3 |   M4  | Összesen |
 |------------------------|-------|-------|------|-------|----------|
 | `Sötét Petra`          | `1`   | `2`   | `6`  | `2.5` | `11.5`   |
-| `Nagy Sz Kamilla`      | `1.5` | `2.5` | `5`  | `2.5` | `11.5`   |
+| `Nagy Sz. Kamilla`     | `1.5` | `2.5` | `5`  | `2.5` | `11.5`   |
 | `Fodor Döme`           | `1.5` | `1`   | `5`  | `5`   | `12.5`   |
 | `Kromek Bálint Dániel` | `1`   | `2`   | `7`  | `1.5` | `11.5`   |
 | `Kovács Bence`         | `1.5` | `1`   | `9`  | `1.5` | `13`     |
@@ -671,7 +676,7 @@ Erőforrásigény:  `0.5 személynap`
 | Név                    |   M1  |   M2  |   M3 |   M4 | Összesen |
 |------------------------|-------|-------|------|------|----------|
 | `Sötét Petra`          | `1`   | `1`   | `4`  | `1`  | `7`      |
-| `Nagy Sz Kamilla`      | `2`   | `2`   | `3`  | `2`  | `9`      |
+| `Nagy Sz. Kamilla`     | `2`   | `2`   | `3`  | `2`  | `9`      |
 | `Fodor Döme`           | `2`   | `1`   | `3`  | `2`  | `8`      |
 | `Kromek Bálint Dániel` | `1`   | `1`   | `4`  | `1`  | `7`      |
 | `Kovács Bence`         | `2`   | `1`   | `5`  | `1`  | `9`      |
@@ -684,7 +689,7 @@ Erőforrásigény:  `0.5 személynap`
 |-------------------------------------|---------|----------|----------|----------|-----------|
 | Maximálisan megszerezhető pontszám  |  (7)    | (20)     | (35)     |  (28)    | 100% (70) |
 | `Sötét Petra`                       | `4`     | `18`     | `30`     |  `18`    | 70        |
-| `Nagy Sz Kamilla`                   | `7`     | `17`     | `30`     |  `16`    | 70        |
+| `Nagy Sz. Kamilla`                  | `7`     | `17`     | `30`     |  `16`    | 70        |
 | `Fodor Döme`                        | `7`     | `13`     | `30`     |  `20`    | 70        |
 | `Kromek Bálint Dániel`              | `4`     | `17`     | `32`     |  `17`    | 70        |
 | `Kovács Bence`                      | `7`     | `13`     | `35`     |  `15`    | 70        |
