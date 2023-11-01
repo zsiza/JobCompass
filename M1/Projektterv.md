@@ -17,13 +17,25 @@
 ### 2.2. Funkcionális követelmények
 
  - `Felhasználók kezelése (önmagát hirdető jelentkező, munkaerő kereső, admin) (CRUD)`
+    - `Felhasználók regisztrálása és belépés lehetősége`
+    - `Felhasználói profil szerkesztése és törlése`
+    - `Felhasználók bejelentkezése és kijelentkezése`
  - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel`
+    -`Különböző jogosultsági szintekhez tartozó műveletek engedélyezése vagy korlátozása`
  - `Jelentkezések kezelése (CRUD)`
+    - `Jelentkezések létrehozása és szerkesztése`
+    - `Jelentkezések törlése`
  - `Keresések kezelése`
- - `Személyes információk (pl.: elérhetőség) tárolása`
- - `Személyes leírások kezelése (CRUD)`
+    - `Keresési funkció a weboldalon`
+    - `Hírdetések kategorizálása, kategória szerinti szűrés lehetősége`
+    - `Címkék létrehozása a munkaerőhöz, keresés címkék alapján`
+ - `Személyes információk tárolása`
+    - `Felhasználók személyes információinak tárolása, mint például elérhetőség, profilkép stb`
+    - `Személyes leírások kezelése (CRUD)`
  - `Üzenetírás lehetősége a munkaerőnek`
- - `Címkék létrehozása a munkaerőhöz, keresés címkék alapján`
+    - `Felhasználók közötti üzenetküldés`
+    - `Üzenetek tárolása, legetőség az üzenetek szerkesztésére`
+ 
 
 
 ### 2.3. Nem funkcionális követelmények
