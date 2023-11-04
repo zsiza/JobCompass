@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  li {
+    float: left;
+  }
+
+  #right{
+    float:right;
+  }
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    font-family: Tahoma;
+    padding: 20px 20px;
+    width: 100px;
+    text-decoration: none;
+  }
+  
+
+  li a:hover {
+    background-color: rgb(74, 74, 75);
+    color:white;
+    transition: background-color 1s, color 1s;
+    
+  }
