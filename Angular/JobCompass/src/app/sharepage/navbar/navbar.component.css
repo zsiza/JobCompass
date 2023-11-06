@@ -4,16 +4,23 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: transparent;
+    position: sticky;
   }
   
   li {
     float: left;
   }
 
+  
   #right{
     float:right;
   }
+  #main{
+    font-size: larger;
+    padding: 10px;
+  }
   li a {
+    float:right;
     display: block;
     color: black;
     text-align: center;
@@ -25,8 +32,8 @@ ul {
   
 
   li a:hover {
-    background-color: rgb(74, 74, 75);
-    color:white;
-    transition: background-color 1s, color 1s;
+    color:rgb(73, 23, 255);
+    padding-right: 8px;
+    transition:color 1s, padding-right 1s;
     
   }
