@@ -3,6 +3,7 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 *{
+	border:red 1px solid;
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -77,7 +78,6 @@ ul{
 	color: #24262b;
 	background-color: #ffffff;
 }
-
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
