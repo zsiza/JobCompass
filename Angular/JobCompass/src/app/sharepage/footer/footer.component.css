@@ -3,7 +3,6 @@ body{
 	font-family: 'Poppins', sans-serif;
 }
 *{
-	border:red 1px solid;
 	margin:0;
 	padding:0;
 	box-sizing: border-box;
@@ -22,6 +21,7 @@ ul{
 .footer{
 	background-color: #000929;
     padding: 70px 0;
+	width: 100%;
 }
 .footer-col{
    width: 25%;
@@ -81,8 +81,9 @@ ul{
 /*responsive*/
 @media(max-width: 767px){
   .footer-col{
-    width: 50%;
     margin-bottom: 30px;
+	width: 100%;
+
 }
 }
 @media(max-width: 574px){

@@ -1,30 +1,99 @@
-ul {
-    list-style-type: none;
+
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  }
+  .links{
+    align-items: center;
+  }
+  .name{
+    font-size: 25px;
+    font-weight: bold;
     margin: 25px;
-    padding: 0;
-    overflow: hidden;
-    background-color: transparent;
+    margin-left: 40px;
   }
-  
-  #main{
-    font-size: larger;
-    padding: 10px;
-  }
-  li a {
-    float:right;
-    display: block;
-    color: black;
+  ul{
+    display: flex;
+    list-style: none;
     text-align: center;
-    font-family: Tahoma;
-    padding: 20px 20px;
-    width: 100px;
-    text-decoration: none;
+    margin-right: 30px;
   }
-  
+   a{
+    text-decoration: none;
+    color: black;
+    font-family: "Outfit";
+    font-size: 18px;
+  }
+  li{
+    padding: 0 15px;
+  }
 
   li a:hover {
-    color:rgb(32, 59, 235);
+    color:rgb(100, 32, 235);
     text-shadow: 10px 5px 7px black;
     transition:color 1s, text-shadow 0.5s;
-    
+  }
+
+
+  @media screen and (max-width: 694px){
+    .name{
+      font-size: 20px;
+      margin-left: 10px;
+      transition: font-size 1s, margin-left 1s;
+  }
+    a{
+    font-size: 17px; 
+    transition: font-size 1s;
+  }
+    ul{
+    margin-right: 4px;
+    transition: margin-right 1s;
+    }
+    li{
+      padding: 0 7px;
+      transition: padding 1s;
+    }
+
+  }
+  @media screen and (max-width: 530px){
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    .name {
+      font-size: 17px;
+      margin-left: 2px;
+      margin: 10px;
+      order: 1;
+      text-align: center;
+      transition: font-size 1s, margin-left 1s;
+    }
+  
+    .links {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      order: 2;
+      transition: order;
+    }
+  
+    ul {
+      margin-right: 3px;
+      transition: margin-right 1s;
+      text-align: center;
+    }
+  
+    li {
+      padding: 0 4.5px;
+      transition: padding 1s;
+    }
+  
+    a {
+      font-size: 15px; 
+      transition: font-size 1s;
+    }
   }
