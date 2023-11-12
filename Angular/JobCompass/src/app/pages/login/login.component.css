@@ -1,0 +1,43 @@
+body {/*body formázás*/
+    font-family: Arial, sans-serif; /*betűtípus*/
+   }
+   .login-container { /*Login konténer*/
+    width: 500px; /*konténer szélessége*/
+    padding: 16px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+    background-color: #000929; /*háttérszín*/
+    margin: 0 auto; /*az elemek külső térköze*/
+    margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
+    border-radius: 10px; /*kerekített sarkak*/
+    color: white; /*feliratszín*/
+   }
+   .login-container h2 { /*Login felirat formázása*/
+    text-align: center; /*a szöveg középen legyen*/
+    margin-bottom: 24px; /*a login felirat alján legyen 24 pixel térköz.*/
+   }
+   .login-container label {
+    display: block; /*label elemek blokk szintű elemek legyenek(újsor)*/
+   }
+   .login-container input[type="text"],
+   .login-container input[type="password"] {
+    width: 100%; /*input elemek szélessége*/
+    padding: 12px; /*input belső térköz(textdoboz)*/
+    margin: 20px 0; /*input külső térköz*/
+    display: inline-block;
+    border: 1px solid #ccc; /*input elemek szegélye*/
+    box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
+    border-radius: 5px; /*kerekített sarkak*/
+   }
+   .login-container button { /*bomg tulajdonságok*/
+    background-color: #0b2584; /*háttérszíne*/
+    color: white; /*gomb login felirat színe*/
+    padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
+    margin: 15px 0; /*külső térköz*/
+    border: none; /*ne legyen szegély*/
+    cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
+    width: 100%;
+    border-radius: 5px; /*kerekített sarkak*/
+   }
+   .login-container button:hover {
+    opacity: 0.8; /* a gomb átlátszósága*/
+   }
