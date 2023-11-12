@@ -1,12 +1,21 @@
 body {/*body formázás*/
     font-family: Arial, sans-serif; /*betűtípus*/
    }
+
+  p{ /*you dont have account szöveg*/
+    font-size: 18px;
+  }
+
+  label{ /*szöveg méret*/
+    font-size: 20px;
+  }
    .login-container { /*Login konténer*/
-    width: 500px; /*konténer szélessége*/
-    padding: 16px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+    width: 600px; /*konténer szélessége*/
+    padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
     background-color: #000929; /*háttérszín*/
     margin: 0 auto; /*az elemek külső térköze*/
     margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
+    margin-bottom: 250px; /* .. pixel térközük legyen a alján*/
     box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
     border-radius: 10px; /*kerekített sarkak*/
     color: white; /*feliratszín*/
@@ -14,6 +23,7 @@ body {/*body formázás*/
    .login-container h2 { /*Login felirat formázása*/
     text-align: center; /*a szöveg középen legyen*/
     margin-bottom: 24px; /*a login felirat alján legyen 24 pixel térköz.*/
+    font-size: 35px;
    }
    .login-container label {
     display: block; /*label elemek blokk szintű elemek legyenek(újsor)*/
@@ -27,8 +37,9 @@ body {/*body formázás*/
     border: 1px solid #ccc; /*input elemek szegélye*/
     box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
     border-radius: 5px; /*kerekített sarkak*/
+    font-size: 18px;
    }
-   .login-container button { /*bomg tulajdonságok*/
+   .login-container button { /*gomb tulajdonságok*/
     background-color: #0b2584; /*háttérszíne*/
     color: white; /*gomb login felirat színe*/
     padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
@@ -40,4 +51,13 @@ body {/*body formázás*/
    }
    .login-container button:hover {
     opacity: 0.8; /* a gomb átlátszósága*/
+   }
+
+
+   /*reszponzív*/
+   @media screen and (max-width: 694px){
+
+   }
+   @media screen and (max-width: 530px){
+
    }
