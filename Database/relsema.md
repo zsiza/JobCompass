@@ -1,0 +1,7 @@
+User (**id**, email, password, *profile_ID*, is_admin, balance) 
+Profile (**id**, skills, certifications, experience, education, contact, socials, portfolio_links, profile_picture)
+Service (**id**, title, description, price, delivery_time, category_ID, *seller_ID*)
+Purchases ( **id**, *buyer_ID*, *service_ID*, status, purchase_time)
+Message ( **id**, *sender_ID*, *reicever_ID*, content, timestamp)
+Category (**id**, name, description)
+Review (**id**, rating, title, description, reviewer_ID, reviewed_id)
