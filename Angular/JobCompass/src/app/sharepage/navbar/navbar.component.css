@@ -10,7 +10,7 @@
     align-items: center;
   }
   .name{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     margin: 25px;
     margin-left: 40px;
@@ -25,7 +25,7 @@
     text-decoration: none;
     color: black;
     font-family: "Outfit";
-    font-size: 18px;
+    font-size: 20px;
   }
   li{
     padding: 0 15px;
@@ -38,7 +38,7 @@
   }
 
 
-  @media screen and (max-width: 694px){
+  @media screen and (max-width: 760px){
     .name{
       font-size: 20px;
       margin-left: 10px;
