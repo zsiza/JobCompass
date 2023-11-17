@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  max-width: 1920px;
   height: 90px;
+  margin:auto
   }
   .links{
     align-items: center;
@@ -23,7 +24,7 @@
   }
    a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-family: "Outfit";
     font-size: 20px;
   }
