@@ -1,265 +1,160 @@
-body { /*body formázás*/
-  font-family: Arial, sans-serif; /*betűtípus*/
- }
-
- h2 {
-  font-size: 35px;
+.jelenlegi_egyenleg {
+  text-align: center;
+  font-size: larger;
+  font-weight: 100;
+  padding-bottom: 20px;
 }
 
-label{ /*szöveg méret*/
+.penzmennyiseg {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px;
+
+  margin: 0 auto;
+  /* Vízszintes középre pozícionálás */
+  width: 181px;
+  border-radius: 19px;
+  background: rgba(149, 240, 253, 0.44);
+}
+
+
+h2 {
+  font-size: 75px;
+}
+
+label {
   font-size: 20px;
 }
- .register-container { /*Register konténer*/
-  width: 600px; /*konténer szélessége*/
-  padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-  background-color: #000929; /*háttérszín*/
-  margin: 0 auto; /*az elemek külső térköze*/
-  margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-  margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-  border-radius: 10px; /*kerekített sarkak*/
-  color: white;
-  
- }
- .register-container h2 { /*Register felirat formázása*/
-  text-align: center; /*a szöveg középen legyen*/
-  margin-bottom: 24px; /*a register felirat alján legyen 24 pixel térköz.*/
- }
- 
- body { /*body formázás*/
-  font-family: Arial, sans-serif; /*betűtípus*/
- }
 
- h2 {
-  font-size: 35px;
+.balance-container {
+  width: 100%;
+  /*Register konténer*/
+  max-width: 1065px;
+  /*konténer szélessége*/
+  height: 470px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
+  box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+
+  margin: 0 auto;
+  /*az elemek külső térköze*/
+  margin-top: 63px;
+  /* .. pixel térközük legyen a tetejükön*/
+  margin-bottom: 200px;
+  /* .. pixel térközük legyen a alján*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*az árnyék színét határozza meg*/
+  border-radius: 10px;
+  /*kerekített sarkak*/
+  color: white;
+
 }
 
-label{ /*szöveg méret*/
+.balance-container h2 {
+  /*balance felirat formázása*/
+  text-align: center;
+  /*a szöveg középen legyen*/
+  margin-bottom: 24px;
+  /*a balance felirat alján legyen 24 pixel térköz.*/
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.balance-container button {
+  color: #FFF;
+  text-align: center;
+  display: inline-block;
+  font-family: Outfit;
   font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  width: 100%;
+  /* Make button full-width */
+  max-width: 181px;
+  height: 44px;
+  flex-shrink: 0;
+  border: 5px solid #A8D8D8;
+  background: #8E8EDB;
+  margin-top:70px;
+  cursor: pointer;
+  align-items: center;
+  border-radius: 5px;
 }
- .register-container { /*Register konténer*/
-  width: 600px; /*konténer szélessége*/
-  padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-  background-color: #000929; /*háttérszín*/
-  margin: 0 auto; /*az elemek külső térköze*/
-  margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-  margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-  border-radius: 10px; /*kerekített sarkak*/
-  color: white;
+
+.balance-container button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1152px) {
+  .balance-container {
+    max-width: 800px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 1s;
+  }
+
+  h2 {
+    font-size: 55px;
+    transition: all 1s;
+  }
+
+  .balance-container button {
+    font-size: 20px;
+    width: 100%;
+    /* Make button full-width */
+    max-width: 160px;
+    margin-top:70px;
+    transition: all 1s;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .balance-container {
+    max-width: 560px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+  }
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 1s;
   
- }
- .register-container h2 { /*Register felirat formázása*/
-  text-align: center; /*a szöveg középen legyen*/
-  margin-bottom: 24px; /*a register felirat alján legyen 24 pixel térköz.*/
- }
+  }
 
- 
- .register-container input[type="reset"]{
-  width: 20%; /*input elemek szélessége*/
-  padding: 5px; /*input belső térköz*/
-  border: 1px solid #022056; /*input elemek szegélye*/
-  border-radius: 5px; /*kerekített sarkak*/
-  color: rgb(255, 255, 255); /*gomb reset felirat színe*/
-  background-color: #0b2584; /*háttérszíne*/
- }
+  h2 {
+    font-size:50px;
+    transition: all 1s;
+  }
 
- .register-container input[type="text"],
- .register-container input[type="password"] {
-  width: 100%; /*input elemek szélessége*/
-  padding: 12px; /*input belső térköz*/
-  margin: 20px 0; /*input külső térköz*/
-  display: inline-block;
-  border: 1px solid #ccc; /*input elemek szegélye*/
-  box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
-  border-radius: 5px; /*kerekített sarkak*/
-  font-size: 18px;
- }
- .register-container button { /*gomb tulajdonságok*/
-  background-color: #0b2584; /*háttérszíne*/
-  color: white; /*gomb register felirat színe*/
-  padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
-  margin: 15px 0; /*külső térköz*/
-  border: none;  /*ne legyen szegély*/
-  cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
-  width: 100%;
-  border-radius: 5px; /*kerekített sarkak*/
- }
- .register-container button:hover {
-  opacity: 0.8;
- }
- body { /*body formázás*/
-  font-family: Arial, sans-serif; /*betűtípus*/
- }
+  .button-container button {
+    margin-top: 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    width: 100%;
+    /* Make button full-width */
+    max-width: 151px;
 
- h2 {
-  font-size: 35px;
+    transition: all 1s;
+  }
 }
-
-label{ /*szöveg méret*/
-  font-size: 20px;
-}
- .register-container { /*Register konténer*/
-  width: 600px; /*konténer szélessége*/
-  padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-  background-color: #000929; /*háttérszín*/
-  margin: 0 auto; /*az elemek külső térköze*/
-  margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-  margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-  border-radius: 10px; /*kerekített sarkak*/
-  color: white;
-  
- }
- .register-container h2 { /*Register felirat formázása*/
-  text-align: center; /*a szöveg középen legyen*/
-  margin-bottom: 24px; /*a register felirat alján legyen 24 pixel térköz.*/
- }
- 
- .register-container input[type="reset"]{
-  width: 20%; /*input elemek szélessége*/
-  padding: 5px; /*input belső térköz*/
-  border: 1px solid #022056; /*input elemek szegélye*/
-  border-radius: 5px; /*kerekített sarkak*/
-  color: rgb(255, 255, 255); /*gomb reset felirat színe*/
-  background-color: #0b2584; /*háttérszíne*/
- }
- .register-container div{
-  padding: 10px;
-  padding-left: 20px;
- }
-
- .register-container input[type="text"],
- .register-container input[type="password"] {
-  width: 100%; /*input elemek szélessége*/
-  padding: 12px; /*input belső térköz*/
-  margin: 20px 0; /*input külső térköz*/
-  display: inline-block;
-  border: 1px solid #ccc; /*input elemek szegélye*/
-  box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
-  border-radius: 5px; /*kerekített sarkak*/
-  font-size: 18px;
- }
- .register-container button { /*gomb tulajdonságok*/
-  background-color: #0b2584; /*háttérszíne*/
-  color: white; /*gomb register felirat színe*/
-  padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
-  margin: 15px 0; /*külső térköz*/
-  border: none;  /*ne legyen szegély*/
-  cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
-  width: 100%;
-  border-radius: 5px; /*kerekített sarkak*/
- }
- .register-container button:hover {
-  opacity: 0.8;
- }
-
- /*reszponzív*/
- @media screen and (max-width: 694px){}
- @media screen and (max-width: 530px){}
- /*reszponzív*/
- @media screen and (max-width: 694px){}
- @media screen and (max-width: 530px){}
- .register-container input[type="reset"]{
-  width: 20%; /*input elemek szélessége*/
-  padding: 5px; /*input belső térköz*/
-  border: 1px solid #022056; /*input elemek szegélye*/
-  border-radius: 5px; /*kerekített sarkak*/
-  color: rgb(255, 255, 255); /*gomb reset felirat színe*/
-  background-color: #0b2584; /*háttérszíne*/
- }
-
- .register-container input[type="text"],
- .register-container input[type="password"] {
-  width: 100%; /*input elemek szélessége*/
-  padding: 12px; /*input belső térköz*/
-  margin: 20px 0; /*input külső térköz*/
-  display: inline-block;
-  border: 1px solid #ccc; /*input elemek szegélye*/
-  box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
-  border-radius: 5px; /*kerekített sarkak*/
-  font-size: 18px;
- }
- body { /*body formázás*/
-  font-family: Arial, sans-serif; /*betűtípus*/
- }
-
- h2 {
-  font-size: 35px;
-}
-
-label{ /*szöveg méret*/
-  font-size: 20px;
-  padding-left: 10px;
-}
- .register-container { /*Register konténer*/
-  width: 600px; /*konténer szélessége*/
-  padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-  background-color: #000929; /*háttérszín*/
-  margin: 0 auto; /*az elemek külső térköze*/
-  margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-  margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
-  box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-  border-radius: 10px; /*kerekített sarkak*/
-  color: white;
-  
- }
- .register-container h2 { /*Register felirat formázása*/
-  text-align: center; /*a szöveg középen legyen*/
-  margin-bottom: 24px; /*a register felirat alján legyen 24 pixel térköz.*/
- }
- 
- .register-container input[type="reset"]{
-  width: 20%; /*input elemek szélessége*/
-  padding: 5px; /*input belső térköz*/
-  border: 1px solid #022056; /*input elemek szegélye*/
-  border-radius: 5px; /*kerekített sarkak*/
-  color: rgb(255, 255, 255); /*gomb reset felirat színe*/
-  background-color: #0b2584; /*háttérszíne*/
- }
-
- .register-container input[type="text"],
- .register-container input[type="password"] {
-  width: 100%; /*input elemek szélessége*/
-  padding: 12px; /*input belső térköz*/
-  margin: 20px 0; /*input külső térköz*/
-  display: inline-block;
-  border: 1px solid #ccc; /*input elemek szegélye*/
-  box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
-  border-radius: 5px; /*kerekített sarkak*/
-  font-size: 18px;
- }
- .register-container button { /*gomb tulajdonságok*/
-  background-color: #0b2584; /*háttérszíne*/
-  color: white; /*gomb register felirat színe*/
-  padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
-  margin: 15px 0; /*külső térköz*/
-  border: none;  /*ne legyen szegély*/
-  cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
-  width: 100%;
-  border-radius: 5px; /*kerekített sarkak*/
- }
- .register-container button:hover {
-  opacity: 0.8;
- }
-
- /*reszponzív*/
- @media screen and (max-width: 694px){}
- @media screen and (max-width: 530px){}
- .register-container button { /*gomb tulajdonságok*/
-  background-color: #0b2584; /*háttérszíne*/
-  color: white; /*gomb register felirat színe*/
-  padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
-  margin: 15px 0; /*külső térköz*/
-  border: none;  /*ne legyen szegély*/
-  cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
-  width: 100%;
-  border-radius: 5px; /*kerekített sarkak*/
- }
- .register-container button:hover {
-  opacity: 0.8;
- }
-
- /*reszponzív*/
- @media screen and (max-width: 694px){}
- @media screen and (max-width: 530px){}

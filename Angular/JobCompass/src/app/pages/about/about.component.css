@@ -1,6 +1,6 @@
 
 h1 {
-    color: linear-gradient(to top right, #33ccff 0%, #ff99cc 100%);
+    color: white;
     text-align: center;
     font-size: 80px;
     padding-top: 80px;
@@ -21,6 +21,7 @@ h2 {
     padding: 17px;
     padding-left: 30px;
     font-size: 27px;
+    color: white;
 }
 
 ul {
@@ -31,9 +32,11 @@ ul {
 
 li {
     padding: 8px;
+    color: white;
 }
 
 p {
+    color: white;
     font-size: 25px;
     padding-top: 20px;
     padding: 8px;

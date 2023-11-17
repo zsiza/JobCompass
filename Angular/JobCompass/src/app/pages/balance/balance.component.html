@@ -1,27 +1,20 @@
-<div class="register-container">
-    <h2>Coins Feltöltése</h2>
-  
-    <form action="#" method="post">
-      <div>
-        <input type="radio" id="coins1" name="coins" value="10">
-        <label for="coins1">1000 Ft</label>
-      </div>
-      <div>
-        <input type="radio" id="coins2" name="coins" value="20">
-        <label for="coins2">2500 Ft</label>
-      </div>
-      <div>
-        <input type="radio" id="coins3" name="coins" value="30">
-        <label for="coins3">5000 Ft</label>
-      </div>
-      <div>
-        <input type="radio" id="coins4" name="coins" value="40">
-        <label for="coins4">7000 Ft</label>
-      </div>
-      <div>
-        <input type="radio" id="coins5" name="coins" value="50">
-        <label for="coins5">10 000 Ft</label>
-      </div>
-  
-    </form>
-  </div>
+<div class="balance-container">
+  <h2>Pénztárca Feltöltése</h2>
+
+  <h3 class="jelenlegi_egyenleg">JELENLEGI EGYENLEG</h3>
+    <div class="penzmennyiseg">0 Ft</div>
+
+
+  <form action="#" method="post">
+    <div class="button-container">
+
+    <button type="button" class="amount-btn" onclick="selectAmount(1000)">+ 1000 Ft</button>
+    <button type="button" class="amount-btn" onclick="selectAmount(2000)">+ 2000 Ft</button>
+    <button type="button" class="amount-btn" onclick="selectAmount(5000)">+ 5000 Ft</button>
+    <button type="button" class="amount-btn" onclick="selectAmount(10000)">+ 10000 Ft</button>
+    </div>
+
+    <!-- A tényleges érték elküldése az űrlap feldolgozásakor -->
+    <input type="hidden" name="selectedAmount" id="selectedAmount">
+  </form>
+</div>
