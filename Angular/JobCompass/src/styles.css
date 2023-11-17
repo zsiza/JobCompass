@@ -9,4 +9,28 @@
 body
 {
     font-family:Outfit, Helvetica, sans-serif;
+    background-color: #010032;
+    margin: auto;
+}
+#cyan-circle{
+    background-color: #95F0FD;
+    width: 750px;
+    height: 750px;
+    border-radius: 100%;
+    filter: blur(100px);
+    z-index: -100;
+    position: absolute;
+    top: -350px;
+    left: -100px;
+}
+#pink-circle{
+    background-color: #9F60AE;
+    width: 750px;
+    height: 750px;
+    border-radius: 100%;
+    filter: blur(100px);
+    z-index: -100;
+    position: absolute;
+    left: 1500px;
+    top: 400px;
 }
