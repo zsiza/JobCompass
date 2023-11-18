@@ -16,6 +16,36 @@ h1 {
     font-size: 30px;
 
 }
+#box{
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 22px;
+    background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
+    box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+    padding: 50px;
+    /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+  
+    margin: 0 auto;
+    margin-bottom: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+    border-radius: 10px;
+    color: white;
+}
+button{
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(#e66465, #9198e5);
+    color: white;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+button:hover {
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.4),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
 
 h2 {
     padding: 17px;
