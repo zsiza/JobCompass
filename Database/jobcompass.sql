@@ -8,6 +8,18 @@ CREATE SEQUENCE purchases_id_seq START 0;
 CREATE SEQUENCE message_id_seq START 0;
 CREATE SEQUENCE review_id_seq START 0;
 
+CREATE TABLE Profile (
+    id INT PRIMARY KEY DEFAULT nextval('profile_id_seq'),
+    skills TEXT,
+    certifications TEXT,
+    experience TEXT,
+    education TEXT,
+    contact TEXT,
+    socials TEXT,
+    portfolio_links TEXT,
+    profile_picture TEXT
+);
+
 CREATE TABLE Users (
     id INT PRIMARY KEY DEFAULT nextval('users_id_seq'),
     email VARCHAR(100) NOT NULL,
