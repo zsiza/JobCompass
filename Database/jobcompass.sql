@@ -1,7 +1,9 @@
 DROP TABLE IF EXISTS Users, Profile, Service, Purchase, Message, Category, Review;
 
+CREATE SEQUENCE profile_id_seq START 0;
+
 CREATE TABLE Profile (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('profile_id_seq'),
     skills TEXT,
     certifications TEXT,
     experience TEXT,
