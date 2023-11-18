@@ -10,6 +10,8 @@ import { RegisterComponent } from './pages/register/register.component';
 import { LoginComponent } from './pages/login/login.component';
 import { BalanceComponent } from './pages/balance/balance.component';
 import { AboutComponent } from './pages/about/about.component';
+import { BalanceService } from './pages/balance/balance.service';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,7 @@ import { AboutComponent } from './pages/about/about.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BalanceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

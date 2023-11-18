@@ -40,14 +40,14 @@
   }
 
 
-  @media screen and (max-width: 760px){
+  @media screen and (max-width: 970px){
     .name{
-      font-size: 20px;
+      font-size: 25px;
       margin-left: 10px;
       transition: font-size 1s, margin-left 1s;
   }
     a{
-    font-size: 17px; 
+    font-size: 20px; 
     transition: font-size 1s;
   }
     ul{
@@ -60,7 +60,7 @@
     }
 
   }
-  @media screen and (max-width: 530px){
+  @media screen and (max-width: 800px){
     .navbar {
       flex-direction: column;
       align-items: center;
@@ -68,7 +68,7 @@
     }
   
     .name {
-      font-size: 17px;
+      font-size: 30px;
       margin-left: 2px;
       margin: 10px;
       order: 1;
@@ -95,7 +95,7 @@
     }
   
     a {
-      font-size: 15px; 
+      font-size: 20px; 
       transition: font-size 1s;
     }
   }

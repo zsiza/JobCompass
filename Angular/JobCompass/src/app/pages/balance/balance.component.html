@@ -2,16 +2,14 @@
   <h2>Pénztárca Feltöltése</h2>
 
   <h3 class="jelenlegi_egyenleg">JELENLEGI EGYENLEG</h3>
-    <div class="penzmennyiseg">0 Ft</div>
-
+  <div class="penzmennyiseg">{{ currentBalance }} Ft</div>
 
   <form action="#" method="post">
     <div class="button-container">
-
-    <button type="button" class="amount-btn" onclick="selectAmount(1000)">+ 1000 Ft</button>
-    <button type="button" class="amount-btn" onclick="selectAmount(2000)">+ 2000 Ft</button>
-    <button type="button" class="amount-btn" onclick="selectAmount(5000)">+ 5000 Ft</button>
-    <button type="button" class="amount-btn" onclick="selectAmount(10000)">+ 10000 Ft</button>
+      <button type="button" class="amount-btn" (click)="selectAmount(1000)">+ 1000 Ft</button>
+      <button type="button" class="amount-btn" (click)="selectAmount(2000)">+ 2000 Ft</button>
+      <button type="button" class="amount-btn" (click)="selectAmount(5000)">+ 5000 Ft</button>
+      <button type="button" class="amount-btn" (click)="selectAmount(10000)">+ 10000 Ft</button>
     </div>
 
     <!-- A tényleges érték elküldése az űrlap feldolgozásakor -->
