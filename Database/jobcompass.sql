@@ -1,6 +1,12 @@
 DROP TABLE IF EXISTS Users, Profile, Service, Purchase, Message, Category, Review;
 
 CREATE SEQUENCE profile_id_seq START 0;
+CREATE SEQUENCE users_id_seq START 0;
+CREATE SEQUENCE category_id_seq START 0;
+CREATE SEQUENCE service_id_seq START 0;
+CREATE SEQUENCE purchases_id_seq START 0;
+CREATE SEQUENCE message_id_seq START 0;
+CREATE SEQUENCE review_id_seq START 0;
 
 CREATE TABLE Profile (
     id INT PRIMARY KEY DEFAULT nextval('profile_id_seq'),
@@ -15,7 +21,7 @@ CREATE TABLE Profile (
 );
 
 CREATE TABLE Users (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('users_id_seq'),
     email VARCHAR(100) NOT NULL,
     password VARCHAR(100) NOT NULL,
     profile_ID INT,
@@ -25,15 +31,14 @@ CREATE TABLE Users (
 	FOREIGN KEY (profile_ID) REFERENCES Profile(id)
 );
 
-
 CREATE TABLE Category (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('category_id_seq'),
     name VARCHAR(100) NOT NULL,
     description TEXT NOT NULL
 );
 
 CREATE TABLE Service (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('service_id_seq'),
     title VARCHAR(100) NOT NULL,
     description TEXT NOT NULL,
     price DECIMAL(10, 2) NOT NULL,
@@ -45,7 +50,7 @@ CREATE TABLE Service (
 );
 
 CREATE TABLE Purchases (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('purchases_id_seq'),
     buyer_ID INT,
     service_ID INT REFERENCES Service(id),
     purchase_time TIMESTAMP NOT NULL,
@@ -55,7 +60,7 @@ CREATE TABLE Purchases (
 );
 
 CREATE TABLE Message (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('message_id_seq'),
     sender_ID INT,
     receiver_ID INT,
     content TEXT NOT NULL,
@@ -64,9 +69,8 @@ CREATE TABLE Message (
 	FOREIGN KEY (receiver_ID) REFERENCES Users(id)
 );
 
-
 CREATE TABLE Review (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY DEFAULT nextval('review_id_seq'),
     rating INT NOT NULL,
     title VARCHAR(100) NOT NULL,
     description TEXT NOT NULL,
