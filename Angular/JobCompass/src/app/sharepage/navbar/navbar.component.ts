@@ -2,7 +2,6 @@
 
 import { Component, OnInit } from '@angular/core';
 import { BalanceService } from 'src/app/pages/balance/balance.service';
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
