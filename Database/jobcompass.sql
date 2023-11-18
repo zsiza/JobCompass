@@ -31,6 +31,12 @@ CREATE TABLE Users (
 	FOREIGN KEY (profile_ID) REFERENCES Profile(id) ON DELETE CASCADE
 );
 
+CREATE TABLE Category (
+    id INT PRIMARY KEY DEFAULT nextval('category_id_seq'),
+    name VARCHAR(100) NOT NULL,
+    description TEXT NOT NULL
+);
+
 CREATE TABLE Service (
     id INT PRIMARY KEY DEFAULT nextval('service_id_seq'),
     title VARCHAR(100) NOT NULL,
