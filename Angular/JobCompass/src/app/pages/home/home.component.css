@@ -47,3 +47,28 @@ body {
 #body-content-container {
   margin-top: 150px;
 }
+#body-content-container-background{
+    position: absolute;
+    right:0px;
+    z-index: -2;
+    width: 100vw;
+    height: 90%;
+    background-color: #010032;
+}
+#popular-title{
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 26px;
+}
+#popular-card-container{
+    display: flex;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+.popular-cards{
+    width: 260px;
+    aspect-ratio: 1/1.6;
+    flex-grow: 1;
+    background: linear-gradient(301deg, #9CFEFD 4.55%, #8E529D 96%);
+    box-shadow: 20px 23px 19px 1px rgba(0, 0, 0, 0.25);
+}
