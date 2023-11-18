@@ -12,6 +12,9 @@ body
     background-color: #010032;
     margin: auto;
 }
+#background-container{
+    max-width: 100vw;
+}
 #cyan-circle{
     background-color: #95F0FD;
     width: 750px;
@@ -31,6 +34,6 @@ body
     filter: blur(100px);
     z-index: -100;
     position: absolute;
-    left: 1500px;
-    top: 400px;
+    right: 0vw;
+    top: 475px;
 }
