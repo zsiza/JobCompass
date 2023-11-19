@@ -11,7 +11,7 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long userId;        // TODO: ez az adatbázisban legyen BigInt, és ne id legyen a neve
+    private Long id;        // TODO: ez az adatbázisban legyen BigInt, és ne id legyen a neve
     private String email;
     private String password;
     @Column(nullable = false, updatable = false)
@@ -35,12 +35,12 @@ public class User implements Serializable {
         this.online = online;
     }
 
-    public Long getUserId() {
-        return userId;
+    public Long getId() {
+        return id;
     }
 
-    public void setUserId(Long userId) {
-        this.userId = userId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getEmail() {
@@ -102,7 +102,7 @@ public class User implements Serializable {
     @Override
     public String toString() {
         return "User{" +
-                "userId=" + userId +
+                "id=" + id +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", profileId=" + profileId +

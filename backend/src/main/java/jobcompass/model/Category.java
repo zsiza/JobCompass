@@ -10,7 +10,7 @@ public class Category implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long categoryId;
+    private Long id;
     private String name;
     private String description;
 
@@ -21,12 +21,12 @@ public class Category implements Serializable {
         this.description = description;
     }
 
-    public Long getCategoryId() {
-        return categoryId;
+    public Long getId() {
+        return id;
     }
 
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -48,7 +48,7 @@ public class Category implements Serializable {
     @Override
     public String toString() {
         return "Category{" +
-                "categoryId=" + categoryId +
+                "categoryId=" + id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';

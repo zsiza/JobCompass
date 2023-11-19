@@ -11,7 +11,7 @@ public class Purchase implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long purchaseId;
+    private Long id;
     @Column(nullable = false, updatable = false)
     private Long buyerId;
     @Column(nullable = false, updatable = false)
@@ -21,20 +21,20 @@ public class Purchase implements Serializable {
 
     public Purchase() {}
 
-    public Purchase(Long purchaseId, Long buyerId, Long serviceId, Timestamp purchaseTime, String status) {
-        this.purchaseId = purchaseId;
+    public Purchase(Long id, Long buyerId, Long serviceId, Timestamp purchaseTime, String status) {
+        this.id = id;
         this.buyerId = buyerId;
         this.serviceId = serviceId;
         this.purchaseTime = purchaseTime;
         this.status = status;
     }
 
-    public Long getPurchaseId() {
-        return purchaseId;
+    public Long getId() {
+        return id;
     }
 
-    public void setPurchaseId(Long purchaseId) {
-        this.purchaseId = purchaseId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getBuyerId() {
@@ -72,7 +72,7 @@ public class Purchase implements Serializable {
     @Override
     public String toString() {
         return "Purchase{" +
-                "purchaseId=" + purchaseId +
+                "id=" + id +
                 ", buyerId=" + buyerId +
                 ", serviceId=" + serviceId +
                 ", purchaseTime=" + purchaseTime +

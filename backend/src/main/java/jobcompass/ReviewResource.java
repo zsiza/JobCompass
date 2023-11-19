@@ -23,9 +23,9 @@ public class ReviewResource {
         return ResponseEntity.ok(reviews);
     }
 
-    @GetMapping("/find/{reviewId}")
-    public ResponseEntity<Review> getReviewByReviewId(@PathVariable("reviewId") Long reviewId) {
-        Review review = reviewService.findReviewByReviewId(reviewId);
+    @GetMapping("/find/{id}")
+    public ResponseEntity<Review> getReviewById(@PathVariable("id") Long id) {
+        Review review = reviewService.findReviewById(id);
         return new ResponseEntity<>(review, HttpStatus.OK);
     }
 
@@ -41,9 +41,9 @@ public class ReviewResource {
         return new ResponseEntity<>(updatedReview, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{reviewId}")
-    public ResponseEntity<?> deleteReview(@PathVariable("reviewId") Long reviewId) {
-        reviewService.deleteReview(reviewId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteReview(@PathVariable("id") Long id) {
+        reviewService.deleteReview(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface ServiceRepo extends JpaRepository<Service, Long> {
 
-    Optional<Service> findServiceByServiceId(Long serviceId);
+    Optional<Service> findServiceById(Long id);
 
-    void deleteServiceByServiceId(Long serviceId);
+    void deleteServiceById(Long id);
 }

@@ -1,55 +1,44 @@
 package jobcompass.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.SecurityConfigurer;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.web.DefaultSecurityFilterChain;
-import jobcompass.service.UserService;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.SecurityFilterChain;
 
-/*
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfig implements SecurityConfigurer<DefaultSecurityFilterChain, HttpSecurity> {
-
-    @Autowired
-    private UserService userService;
-
-    @Override
-
-    public void init(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests()
-                .antMatchers("/edit/*").hasAnyRole("USER", "ADMIN")
-                .anyRequest().permitAll()
-                .and()
-                .formLogin()
-                .defaultSuccessUrl("/")
-                .permitAll()
-                .and()
-                .logout().logoutSuccessUrl("/").permitAll();
-    }
-
-    @Override
-    public void configure(HttpSecurity http) throws Exception {}
-
-    @Autowired
-    protected void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {}
+public class WebSecurityConfig {
 
     @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .authorizeHttpRequests((requests) -> requests
+                        .requestMatchers("/", "/home").permitAll()
+                        .anyRequest().authenticated()
+                )
+                .formLogin((form) -> form
+                        .loginPage("/login")
+                        .permitAll()
+                )
+                .logout((logout) -> logout.permitAll());
+
+        return http.build();
     }
 
     @Bean
     public UserDetailsService userDetailsService() {
-        return new UserService();
-    }
+        UserDetails user =
+                User.withDefaultPasswordEncoder()
+                        .username("user")
+                        .password("password")
+                        .roles("USER")
+                        .build();
 
+        return new InMemoryUserDetailsManager(user);
+    }
 }
-*/

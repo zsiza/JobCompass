@@ -1,7 +1,6 @@
 package jobcompass;
 
 import jakarta.transaction.Transactional;
-import jobcompass.exception.ProfileNotFoundException;
 import jobcompass.model.Profile;
 import jobcompass.service.ProfileService;
 import org.springframework.http.HttpStatus;
@@ -24,9 +23,9 @@ public class ProfileResource {
         return ResponseEntity.ok(profiles);
     }
 
-    @GetMapping("/find/{profileId}")
-    public ResponseEntity<Profile> getProfileByProfileId(@PathVariable("profileId") Long profileId) throws ProfileNotFoundException {
-        Profile profile = profileService.findProfileByProfileId(profileId);
+    @GetMapping("/find/{id}")
+    public ResponseEntity<Profile> getProfileById(@PathVariable("id") Long id) {
+        Profile profile = profileService.findProfileById(id);
         return new ResponseEntity<>(profile, HttpStatus.OK);
     }
 
@@ -42,9 +41,9 @@ public class ProfileResource {
         return new ResponseEntity<>(updatedProfile, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{profileId}")
-    public ResponseEntity<?> deleteProfile(@PathVariable("profileId") Long profileId) {
-        profileService.deleteProfile(profileId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteProfile(@PathVariable("id") Long id) {
+        profileService.deleteProfile(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

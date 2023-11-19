@@ -31,12 +31,12 @@ public class ReviewService {
         return reviewRepo.save(review);
     }
 
-    public Review findReviewByReviewId(Long reviewId) throws ReviewNotFoundException {
-        return reviewRepo.findReviewByReviewId(reviewId)
-                .orElseThrow(() -> new ReviewNotFoundException("Nincs " + reviewId + " azonosíójú értékelés!"));
+    public Review findReviewById(Long id) throws ReviewNotFoundException {
+        return reviewRepo.findReviewById(id)
+                .orElseThrow(() -> new ReviewNotFoundException("Nincs " + id + " azonosíójú értékelés!"));
     }
 
-    public void deleteReview(Long reviewId) {
-        reviewRepo.deleteReviewByReviewId(reviewId);
+    public void deleteReview(Long id) {
+        reviewRepo.deleteReviewById(id);
     }
 }

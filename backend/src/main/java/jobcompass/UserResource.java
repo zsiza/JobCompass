@@ -23,9 +23,9 @@ public class UserResource {
         return ResponseEntity.ok(users);
     }
 
-    @GetMapping("/find/{userId}")
-    public ResponseEntity<User> getUserByUserId(@PathVariable("userId") Long userId) {
-        User user = userService.findUserByUserId(userId);
+    @GetMapping("/find/{id}")
+    public ResponseEntity<User> getUserByUserId(@PathVariable("id") Long id) {
+        User user = userService.findUserById(id);
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
@@ -41,9 +41,9 @@ public class UserResource {
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{userId}")
-    public ResponseEntity<?> deleteUser(@PathVariable("userId") Long userId) {
-        userService.deleteUser(userId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteUser(@PathVariable("id") Long id) {
+        userService.deleteUser(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

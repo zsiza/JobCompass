@@ -31,12 +31,12 @@ public class MessageService {
         return messageRepo.save(message);
     }
 
-    public Message findMessageByMessageId(Long messageId) throws MessageNotFoundException {
-        return messageRepo.findMessageByMessageId(messageId)
-                .orElseThrow(() -> new MessageNotFoundException("Nincs " + messageId + " azonosíójú üzenet!"));
+    public Message findMessageById(Long id) throws MessageNotFoundException {
+        return messageRepo.findMessageById(id)
+                .orElseThrow(() -> new MessageNotFoundException("Nincs " + id + " azonosíójú üzenet!"));
     }
 
-    public void deleteMessage(Long messageId) {
-        messageRepo.deleteMessageByMessageId(messageId);
+    public void deleteMessage(Long id) {
+        messageRepo.deleteMessageById(id);
     }
 }

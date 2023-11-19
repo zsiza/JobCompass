@@ -30,12 +30,12 @@ public class ServiceService {
         return serviceRepo.save(service);
     }
 
-    public Service findServiceByServiceId(Long serviceId) throws ServiceNotFoundException {
-        return serviceRepo.findServiceByServiceId(serviceId)
-                .orElseThrow(() -> new ServiceNotFoundException("Nincs " + serviceId + " azonosíójú szolgáltatás!"));
+    public Service findServiceById(Long id) throws ServiceNotFoundException {
+        return serviceRepo.findServiceById(id)
+                .orElseThrow(() -> new ServiceNotFoundException("Nincs " + id + " azonosíójú szolgáltatás!"));
     }
 
-    public void deleteService(Long serviceId) {
-        serviceRepo.deleteServiceByServiceId(serviceId);
+    public void deleteService(Long id) {
+        serviceRepo.deleteServiceById(id);
     }
 }

@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface ReviewRepo extends JpaRepository<Review, Long> {
 
-    Optional<Review> findReviewByReviewId(Long reviewId);
+    Optional<Review> findReviewById(Long id);
 
-    void deleteReviewByReviewId(Long reviewId);
+    void deleteReviewById(Long id);
 }

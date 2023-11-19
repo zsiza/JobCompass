@@ -3,7 +3,6 @@ package jobcompass;
 import jakarta.transaction.Transactional;
 import jobcompass.exception.CategoryNotFoundException;
 import jobcompass.model.Category;
-import jobcompass.model.User;
 import jobcompass.service.CategoryService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,9 +24,9 @@ public class CategoryResource {
         return ResponseEntity.ok(categories);
     }
 
-    @GetMapping("/find/{categoryId}")
-    public ResponseEntity<Category> getCategoryByCategoryId(@PathVariable("categoryId") Long categoryId) throws CategoryNotFoundException {
-        Category category = categoryService.findCategoryByCategoryId(categoryId);// TODO: ide miért kell a throws, máshova meg miért nem? :DD
+    @GetMapping("/find/{id}")
+    public ResponseEntity<Category> getCategoryById(@PathVariable("id") Long id) throws CategoryNotFoundException {
+        Category category = categoryService.findCategoryById(id);
         return new ResponseEntity<>(category, HttpStatus.OK);
     }
 
@@ -43,9 +42,9 @@ public class CategoryResource {
         return new ResponseEntity<>(updatedCategory, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{categoryId}")
-    public ResponseEntity<?> deleteCategory(@PathVariable("categoryId") Long categoryId) {
-        categoryService.deleteCategory(categoryId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteCategory(@PathVariable("id") Long id) {
+        categoryService.deleteCategory(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

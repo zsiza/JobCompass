@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface MessageRepo extends JpaRepository<Message, Long> {
 
-    Optional<Message> findMessageByMessageId(Long messageId);
+    Optional<Message> findMessageById(Long id);
 
-    void deleteMessageByMessageId(Long messageId);
+    void deleteMessageById(Long id);
 }

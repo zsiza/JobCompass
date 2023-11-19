@@ -10,7 +10,7 @@ public class Service implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long serviceId; //TODO: db bigint
+    private Long id; //TODO: db bigint
     private String title;
     private String description;
     private double price;
@@ -22,8 +22,8 @@ public class Service implements Serializable {
 
     public Service() {}
 
-    public Service(Long serviceId, String title, String description, double price, LocalDate deliveryTime, Long categoryId, Long sellerId) {
-        this.serviceId = serviceId;
+    public Service(Long id, String title, String description, double price, LocalDate deliveryTime, Long categoryId, Long sellerId) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.price = price;
@@ -32,12 +32,12 @@ public class Service implements Serializable {
         this.sellerId = sellerId;
     }
 
-    public Long getServiceId() {
-        return serviceId;
+    public Long getId() {
+        return id;
     }
 
-    public void setServiceId(Long serviceId) {
-        this.serviceId = serviceId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -91,7 +91,7 @@ public class Service implements Serializable {
     @Override
     public String toString() {
         return "Service{" +
-                "serviceId=" + serviceId +
+                "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", price=" + price +

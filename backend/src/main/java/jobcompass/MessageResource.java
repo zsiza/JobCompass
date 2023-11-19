@@ -23,9 +23,9 @@ public class MessageResource {
         return ResponseEntity.ok(messages);
     }
 
-    @GetMapping("/find/{messageId}")
-    public ResponseEntity<Message> getMessageByMessageId(@PathVariable("messageId") Long messageId) {
-        Message message = messageService.findMessageByMessageId(messageId);
+    @GetMapping("/find/{id}")
+    public ResponseEntity<Message> getMessageById(@PathVariable("id") Long id) {
+        Message message = messageService.findMessageById(id);
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
 
@@ -41,9 +41,9 @@ public class MessageResource {
         return new ResponseEntity<>(updatedMessage, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{messageId}")
-    public ResponseEntity<?> deleteMessage(@PathVariable("messageId") Long messageId) {
-        messageService.deleteMessage(messageId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteMessage(@PathVariable("id") Long id) {
+        messageService.deleteMessage(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

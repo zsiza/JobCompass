@@ -31,12 +31,12 @@ public class ProfileService {
         return profileRepo.save(profile);
     }
 
-    public Profile findProfileByProfileId(Long profileId) throws ProfileNotFoundException {
-        return profileRepo.findProfileByProfileId(profileId)
-                .orElseThrow(() -> new ProfileNotFoundException("Nincs " + profileId + " azonosíójú profil!"));
+    public Profile findProfileById(Long id) throws ProfileNotFoundException {
+        return profileRepo.findProfileById(id)
+                .orElseThrow(() -> new ProfileNotFoundException("Nincs " + id + " azonosíójú profil!"));
     }
 
-    public void deleteProfile(Long profileId) {
-        profileRepo.deleteProfileByProfileId(profileId);
+    public void deleteProfile(Long id) {
+        profileRepo.deleteProfileById(id);
     }
 }

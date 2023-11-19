@@ -11,7 +11,7 @@ public class Message implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long messageId;
+    private Long id;
     @Column(nullable = false, updatable = false)
     private Long senderId;
     @Column(nullable = false, updatable = false)
@@ -28,12 +28,12 @@ public class Message implements Serializable {
         this.timestamp = timestamp;
     }
 
-    public Long getMessageId() {
-        return messageId;
+    public Long getId() {
+        return id;
     }
 
-    public void setMessageId(Long messageId) {
-        this.messageId = messageId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public Long getSenderId() {
@@ -71,7 +71,7 @@ public class Message implements Serializable {
     @Override
     public String toString() {
         return "Message{" +
-                "messageId=" + messageId +
+                "id=" + id +
                 ", senderId=" + senderId +
                 ", receiverId=" + receiverId +
                 ", content='" + content + '\'' +

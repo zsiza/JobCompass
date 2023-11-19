@@ -1,7 +1,6 @@
 package jobcompass;
 
 import jakarta.transaction.Transactional;
-import jobcompass.exception.PurchaseNotFoundException;
 import jobcompass.model.Purchase;
 import jobcompass.service.PurchaseService;
 import org.springframework.http.HttpStatus;
@@ -24,9 +23,9 @@ public class PurchaseResource {
         return ResponseEntity.ok(purchases);
     }
 
-    @GetMapping("/find/{purchaseId}")
-    public ResponseEntity<Purchase> getPurchaseByPurchaseId(@PathVariable("purchaseId") Long purchaseId) {
-        Purchase purchase = purchaseService.findPurchaseByPurchaseId(purchaseId);
+    @GetMapping("/find/{id}")
+    public ResponseEntity<Purchase> getPurchaseById(@PathVariable("id") Long id) {
+        Purchase purchase = purchaseService.findPurchaseById(id);
         return new ResponseEntity<>(purchase, HttpStatus.OK);
     }
 
@@ -42,9 +41,9 @@ public class PurchaseResource {
         return new ResponseEntity<>(updatedPurchase, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{purchaseId}")
-    public ResponseEntity<?> deletePurchase(@PathVariable("purchaseId") Long purchaseId) {
-        purchaseService.deletePurchase(purchaseId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deletePurchase(@PathVariable("id") Long id) {
+        purchaseService.deletePurchase(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

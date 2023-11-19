@@ -9,7 +9,7 @@ public class Profile implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long profileId; //TODO: db bigint
+    private Long id; //TODO: db bigint
     private String skills;
     private String certifications;
     private String experience;
@@ -32,12 +32,12 @@ public class Profile implements Serializable {
         this.profilePicture = profilePicture;
     }
 
-    public Long getProfileId() {
-        return profileId;
+    public Long getId() {
+        return id;
     }
 
-    public void setProfileId(Long profileId) {
-        this.profileId = profileId;
+    public void id(Long id) {
+        this.id = id;
     }
 
     public String getSkills() {
@@ -107,7 +107,7 @@ public class Profile implements Serializable {
     @Override
     public String toString() {
         return "Profile{" +
-                "profileId=" + profileId +
+                "id=" + id +
                 ", skills='" + skills + '\'' +
                 ", certifications='" + certifications + '\'' +
                 ", experience='" + experience + '\'' +

@@ -31,12 +31,12 @@ public class PurchaseService {
         return purchaseRepo.save(purchase);
     }
 
-    public Purchase findPurchaseByPurchaseId(Long purchaseId) throws PurchaseNotFoundException {
-        return purchaseRepo.findPurchaseByPurchaseId(purchaseId)
-                .orElseThrow(() -> new PurchaseNotFoundException("Nincs " + purchaseId + " azonosíójú vásárlás!"));
+    public Purchase findPurchaseById(Long id) throws PurchaseNotFoundException {
+        return purchaseRepo.findPurchaseById(id)
+                .orElseThrow(() -> new PurchaseNotFoundException("Nincs " + id + " azonosíójú vásárlás!"));
     }
 
-    public void deletePurchase(Long purchaseId) {
-        purchaseRepo.deletePurchaseByPurchaseId(purchaseId);
+    public void deletePurchase(Long id) {
+        purchaseRepo.deletePurchaseById(id);
     }
 }

@@ -23,9 +23,9 @@ public class ServiceResource {
         return ResponseEntity.ok(services);
     }
 
-    @GetMapping("/find/{serviceId}")
-    public ResponseEntity<Service> getServiceByServiceId(@PathVariable("serviceId") Long serviceId) {
-        Service service = serviceService.findServiceByServiceId(serviceId);
+    @GetMapping("/find/{id}")
+    public ResponseEntity<Service> getServiceByServiceId(@PathVariable("id") Long id) {
+        Service service = serviceService.findServiceById(id);
         return new ResponseEntity<>(service, HttpStatus.OK);
     }
 
@@ -41,9 +41,9 @@ public class ServiceResource {
         return new ResponseEntity<>(updatedService, HttpStatus.OK);
     }
 
-    @DeleteMapping("/delete/{serviceId}")
-    public ResponseEntity<?> deleteService(@PathVariable("serviceId") Long serviceId) {
-        serviceService.deleteService(serviceId);
+    @DeleteMapping("/delete/{id}")
+    public ResponseEntity<?> deleteService(@PathVariable("id") Long id) {
+        serviceService.deleteService(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }

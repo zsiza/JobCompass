@@ -9,7 +9,7 @@ public class Review implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long reviewId; //TODO: db bigint, név
+    private Long id; //TODO: db bigint, név
     private int rating;
     private String title;
     private String description;
@@ -20,8 +20,8 @@ public class Review implements Serializable {
 
     public Review() {}
 
-    public Review(Long reviewId, int rating, String title, String description, Long reviewerId, Long reviewedId) {
-        this.reviewId = reviewId;
+    public Review(Long id, int rating, String title, String description, Long reviewerId, Long reviewedId) {
+        this.id = id;
         this.rating = rating;
         this.title = title;
         this.description = description;
@@ -29,12 +29,12 @@ public class Review implements Serializable {
         this.reviewedId = reviewedId;
     }
 
-    public Long getReviewId() {
-        return reviewId;
+    public Long getId() {
+        return id;
     }
 
-    public void setReviewId(Long reviewId) {
-        this.reviewId = reviewId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public int getRating() {
@@ -80,7 +80,7 @@ public class Review implements Serializable {
     @Override
     public String toString() {
         return "Review{" +
-                "reviewId=" + reviewId +
+                "id=" + id +
                 ", rating=" + rating +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +

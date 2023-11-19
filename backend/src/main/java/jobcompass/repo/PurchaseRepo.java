@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface PurchaseRepo extends JpaRepository<Purchase, Long> {
 
-    Optional<Purchase> findPurchaseByPurchaseId(Long purchaseId);
+    Optional<Purchase> findPurchaseById(Long id);
 
-    void deletePurchaseByPurchaseId(Long purchaseId);
+    void deletePurchaseById(Long id);
 }

@@ -31,12 +31,12 @@ public class UserService {
         return userRepo.save(user);
     }
 
-    public User findUserByUserId(Long userId) throws UserNotFoundException {
-        return userRepo.findUserByUserId(userId)
-                .orElseThrow(() -> new UserNotFoundException("Nincs " + userId + " azonosíójú felhasználó!"));
+    public User findUserById(Long id) throws UserNotFoundException {
+        return userRepo.findUserById(id)
+                .orElseThrow(() -> new UserNotFoundException("Nincs " + id + " azonosíójú felhasználó!"));
     }
 
-    public void deleteUser(Long userId) {
-        userRepo.deleteUserByUserId(userId);
+    public void deleteUser(Long id) {
+        userRepo.deleteUserById(id);
     }
 }

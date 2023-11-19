@@ -31,12 +31,12 @@ public class CategoryService {
         return categoryRepo.save(category);
     }
 
-    public Category findCategoryByCategoryId(Long categoryId) throws CategoryNotFoundException {
-        return categoryRepo.findCategoryByCategoryId(categoryId)
-                .orElseThrow(() -> new CategoryNotFoundException("Nincs " + categoryId + " azonosíójú kategória!"));
+    public Category findCategoryById(Long id) throws CategoryNotFoundException {
+        return categoryRepo.findCategoryById(id)
+                .orElseThrow(() -> new CategoryNotFoundException("Nincs " + id + " azonosíójú kategória!"));
     }
 
-    public void deleteCategory(Long categoryId) {
-        categoryRepo.deleteCategoryByCategoryId(categoryId);
+    public void deleteCategory(Long id) {
+        categoryRepo.deleteCategoryById(id);
     }
 }

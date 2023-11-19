@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface CategoryRepo extends JpaRepository<Category, Long> {
 
-    Optional<Category> findCategoryByCategoryId(Long categoryId);
+    Optional<Category> findCategoryById(Long id);
 
-    void deleteCategoryByCategoryId(Long categoryId);
+    void deleteCategoryById(Long id);
 }
