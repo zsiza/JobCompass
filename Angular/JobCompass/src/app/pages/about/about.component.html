@@ -1,3 +1,4 @@
+
 <div class="container">
     <div>
         <h1>Dolgozz,
@@ -10,6 +11,8 @@
             Megoszthatod profilodat, meghatározhatod a beosztásodat, beállíthatod az óradíjadat
             , és megtarthatod összes bevételt.</p>
     </div>
+    
+     <img [src]="imagePath" width="400px" height="400px">
 
     <div id="box">
         <h2>Mi az a JobCompass?</h2>
@@ -37,8 +40,7 @@
                 lebonyolítását.
             </li>
         </ul>
-
-
+        <a routerLink=""><button><strong>Böngéssz!</strong></button></a>
     </div>
     <div id="box">
         <h2>Hogyan működik?</h2>
@@ -64,6 +66,7 @@
             </li>
 
         </ul>
+       <a routerLink="/register"><button><strong>Regisztrálj!</strong></button></a>
     </div>
 
     <div id="box">
