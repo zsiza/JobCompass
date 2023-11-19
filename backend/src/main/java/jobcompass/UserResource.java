@@ -1,5 +1,6 @@
 package jobcompass;
 
+import jakarta.transaction.Transactional;
 import jobcompass.model.User;
 import jobcompass.service.UserService;
 import org.springframework.http.HttpStatus;
@@ -8,11 +9,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController @RequestMapping("/user")
-public class JobCompassResource {
+@RestController @RequestMapping("/user") @Transactional
+public class UserResource {
     private final UserService userService;
 
-    public JobCompassResource(UserService userService) {
+    public UserResource(UserService userService) {
         this.userService = userService;
     }
 
@@ -43,6 +44,6 @@ public class JobCompassResource {
     @DeleteMapping("/delete/{userId}")
     public ResponseEntity<?> deleteUser(@PathVariable("userId") Long userId) {
         userService.deleteUser(userId);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

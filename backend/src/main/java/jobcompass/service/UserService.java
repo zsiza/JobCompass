@@ -1,5 +1,6 @@
 package jobcompass.service;
 
+import jakarta.persistence.Table;
 import jobcompass.exception.UserNotFoundException;
 import jobcompass.model.User;
 import jobcompass.repo.UserRepo;
@@ -9,6 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@Table(name="user", schema = "public")
 public class UserService {
     private final UserRepo userRepo;
 
