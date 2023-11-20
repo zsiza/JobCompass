@@ -10,7 +10,7 @@ public class Service implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long id; //TODO: db bigint
+    private Long id;
     private String title;
     private String description;
     private double price;
@@ -22,8 +22,7 @@ public class Service implements Serializable {
 
     public Service() {}
 
-    public Service(Long id, String title, String description, double price, LocalDate deliveryTime, Long categoryId, Long sellerId) {
-        this.id = id;
+    public Service(String title, String description, double price, LocalDate deliveryTime, Long categoryId, Long sellerId) {
         this.title = title;
         this.description = description;
         this.price = price;

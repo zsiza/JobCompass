@@ -20,8 +20,7 @@ public class Review implements Serializable {
 
     public Review() {}
 
-    public Review(Long id, int rating, String title, String description, Long reviewerId, Long reviewedId) {
-        this.id = id;
+    public Review(int rating, String title, String description, Long reviewerId, Long reviewedId) {
         this.rating = rating;
         this.title = title;
         this.description = description;
