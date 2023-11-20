@@ -68,10 +68,30 @@ body {/*body formázás*/
     color: #5fb8f7; /* Piros színű link */
 }
 
-   /*reszponzív*/
-   @media screen and (max-width: 694px){
+@media screen and (max-width: 970px) {
+  .login-container {
+      width: 100%;
+      margin: auto;
+  }
+}
 
-   }
-   @media screen and (max-width: 530px){
+@media screen and (max-width: 800px) {
+  .login-container {
+      width: 100%;
+      margin: auto;
+  }
+}
 
-   }
+@media screen and (max-width: 694px) {
+  .login-container {
+      width: 100%;
+      margin: auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .login-container {
+      width: 100%;
+      margin: auto;
+  }
+}

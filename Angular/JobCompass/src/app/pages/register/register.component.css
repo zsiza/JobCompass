@@ -80,5 +80,23 @@ body { /*body formázás*/
    }
 
    /*reszponzív*/
-   @media screen and (max-width: 694px){}
-   @media screen and (max-width: 530px){}
+     .register-container { /*Register konténer*/
+    width: 600px; /*konténer szélessége*/
+    padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+    
+    margin: 0 auto; /*az elemek külső térköze*/
+    margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
+    margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
+   
+    color: white;
+
+
+    border-radius: 22px;
+    background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
+    box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    
+   }
+
+   
