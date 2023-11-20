@@ -105,6 +105,17 @@ p {
 
 }
 
+.galeria{
+width: auto;
+height: auto;
+border-radius: 15px;
+margin-top: 20px;
+margin-left:25px;
+animation: novekedes 1s ease-in-out;
+}
+
+
+
 @media screen and (max-width: 650px){
     h1{
        font-size: 40px;
