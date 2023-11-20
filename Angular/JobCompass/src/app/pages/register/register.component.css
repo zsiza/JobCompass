@@ -99,4 +99,30 @@ body { /*body formázás*/
     
    }
 
-   
+   @media screen and (max-width: 970px) {
+    .register-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .register-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 694px) {
+    .register-container {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .register-container {
+        width: 100%;
+        margin: auto;
+    }
+}
