@@ -1,4 +1,4 @@
-package jobcompass.config;
+/*package jobcompass.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -41,4 +41,4 @@ public class WebSecurityConfig {
 
         return new InMemoryUserDetailsManager(user);
     }
-}
+}*/
