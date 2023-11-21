@@ -1,28 +1,24 @@
 <div class="register-container">
     <h2>Regisztráció</h2>
 
-    <form method="POST">
+    <form #addForm="ngForm" (ngSubmit)="onAddUser(addForm)" method="POST">
     <label for="email">Email cím</label>
-    <input type="email" id="email" placeholder="Email cím" name="email" required>
+    <input type="email" ngModel id="email" placeholder="Email cím" name="email" required>
 
     <label for="firstname">Kereszt név</label>
-    <input type="text" id="firstname" placeholder="Kereszt név" name="firstname" required>
+    <input type="text" ngModel id="firstname" placeholder="Kereszt név" name="firstname" required>
 
     <label for="lastname">Vezeték név</label>
-    <input type="text" id="lastname" placeholder="Vezeték név" name="lastname" required>
+    <input type="text" ngModel id="lastname" placeholder="Vezeték név" name="lastname" required>
 
     <label for="username">Felhasználó név</label>
-    <input type="text" id="username" placeholder="Felhasználó név" name="username" required>
+    <input type="text" ngModel id="username" placeholder="Felhasználó név" name="username" required>
 
     <label for="password">Jelszó</label>
-    <input type="password" id="password" placeholder="Jelszó" name="password" required>
-
-
-    <label for="psw-confirm">Jelszó megerősítés</label>
-    <input type="password" placeholder="Jelszó megerősítés" name="psw-confirm" required> 
+    <input type="password" ngModel id="password" placeholder="Jelszó" name="password" required>
 
   <!--  <input type="reset" name="reset-btn" value="Reset"/>-->
-    <button type="submit">REGISZTRÁLJ</button>
+    <button [disabled]="addForm.invalid" type="submit">REGISZTRÁLJ</button>
 
     </form>
     
