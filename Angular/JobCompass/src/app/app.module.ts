@@ -11,6 +11,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { BalanceComponent } from './pages/balance/balance.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BalanceService } from './pages/balance/balance.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { BalanceService } from './pages/balance/balance.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [BalanceService],
   bootstrap: [AppComponent]

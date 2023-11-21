@@ -2,12 +2,11 @@ import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { User } from "./user";
+import { environment } from "src/environments/environment";
 
-@Injectable({
-    providedIn: 'root'
-})
+@Injectable({providedIn: 'root'})
 export class UserService {
-    private apiServerUrl = '';
+    private apiServerUrl = environment.apiBaseUrl; // backend linkelése, maybe?
 
     constructor(private http: HttpClient) { }
 
