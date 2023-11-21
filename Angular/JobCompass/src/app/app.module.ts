@@ -12,6 +12,7 @@ import { BalanceComponent } from './pages/balance/balance.component';
 import { AboutComponent } from './pages/about/about.component';
 import { BalanceService } from './pages/balance/balance.service';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [BalanceService],
   bootstrap: [AppComponent]
