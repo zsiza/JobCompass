@@ -37,7 +37,7 @@ body {/*body formázás*/
    .login-container input[type="password"] {
     width: 100%; /*input elemek szélessége*/
     padding: 12px; /*input belső térköz(textdoboz)*/
-    margin: 20px 0; /*input külső térköz*/
+    margin: 6px 0 22px 0; /*input külső térköz*/
     display: inline-block;
     border: 1px solid #ccc; /*input elemek szegélye*/
     box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
