@@ -22,4 +22,4 @@ ___
 
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/d03c388a375fafc38955cc2d153e6d1d562a96bb
      - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/e184b6bd2236efcf775397de233d3491be27438c
-     - TODO
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/146871b36d627ede4dd79c54b7edf802475d37cd
