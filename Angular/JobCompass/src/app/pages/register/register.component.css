@@ -135,30 +135,27 @@ label {
   padding: 20px;
 }
 
-@media screen and (max-width: 970px) {
+
+@media(max-width: 972px) {
   .register-container {
-      width: 100%;
-      margin: auto;
+      width: 600px;
+      transition: all 1s;
+      
   }
 }
 
-@media screen and (max-width: 800px) {
+@media(max-width: 805px) {
   .register-container {
-      width: 100%;
-      margin: auto;
+      width: 500px;
+      transition: all 1s;
+      
   }
 }
 
-@media screen and (max-width: 694px) {
+@media(max-width: 695px) {
   .register-container {
-      width: 100%;
-      margin: auto;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .register-container {
-      width: 100%;
-      margin: auto;
+      width: 450px;
+      transition: all 1s;
+      
   }
 }

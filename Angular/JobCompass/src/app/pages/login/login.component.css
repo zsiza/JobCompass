@@ -68,30 +68,26 @@ label{ /*szöveg méret*/
   color: #5fb8f7; /* Piros színű link */
 }
 
-@media screen and (max-width: 970px) {
-.login-container {
-    width: 100%;
-    margin: auto;
-}
-}
-
-@media screen and (max-width: 800px) {
-.login-container {
-    width: 100%;
-    margin: auto;
-}
+@media(max-width: 972px) {
+  .login-container {
+      width: 600px;
+      transition: all 1s;
+      
+  }
 }
 
-@media screen and (max-width: 694px) {
-.login-container {
-    width: 100%;
-    margin: auto;
-}
+@media(max-width: 805px) {
+  .login-container {
+      width: 500px;
+      transition: all 1s;
+      
+  }
 }
 
-@media screen and (max-width: 530px) {
-.login-container {
-    width: 100%;
-    margin: auto;
-}
+@media(max-width: 695px) {
+  .login-container {
+      width: 450px;
+      transition: all 1s;
+      
+  }
 }
