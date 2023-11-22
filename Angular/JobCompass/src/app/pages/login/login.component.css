@@ -67,31 +67,28 @@ body {/*body formázás*/
    a {
     color: #5fb8f7; /* Piros színű link */
 }
+
 /*Reszponzív*/
-@media(max-width: 970px) {
+@media(max-width: 972px) {
   .login-container {
-      width: 100%;
-      margin: auto;
+      width: 600px;
+      transition: all 1s;
+      
   }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 805px) {
   .login-container {
-      width: 100%;
-      margin: auto;
+      width: 500px;
+      transition: all 1s;
+      
   }
 }
 
-@media(max-width: 694px) {
+@media(max-width: 695px) {
   .login-container {
-      width: 100%;
-      margin: auto;
-  }
-}
-
-@media(max-width: 530px) {
-  .login-container {
-      width: 100%;
-      margin: auto;
+      width: 450px;
+      transition: all 1s;
+      
   }
 }

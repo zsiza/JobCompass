@@ -100,30 +100,26 @@ body { /*body formázás*/
    }
 
 /*Reszponzív*/
-@media(max-width: 970px) {
-    .register-container {
-        width: 100%;
-        margin: auto;
-    }
+@media(max-width: 972px) {
+  .register-container {
+      width: 600px;
+      transition: all 1s;
+      
+  }
 }
 
-@media(max-width: 800px) {
-    .register-container {
-        width: 100%;
-        margin: auto;
-    }
+@media(max-width: 805px) {
+  .register-container {
+      width: 500px;
+      transition: all 1s;
+      
+  }
 }
 
-@media(max-width: 694px) {
-    .register-container {
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media(max-width: 530px) {
-    .register-container {
-        width: 100%;
-        margin: auto;
-    }
+@media(max-width: 695px) {
+  .register-container {
+      width: 450px;
+      transition: all 1s;
+      
+  }
 }
