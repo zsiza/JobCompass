@@ -7,11 +7,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Timestamp;
+import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 @RestController @RequestMapping("/message") @Transactional
 public class MessageResource {
     private final MessageService messageService;
+    private final Random random = new Random();
 
     public MessageResource(MessageService messageService) {
         this.messageService = messageService;
@@ -30,7 +34,10 @@ public class MessageResource {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Message> addMessage(@RequestBody Message message) {
+    public ResponseEntity<Message> addMessage(@RequestBody Message message) {;
+        message.setSenderId(random.nextLong());
+        message.setReceiverId(random.nextLong());
+        message.setTimestamp(new Timestamp(new Date().getTime()));
         Message newMessage = messageService.addMessage(message);
         return new ResponseEntity<>(newMessage, HttpStatus.CREATED);
     }

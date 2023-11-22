@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.MessageNotFoundException;
+import jobcompass.exception.MessageException;
 import jobcompass.model.Message;
 import jobcompass.repo.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +31,9 @@ public class MessageService {
         return messageRepo.save(message);
     }
 
-    public Message findMessageById(Long id) throws MessageNotFoundException {
+    public Message findMessageById(Long id) throws MessageException {
         return messageRepo.findMessageById(id)
-                .orElseThrow(() -> new MessageNotFoundException("Nincs " + id + " azonosíójú üzenet!"));
+                .orElseThrow(() -> new MessageException("Nincs " + id + " azonosíójú üzenet!"));
     }
 
     public void deleteMessage(Long id) {

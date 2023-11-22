@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.PurchaseNotFoundException;
+import jobcompass.exception.PurchaseException;
 import jobcompass.model.Purchase;
 import jobcompass.repo.PurchaseRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +31,9 @@ public class PurchaseService {
         return purchaseRepo.save(purchase);
     }
 
-    public Purchase findPurchaseById(Long id) throws PurchaseNotFoundException {
+    public Purchase findPurchaseById(Long id) throws PurchaseException {
         return purchaseRepo.findPurchaseById(id)
-                .orElseThrow(() -> new PurchaseNotFoundException("Nincs " + id + " azonosíójú vásárlás!"));
+                .orElseThrow(() -> new PurchaseException("Nincs " + id + " azonosíójú vásárlás!"));
     }
 
     public void deletePurchase(Long id) {

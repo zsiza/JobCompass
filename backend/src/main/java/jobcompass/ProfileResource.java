@@ -30,7 +30,7 @@ public class ProfileResource {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Profile> addProfile(@RequestBody Profile profile) {
+    public ResponseEntity<?> addProfile(@RequestBody Profile profile) {
         Profile newProfile = profileService.addProfile(profile);
         return new ResponseEntity<>(newProfile, HttpStatus.CREATED);
     }

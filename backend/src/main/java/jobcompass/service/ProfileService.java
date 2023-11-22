@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.ProfileNotFoundException;
+import jobcompass.exception.ProfileException;
 import jobcompass.model.Profile;
 import jobcompass.repo.ProfileRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +31,9 @@ public class ProfileService {
         return profileRepo.save(profile);
     }
 
-    public Profile findProfileById(Long id) throws ProfileNotFoundException {
+    public Profile findProfileById(Long id) throws ProfileException {
         return profileRepo.findProfileById(id)
-                .orElseThrow(() -> new ProfileNotFoundException("Nincs " + id + " azonosíójú profil!"));
+                .orElseThrow(() -> new ProfileException("Nincs " + id + " azonosíójú profil!"));
     }
 
     public void deleteProfile(Long id) {

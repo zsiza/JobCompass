@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.ReviewNotFoundException;
+import jobcompass.exception.ReviewException;
 import jobcompass.model.Review;
 import jobcompass.repo.ReviewRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +31,9 @@ public class ReviewService {
         return reviewRepo.save(review);
     }
 
-    public Review findReviewById(Long id) throws ReviewNotFoundException {
+    public Review findReviewById(Long id) throws ReviewException {
         return reviewRepo.findReviewById(id)
-                .orElseThrow(() -> new ReviewNotFoundException("Nincs " + id + " azonosíójú értékelés!"));
+                .orElseThrow(() -> new ReviewException("Nincs " + id + " azonosíójú értékelés!"));
     }
 
     public void deleteReview(Long id) {

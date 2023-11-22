@@ -9,7 +9,7 @@ public class Review implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long id; //TODO: db bigint, név
+    private Long id;
     private int rating;
     private String title;
     private String description;

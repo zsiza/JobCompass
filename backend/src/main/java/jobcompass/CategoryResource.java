@@ -1,7 +1,7 @@
 package jobcompass;
 
 import jakarta.transaction.Transactional;
-import jobcompass.exception.CategoryNotFoundException;
+import jobcompass.exception.CategoryException;
 import jobcompass.model.Category;
 import jobcompass.service.CategoryService;
 import org.springframework.http.HttpStatus;
@@ -25,13 +25,16 @@ public class CategoryResource {
     }
 
     @GetMapping("/find/{id}")
-    public ResponseEntity<Category> getCategoryById(@PathVariable("id") Long id) throws CategoryNotFoundException {
+    public ResponseEntity<Category> getCategoryById(@PathVariable("id") Long id) throws CategoryException {
         Category category = categoryService.findCategoryById(id);
         return new ResponseEntity<>(category, HttpStatus.OK);
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Category> addCategory(@RequestBody Category category) {
+    public ResponseEntity<?> addCategory(@RequestBody Category category) {
+        if (category.getName() == null || category.getDescription() == null) {
+            return new ResponseEntity<>(new CategoryException("Nem adtál meg minden paramétert!"), HttpStatus.BAD_REQUEST);
+        }
         Category newCategory = categoryService.addCategory(category);
         return new ResponseEntity<>(newCategory, HttpStatus.CREATED);
     }

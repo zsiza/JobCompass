@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.ServiceNotFoundException;
+import jobcompass.exception.ServiceException;
 import jobcompass.model.Service;
 import jobcompass.repo.ServiceRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,9 +30,9 @@ public class ServiceService {
         return serviceRepo.save(service);
     }
 
-    public Service findServiceById(Long id) throws ServiceNotFoundException {
+    public Service findServiceById(Long id) throws ServiceException {
         return serviceRepo.findServiceById(id)
-                .orElseThrow(() -> new ServiceNotFoundException("Nincs " + id + " azonosíójú szolgáltatás!"));
+                .orElseThrow(() -> new ServiceException("Nincs " + id + " azonosíójú szolgáltatás!"));
     }
 
     public void deleteService(Long id) {

@@ -11,21 +11,24 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long id;        // TODO: ez az adatbázisban legyen BigInt, és ne id legyen a neve
+    private Long id;
+    private String firstName;
+    private String lastName;
+    private String username;
     private String email;
     private String password;
-    @Column(nullable = false, updatable = false)
-    private Long profileId;     // TODO: ez az adatbázisban legyen BigInt (amúgy erre van szükség?)
-    private boolean admin;      // TODO: ez az adatbázisban ne isAdmin legyen
-    @Column(nullable = false, updatable = false)
-    private Long sellerId;      //TODO: ez az adatbázisban legyen BigInt
-
+    private Long profileId;
+    private boolean admin;
+    private Long sellerId;
     private double balance;
     private boolean online;
 
     public User() {}
 
-    public User(String email, String password, Long profileId, boolean admin, Long sellerId, double balance, boolean online) {
+    public User(String firstName, String lastName, String username, String email, String password, Long profileId, boolean admin, Long sellerId, double balance, boolean online) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.username = username;
         this.email = email;
         this.password = password;
         this.profileId = profileId;
@@ -99,10 +102,37 @@ public class User implements Serializable {
         this.online = online;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", profileId=" + profileId +

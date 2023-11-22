@@ -1,6 +1,7 @@
 package jobcompass;
 
 import jakarta.transaction.Transactional;
+import jobcompass.exception.ReviewException;
 import jobcompass.model.Review;
 import jobcompass.service.ReviewService;
 import org.springframework.http.HttpStatus;
@@ -8,10 +9,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Random;
+
+import static java.lang.Math.abs;
 
 @RestController @RequestMapping("/review") @Transactional
 public class ReviewResource {
     private final ReviewService reviewService;
+    private final Random Random = new Random();
 
     public ReviewResource(ReviewService reviewService) {
         this.reviewService = reviewService;
@@ -30,7 +35,12 @@ public class ReviewResource {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<Review> addReview(@RequestBody Review review) {
+    public ResponseEntity<?> addReview(@RequestBody Review review) {
+        if (review.getRating() == 0 || review.getTitle() == null || review.getDescription() == null) {
+            return new ResponseEntity<>(new ReviewException("Nem adtál meg minden paramétert!"), HttpStatus.BAD_REQUEST);
+        }
+        review.setReviewerId(abs(Random.nextLong()));
+        review.setReviewedId(abs(Random.nextLong()));
         Review newReview = reviewService.addReview(review);
         return new ResponseEntity<>(newReview, HttpStatus.CREATED);
     }

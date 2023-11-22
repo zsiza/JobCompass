@@ -10,7 +10,7 @@ public class Service implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long id; //TODO: db bigint
+    private Long id;
     private String title;
     private String description;
     private double price;

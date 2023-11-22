@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.UserNotFoundException;
+import jobcompass.exception.UserException;
 import jobcompass.model.User;
 import jobcompass.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +31,9 @@ public class UserService {
         return userRepo.save(user);
     }
 
-    public User findUserById(Long id) throws UserNotFoundException {
+    public User findUserById(Long id) throws UserException {
         return userRepo.findUserById(id)
-                .orElseThrow(() -> new UserNotFoundException("Nincs " + id + " azonosíójú felhasználó!"));
+                .orElseThrow(() -> new UserException("Nincs " + id + " azonosíójú felhasználó!"));
     }
 
     public void deleteUser(Long id) {

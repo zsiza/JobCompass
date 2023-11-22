@@ -9,7 +9,7 @@ public class Profile implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
-    private Long id; //TODO: db bigint
+    private Long id;
     private String skills;
     private String certifications;
     private String experience;

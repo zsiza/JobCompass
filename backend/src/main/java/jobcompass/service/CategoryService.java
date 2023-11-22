@@ -1,7 +1,7 @@
 package jobcompass.service;
 
 import jakarta.persistence.Table;
-import jobcompass.exception.CategoryNotFoundException;
+import jobcompass.exception.CategoryException;
 import jobcompass.model.Category;
 import jobcompass.repo.CategoryRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,9 +31,9 @@ public class CategoryService {
         return categoryRepo.save(category);
     }
 
-    public Category findCategoryById(Long id) throws CategoryNotFoundException {
+    public Category findCategoryById(Long id) throws CategoryException {
         return categoryRepo.findCategoryById(id)
-                .orElseThrow(() -> new CategoryNotFoundException("Nincs " + id + " azonosíójú kategória!"));
+                .orElseThrow(() -> new CategoryException("Nincs " + id + " azonosíójú kategória!"));
     }
 
     public void deleteCategory(Long id) {
