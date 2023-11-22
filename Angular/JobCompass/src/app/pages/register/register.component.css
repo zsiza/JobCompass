@@ -1,126 +1,164 @@
-body { /*body formázás*/
-    font-family: Arial, sans-serif; /*betűtípus*/
-   }
+body {
+  /*body formázás*/
+  font-family: Arial, sans-serif;
+  /*betűtípus*/
+}
 
-   h2 {
-    font-size: 35px;
-  }
+h2 {
+  font-size: 35px;
+}
 
-  label{ /*szöveg méret*/
-    font-size: 20px;
-  }
-   .register-container { /*Register konténer*/
-    width: 600px; /*konténer szélessége*/
-    padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-    
-    margin: 0 auto; /*az elemek külső térköze*/
-    margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-    margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-   
-    color: white;
+label {
+  /*szöveg méret*/
+  font-size: 20px;
+}
 
+.register-container {
+  /*Register konténer*/
+  width: 600px;
+  /*konténer szélessége*/
+  padding: 20px;
+  /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+  margin: 0 auto;
+  /*az elemek külső térköze*/
+  margin-top: 63px;
+  /* .. pixel térközük legyen a tetejükön*/
+  margin-bottom: 200px;
+  /* .. pixel térközük legyen a alján*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*az árnyék színét határozza meg*/
+  color: white;
+  border-radius: 22px;
+  background: linear-gradient(150deg,
+          rgba(128, 128, 215, 0.27) -9.45%,
+          rgba(146, 206, 207, 0.27) 111.55%);
+  box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
 
-    border-radius: 22px;
-    background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
-    box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    
-   }
-   .register-container h2 { /*Register felirat formázása*/
-    text-align: center; /*a szöveg középen legyen*/
-    margin-bottom: 24px; /*a register felirat alján legyen 24 pixel térköz.*/
-   }
-   .register-container label {
-    display: block; /*label elemek blokk szintű elemek legyenek(újsor)*/
-   }
+.register-container h2 {
+  /*Register felirat formázása*/
+  text-align: center;
+  /*a szöveg középen legyen*/
+  margin-bottom: 24px;
+  /*a register felirat alján legyen 24 pixel térköz.*/
+}
 
+.register-container label {
+  display: block;
+  /*label elemek blokk szintű elemek legyenek(újsor)*/
+}
 
 /*
-   .register-container input[type="reset"]{
-    width: 20%; /*input elemek szélessége
-    padding: 5px; /*input belső térköz
-   
-    border-radius: 5px; /*kerekített sarkak
-    color: rgb(255, 255, 255); /*gomb reset felirat színe
-   
+ .register-container input[type="reset"]{
+  width: 20%; /*input elemek szélessége
+  padding: 5px; /*input belső térköz
+ 
+  border-radius: 5px; /*kerekített sarkak
+  color: rgb(255, 255, 255); /*gomb reset felirat színe
+ 
 
-    border: 5px solid #A8D8D8;
-    background: #8E8EDB;
-   }*/
+  border: 5px solid #A8D8D8;
+  background: #8E8EDB;
+ }*/
 
-   .register-container input[type="text"],
-   .register-container input[type="password"] {
-    width: 100%; /*input elemek szélessége*/
-    padding: 12px; /*input belső térköz*/
-    margin: 20px 0; /*input külső térköz*/
-    display: inline-block;
-    border: 1px solid #ccc; /*input elemek szegélye*/
-    box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
-    border-radius: 5px; /*kerekített sarkak*/
-    font-size: 18px;
-   }
-   .register-container button { /*gomb tulajdonságok*/
-    background-color: #0b2584; /*háttérszíne*/
-    color: white; /*gomb register felirat színe*/
-    padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
-    margin: 15px 0; /*külső térköz*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
-    width: 40%;
-    border-radius: 5px; /*kerekített sarkak*/
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="email"]{
+  width: 100%;
+  /*input elemek szélessége*/
+  padding: 12px;
+  /*input belső térköz*/
+  margin: 6px 0 22px 0;
+  /*input külső térköz*/
+  display: inline-block;
+  border: 1px solid #ccc;
+  /*input elemek szegélye*/
+  box-sizing: border-box;
+  /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
+  border-radius: 5px;
+  /*kerekített sarkak*/
+  font-size: 18px;
+}
 
-    border: 5px solid #A8D8D8;
-    background: #8E8EDB;
-   }
-   .register-container button:hover {
-    opacity: 0.8;
-   }
+.register-container button {
+  /*gomb tulajdonságok*/
+  background-color: #0b2584;
+  /*háttérszíne*/
+  color: white;
+  /*gomb register felirat színe*/
+  padding: 15px 20px;
+  /*belső térköz, ami az elem szegélye és a tartalma között va*/
+  margin: 15px 0;
+  /*külső térköz*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  /*a kurzor ikon mutatóujjra változi*/
+  width: 40%;
+  border-radius: 5px;
+  /*kerekített sarkak*/
 
-  
-     .register-container { /*Register konténer*/
-    width: 600px; /*konténer szélessége*/
-    padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-    
-    margin: 0 auto; /*az elemek külső térköze*/
-    margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-    margin-bottom: 200px; /* .. pixel térközük legyen a alján*/
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-   
-    color: white;
+  border: 5px solid #a8d8d8;
+  background: #8e8edb;
+}
 
+.register-container button:hover {
+  opacity: 0.8;
+}
 
-    border-radius: 22px;
-    background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
-    box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-    
-   }
+/*reszponzív*/
+.register-container {
+  /*Register konténer*/
+  width: 600px;
+  /*konténer szélessége*/
+  padding: 20px;
+  /*a belső térköz, ami az elem szegélye és a tartalma között van*/
 
-/*Reszponzív*/
+  margin: 0 auto;
+  /*az elemek külső térköze*/
+  margin-top: 63px;
+  /* .. pixel térközük legyen a tetejükön*/
+  margin-bottom: 200px;
+  /* .. pixel térközük legyen a alján*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*az árnyék színét határozza meg*/
 
-@media(max-width: 972px) {
+  color: white;
+
+  border-radius: 22px;
+  background: linear-gradient(150deg,
+          rgba(128, 128, 215, 0.27) -9.45%,
+          rgba(146, 206, 207, 0.27) 111.55%);
+  box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+@media screen and (max-width: 970px) {
   .register-container {
-      width: 600px;
-      transition: all 1s;
-      
+      width: 100%;
+      margin: auto;
   }
 }
 
-@media(max-width: 805px) {
+@media screen and (max-width: 800px) {
   .register-container {
-      width: 500px;
-      transition: all 1s;
-      
+      width: 100%;
+      margin: auto;
   }
 }
 
-@media(max-width: 695px) {
+@media screen and (max-width: 694px) {
   .register-container {
-      width: 450px;
-      transition: all 1s;
-      
+      width: 100%;
+      margin: auto;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .register-container {
+      width: 100%;
+      margin: auto;
   }
 }
