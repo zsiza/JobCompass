@@ -79,7 +79,7 @@ body { /*body formázás*/
     opacity: 0.8;
    }
 
-   /*reszponzív*/
+  
      .register-container { /*Register konténer*/
     width: 600px; /*konténer szélessége*/
     padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
@@ -100,28 +100,28 @@ body { /*body formázás*/
    }
 
 /*Reszponzív*/
-@media screen and (max-width: 970px) {
+@media(max-width: 970px) {
     .register-container {
         width: 100%;
         margin: auto;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media(max-width: 800px) {
     .register-container {
         width: 100%;
         margin: auto;
     }
 }
 
-@media screen and (max-width: 694px) {
+@media(max-width: 694px) {
     .register-container {
         width: 100%;
         margin: auto;
     }
 }
 
-@media screen and (max-width: 530px) {
+@media(max-width: 530px) {
     .register-container {
         width: 100%;
         margin: auto;
