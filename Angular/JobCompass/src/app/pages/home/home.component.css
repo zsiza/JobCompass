@@ -94,11 +94,12 @@ body {
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
+
 }
 .category-link{
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
+  font-family: Outfit;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
