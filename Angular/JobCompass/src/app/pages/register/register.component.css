@@ -99,7 +99,8 @@ body { /*body formázás*/
     
    }
 
-   @media screen and (max-width: 970px) {
+/*Reszponzív*/
+@media screen and (max-width: 970px) {
     .register-container {
         width: 100%;
         margin: auto;

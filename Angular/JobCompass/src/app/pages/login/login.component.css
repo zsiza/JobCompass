@@ -67,7 +67,7 @@ body {/*body formázás*/
    a {
     color: #5fb8f7; /* Piros színű link */
 }
-
+/*Reszponzív*/
 @media screen and (max-width: 970px) {
   .login-container {
       width: 100%;
