@@ -13,6 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { BalanceService } from './pages/balance/balance.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ServiceComponent } from './service/service.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     RegisterComponent,
     LoginComponent,
     BalanceComponent,
-    AboutComponent
+    AboutComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
