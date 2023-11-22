@@ -1,0 +1,25 @@
+### Összefoglaló az `3.` mérföldkőben végzett munkáról
+
+### Projekt tag: `Fodor Döme`
+
+___
+
+#### Vállalásaim a mérföldkőben: 
+
+ -      8.3.18 Email-es kiértesítés megbízásról és elfogadásról
+
+ -      8.3.19 Automatikus biztonsági mentés létrehozása
+
+ -      8.3.20 Tesztelési dokumentum az összes funkcióhoz
+
+
+    ##### A feladathoz tartozó issue(k):
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/issues/33
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/issues/34
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/issues/52
+
+    ##### A feladat elvégzését alátámasztó commit(ok):
+
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/d03c388a375fafc38955cc2d153e6d1d562a96bb
+     - https://git-okt.sed.inf.szte.hu/2023_ib153i-11_d/2023_ib153i-11_d/-/commit/e184b6bd2236efcf775397de233d3491be27438c
+     - TODO
