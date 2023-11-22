@@ -23,8 +23,8 @@ export class ServiceComponent implements OnInit {
       const newService = document.createElement('div');
       newService.classList.add('service');
       newService.style.width = "300px";
-      newService.style.background = "linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);";
-      newService.style.boxShadow = "10px 10px 12px 4px rgba(0, 0, 0, 0.25);";
+      newService.style.background = "linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%)";
+      newService.style.boxShadow = "10px 10px 12px 4px rgba(0, 0, 0, 0.25)";
       newService.style.padding = "2%";
       newService.style.color = "white";
 
