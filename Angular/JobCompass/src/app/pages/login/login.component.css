@@ -1,95 +1,97 @@
 body {/*body formázás*/
-    font-family: Arial, sans-serif; /*betűtípus*/
-   }
+  font-family: Arial, sans-serif; /*betűtípus*/
+ }
 
-  p{ /*you dont have account szöveg*/
-    font-size: 18px;
-  }
-
-  label{ /*szöveg méret*/
-    font-size: 20px;
-  }
-   .login-container { /*Login konténer*/
-    width: 600px; /*konténer szélessége*/
-    padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
-    
-    margin: 0 auto; /*az elemek külső térköze*/
-    margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
-    margin-bottom: 250px; /* .. pixel térközük legyen a alján*/
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
-    
-    color: white; /*feliratszín*/
-
-    border-radius: 22px;
-    background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
-    box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
-    padding: 20px;
-   }
-   .login-container h2 { /*Login felirat formázása*/
-    text-align: center; /*a szöveg középen legyen*/
-    margin-bottom: 24px; /*a login felirat alján legyen 24 pixel térköz.*/
-    font-size: 35px;
-   }
-   .login-container label {
-    display: block; /*label elemek blokk szintű elemek legyenek(újsor)*/
-   }
-   .login-container input[type="text"],
-   .login-container input[type="password"] {
-    width: 100%; /*input elemek szélessége*/
-    padding: 12px; /*input belső térköz(textdoboz)*/
-    margin: 20px 0; /*input külső térköz*/
-    display: inline-block;
-    border: 1px solid #ccc; /*input elemek szegélye*/
-    box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
-    border-radius: 5px; /*kerekített sarkak*/
-    font-size: 18px;
-   }
-   .login-container button { /*gomb tulajdonságok*/
-    background-color: #0b2584; /*háttérszíne*/
-    color: white; /*gomb login felirat színe*/
-    padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
-    margin: 15px 0; /*külső térköz*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
-    width: 40%;
-    border-radius: 5px; /*kerekített sarkak*/
-
-    border: 5px solid #A8D8D8;
-    background: #8E8EDB;
-   }
-   .login-container button:hover {
-    opacity: 0.8; /* a gomb átlátszósága*/
-   }
-
-
-   a {
-    color: #5fb8f7; /* Piros színű link */
+p{ /*you dont have account szöveg*/
+  font-size: 18px;
 }
 
-/*Reszponzív*/
+label{ /*szöveg méret*/
+  font-size: 20px;
+}
+ .login-container { /*Login konténer*/
+  width: 600px; /*konténer szélessége*/
+  padding: 20px; /*a belső térköz, ami az elem szegélye és a tartalma között van*/
+  
+  margin: 0 auto; /*az elemek külső térköze*/
+  margin-top: 63px; /* .. pixel térközük legyen a tetejükön*/
+  margin-bottom: 250px; /* .. pixel térközük legyen a alján*/
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /*az árnyék színét határozza meg*/
+  
+  color: white; /*feliratszín*/
 
-@media(max-width: 972px) {
-  .login-container {
-      width: 600px;
-      transition: all 1s;
-      
-  }
+  border-radius: 22px;
+  background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
+  box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+ }
+ .login-container h2 { /*Login felirat formázása*/
+  text-align: center; /*a szöveg középen legyen*/
+  margin-bottom: 24px; /*a login felirat alján legyen 24 pixel térköz.*/
+  font-size: 35px;
+ }
+ .login-container label {
+  display: block; /*label elemek blokk szintű elemek legyenek(újsor)*/
+ }
+ .login-container input[type="text"],
+ .login-container input[type="password"] {
+  width: 100%; /*input elemek szélessége*/
+  padding: 12px; /*input belső térköz(textdoboz)*/
+  margin: 6px 0 22px 0; /*input külső térköz*/
+  display: inline-block;
+  border: 1px solid #ccc; /*input elemek szegélye*/
+  box-sizing: border-box; /*a szélesség és magasság értékei magukban foglalják a padding és border értékeit is*/
+  border-radius: 5px; /*kerekített sarkak*/
+  font-size: 18px;
+ }
+ .login-container button { /*gomb tulajdonságok*/
+  background-color: #0b2584; /*háttérszíne*/
+  color: white; /*gomb login felirat színe*/
+  padding: 15px 20px; /*belső térköz, ami az elem szegélye és a tartalma között va*/
+  margin: 15px 0; /*külső térköz*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer; /*a kurzor ikon mutatóujjra változi*/
+  width: 40%;
+  border-radius: 5px; /*kerekített sarkak*/
+
+  border: 5px solid #A8D8D8;
+  background: #8E8EDB;
+ }
+ .login-container button:hover {
+  opacity: 0.8; /* a gomb átlátszósága*/
+ }
+
+
+ a {
+  color: #5fb8f7; /* Piros színű link */
 }
 
-@media(max-width: 805px) {
-  .login-container {
-      width: 500px;
-      transition: all 1s;
-      
-  }
+@media screen and (max-width: 970px) {
+.login-container {
+    width: 100%;
+    margin: auto;
+}
 }
 
-@media(max-width: 695px) {
-  .login-container {
-      width: 450px;
-      transition: all 1s;
-      
-  }
+@media screen and (max-width: 800px) {
+.login-container {
+    width: 100%;
+    margin: auto;
+}
+}
+
+@media screen and (max-width: 694px) {
+.login-container {
+    width: 100%;
+    margin: auto;
+}
+}
+
+@media screen and (max-width: 530px) {
+.login-container {
+    width: 100%;
+    margin: auto;
+}
 }
