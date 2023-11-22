@@ -23,9 +23,11 @@ CREATE TABLE "Profile" (
 CREATE TABLE "User" (
     id BIGINT PRIMARY KEY DEFAULT nextval('users_id_seq'),
     email VARCHAR(100) NOT NULL,
+    firstname TEXT,
+    lastname TEXT,
     password VARCHAR(100) NOT NULL,
     profile_ID BIGINT,
-    is_admin BOOLEAN NOT NULL,
+    admin BOOLEAN NOT NULL,
     seller_ID BIGINT,
     balance DECIMAL(10, 2),
 	FOREIGN KEY (profile_ID) REFERENCES "Profile"(id) ON DELETE CASCADE
