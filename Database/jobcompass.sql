@@ -28,7 +28,6 @@ CREATE TABLE "User" (
     password VARCHAR(100) NOT NULL,
     profile_ID BIGINT,
     admin BOOLEAN NOT NULL,
-    seller_ID BIGINT,
     balance DECIMAL(10, 2),
 	FOREIGN KEY (profile_ID) REFERENCES "Profile"(id) ON DELETE CASCADE
 );
