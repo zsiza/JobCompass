@@ -30,6 +30,8 @@ body {
   padding: 15px 60px;
   border: 5px solid #a8d8d8;
   border-radius: 100px;
+  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.4), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
 }
 #hero-image-container {
   min-height: 450px;
