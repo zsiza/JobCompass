@@ -11,6 +11,7 @@ h1 {
 .mainparagraph {
     text-align: center;
     font-size: 30px;
+    margin-bottom: 450px;
 
 }
 
@@ -60,14 +61,6 @@ ul {
     list-style: circle;
     font-size: 22px;
 }
-.image-container {
-    text-align: center;
-}
-
-img {
-    width: 100%; /* Adjust the width to make the image responsive */
-    border-radius: 15px;
-}
 
 li {
     padding: 8px;
@@ -93,6 +86,17 @@ p {
     padding-top: 50px;
     padding-bottom: 100px;
 }
+.galeria{
+    width: 1400px;
+    display: block;
+    margin: 0 auto; /* This centers the image horizontally */
+    position: absolute;
+    z-index: -1; /* This places the image behind other elements */
+    top: 900px; /* This centers the image vertically */
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
 
 
 @media screen and (max-width: 790px){
@@ -110,17 +114,14 @@ p {
         max-width: 500px;
         transition: all, 0.5s;
     }
+    .galeria{
+        top: 700px;
+        transform: all, 0.5s;
+    }
+    
 
 }
 
-.galeria{
-width: auto;
-height: auto;
-border-radius: 15px;
-margin-top: 20px;
-margin-left:25px;
-animation: novekedes 1s ease-in-out;
-}
 
 
 
