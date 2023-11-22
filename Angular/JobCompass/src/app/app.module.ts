@@ -13,7 +13,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { BalanceService } from './pages/balance/balance.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { ServiceComponent } from './service/service.component';
+import { ServiceComponent } from './pages/service/service.component';
 
 
 @NgModule({
