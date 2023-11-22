@@ -60,6 +60,14 @@ ul {
     list-style: circle;
     font-size: 22px;
 }
+.image-container {
+    text-align: center;
+}
+
+img {
+    width: 100%; /* Adjust the width to make the image responsive */
+    border-radius: 15px;
+}
 
 li {
     padding: 8px;
