@@ -100,6 +100,7 @@ body { /*body formázás*/
    }
 
 /*Reszponzív*/
+
 @media(max-width: 972px) {
   .register-container {
       width: 600px;

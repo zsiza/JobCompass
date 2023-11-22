@@ -69,6 +69,7 @@ body {/*body formázás*/
 }
 
 /*Reszponzív*/
+
 @media(max-width: 972px) {
   .login-container {
       width: 600px;
