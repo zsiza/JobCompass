@@ -26,7 +26,6 @@ export class AppComponent implements OnInit {
     this.userService.getUsers().subscribe(
       (response: User[]) => {
         this.users = response;
-        console.log(this.users)
       },
       (error: HttpErrorResponse) => {
         alert(error.message);
@@ -38,7 +37,6 @@ export class AppComponent implements OnInit {
     this.serviceService.getServices().subscribe(
       (response: Service[]) => {
         this.services = response;
-        console.log(this.services)
       },
       (error: HttpErrorResponse) => {
         alert(error.message);
