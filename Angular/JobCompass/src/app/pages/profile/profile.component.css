@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+}
+
+/* Main */
+.main {
+    margin: 5% auto;
+    font-size: 40px;
+    padding: 0 10px;
+    width: 58%;
+    margin-bottom: 15%;   
+}
+
+.main h2 {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Outfit;
+}
+
+.main .card {
+    background: linear-gradient(150deg, rgba(128, 128, 215, 0.27) -9.45%, rgba(146, 206, 207, 0.27) 111.55%);
+    box-shadow: 15px 15px 19px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    color: white;
+    border-radius: 18px;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 50px 30px 50px 50px;
+    font-family: Outfit;
+}
+.main .image-container{
+    order: 1;
+    padding-right: 10%;
+}
+.main .card-body{
+    order: 2;
+}
+img {
+    width: 100%;
+  }
+.main .card table {
+    border: none;
+    font-size: 25px;
+    height: 400px;
+    width: 80%;
+    font-family: Outfit;
+}
+
+.main .card table tr{
+ margin-bottom: 20px;
+}
+
+.main .card table td {
+    margin-right: 20px;
+    padding-right: 20px; /* Add padding to increase space between data */
+}
+
+/* Adjust the spacing between the data (e.g., between "Name" and "ImDezCode") */
+.main .card table tr td:first-child {
+    padding-right: 40px; /* Adjust the padding as needed */
+}
+
+/* End */

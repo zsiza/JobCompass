@@ -14,6 +14,7 @@ import { BalanceService } from './pages/balance/balance.service';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ServiceComponent } from './pages/service/service.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ServiceComponent } from './pages/service/service.component';
     LoginComponent,
     BalanceComponent,
     AboutComponent,
-    ServiceComponent
+    ServiceComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
