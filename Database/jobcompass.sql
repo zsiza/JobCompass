@@ -25,6 +25,7 @@ CREATE TABLE "User" (
     email VARCHAR(100) NOT NULL,
     firstname TEXT,
     lastname TEXT,
+    username TEXT,
     password VARCHAR(100) NOT NULL,
     profile_ID BIGINT,
     admin BOOLEAN NOT NULL,
