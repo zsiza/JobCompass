@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ServiceComponent } from './pages/service/service.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ChangeprofileComponent } from './pages/changeprofile/changeprofile.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
     BalanceComponent,
     AboutComponent,
     ServiceComponent,
-    ProfileComponent
+    ProfileComponent,
+    ChangeprofileComponent
   ],
   imports: [
     BrowserModule,

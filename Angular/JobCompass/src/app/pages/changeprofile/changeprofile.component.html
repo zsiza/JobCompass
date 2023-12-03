@@ -1,0 +1,43 @@
+<div class="main">
+    <h2>PROFIL</h2>
+    <div class="card">
+        <div class="image-container" id="profile-image-container">
+            <label for="profile-picture" class="overlay">Húzd ide az új profilképet</label>
+            <img src="assets/Group 1.png" alt="..." id="profile-image" draggable="true">
+            <p>Profilkép megváltoztatása</p>
+        </div>
+        <div class="card-body">
+            <form action="#" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Név</td>
+                            <td><input type="text" name="nev" value="név"></td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td><input type="email" name="email" value="email@email.com"></td>
+                        </tr>
+                        <tr>
+                            <td>Lakcím</td>
+                            <td><input type="text" name="lakcim" value="Szeged"></td>
+                        </tr>
+                        <tr>
+                            <td>Hobbik</td>
+                            <td><input type="text" name="hobbik" value="Diving, Reading Book"></td>
+                        </tr>
+                        <tr>
+                            <td>Munka</td>
+                            <td><input type="text" name="munka" value="Web Developer"></td>
+                        </tr>
+                        <tr>
+                            <td>Képzettségek</td>
+                            <td><input type="text" name="kepzettsegek" value="PHP, HTML, CSS, Java"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a routerLink="/profile"><button type="submit"><strong>Mentés</strong></button></a>
+            </form>
+        </div>
+    </div>
+</div>

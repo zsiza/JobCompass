@@ -14,7 +14,6 @@
 
 .main h2 {
     color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
     font-family: Outfit;
@@ -39,7 +38,7 @@
     order: 2;
 }
 img {
-    width: 100%;
+    width: 200px;
   }
 .main .card table {
     border: none;
@@ -62,5 +61,16 @@ img {
 .main .card table tr td:first-child {
     padding-right: 40px; /* Adjust the padding as needed */
 }
-
+.main .card table tr td:first-child {
+    padding-right: 40px; /* Adjust the padding as needed */
+}
+.changeprofile{
+   font-size: 25px;
+   text-decoration: none;
+   color:blueviolet;
+}
+.changeprofile:hover {
+    text-shadow: 1px 1px 2px black;
+    transition: text-shadow 0.3s ease; /* Add a transition for a smooth effect */
+}
 /* End */
