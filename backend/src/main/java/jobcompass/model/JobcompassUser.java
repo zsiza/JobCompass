@@ -6,8 +6,8 @@ import java.io.Serializable;
 
 
 @Entity
-@Table(name="user", schema = "public")
-public class User implements Serializable {
+@Table(name="jobcompass_user", schema = "public")
+public class JobcompassUser implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, updatable = false)
@@ -23,9 +23,9 @@ public class User implements Serializable {
     private double balance;
     private boolean online;
 
-    public User() {}
+    public JobcompassUser() {}
 
-    public User(String firstName, String lastName, String username, String email, String password, Long profileId, boolean admin, Long sellerId, double balance, boolean online) {
+    public JobcompassUser(String firstName, String lastName, String username, String email, String password, Long profileId, boolean admin, Long sellerId, double balance, boolean online) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;

@@ -1,5 +1,6 @@
 package jobcompass;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -14,6 +15,8 @@ import java.util.Arrays;
 @EnableScheduling
 public class JobcompassApplication {
 
+	@Value("${FRONTEND_URL}")
+	private String frontendUrl;
 
 	public static void main(String[] args) {
 		SpringApplication.run(JobcompassApplication.class, args);
@@ -23,7 +26,7 @@ public class JobcompassApplication {
 	public CorsFilter corsFilter() {
 		CorsConfiguration corsConfiguration = new CorsConfiguration();
 		corsConfiguration.setAllowCredentials(true);
-		corsConfiguration.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
+		corsConfiguration.setAllowedOrigins(Arrays.asList(frontendUrl));
 		corsConfiguration.setAllowedHeaders(Arrays.asList("Origin", "Access-Control-Allow-Origin", "Content-Type",
 				"Accept", "Authorization", "Origin, Accept", "X-Requested-With",
 				"Access-Control-Request-Method", "Access-Control-Request-Headers"));
