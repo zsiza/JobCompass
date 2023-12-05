@@ -17,19 +17,19 @@ body
 }
 #cyan-circle{
     background-color: #95F0FD;
-    width: 750px;
-    height: 750px;
+    width: 50vw;
+    height: 50vw;
     border-radius: 100%;
     filter: blur(100px);
     z-index: -100;
     position: absolute;
-    top: -350px;
-    left: -100px;
+    top: -25vw;
+    left: -10vw;
 }
 #pink-circle{
     background-color: #9F60AE;
-    width: 750px;
-    height: 750px;
+    width: 50vw;
+    height: 50vw;
     border-radius: 100%;
     filter: blur(100px);
     z-index: -100;
