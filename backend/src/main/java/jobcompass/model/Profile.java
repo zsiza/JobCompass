@@ -17,11 +17,11 @@ public class Profile implements Serializable {
     private String contact;
     private String socials;
     private String portfolioLinks;
-    private String profilePicture;
+    private int profilePicture;
 
     public Profile() {}
 
-    public Profile(String skills, String certifications, String experience, String education, String contact, String socials, String portfolioLinks, String profilePicture) {
+    public Profile(String skills, String certifications, String experience, String education, String contact, String socials, String portfolioLinks, int profilePicture) {
         this.skills = skills;
         this.certifications = certifications;
         this.experience = experience;
@@ -96,11 +96,11 @@ public class Profile implements Serializable {
         this.portfolioLinks = portfolioLinks;
     }
 
-    public String getProfilePicture() {
+    public int getProfilePicture() {
         return profilePicture;
     }
 
-    public void setProfilePicture(String profilePicture) {
+    public void setProfilePicture(int profilePicture) {
         this.profilePicture = profilePicture;
     }
 

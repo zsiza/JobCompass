@@ -17,7 +17,7 @@ CREATE TABLE "Profile" (
     contact TEXT,
     socials TEXT,
     portfolio_links TEXT,
-    profile_picture TEXT
+    profile_picture INT
 );
 
 CREATE TABLE "JobcompassUser" (
