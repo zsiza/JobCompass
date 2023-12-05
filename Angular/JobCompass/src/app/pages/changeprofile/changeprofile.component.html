@@ -1,11 +1,17 @@
+<!-- changeprofile.component.html -->
 <div class="main">
     <h2>PROFIL</h2>
     <div class="card">
         <div class="image-container" id="profile-image-container">
-            <label for="profile-picture" class="overlay">Húzd ide az új profilképet</label>
-            <img src="assets/Group 1.png" alt="..." id="profile-image" draggable="true">
-            <p>Profilkép megváltoztatása</p>
-        </div>
+            <img [src]="selectedImage" alt="..." id="profile-image">
+            <p>Profilkép megváltozatása</p>
+            <input type="radio" id="male" name="gender" value="male" (change)="updateImage('male')">
+            <label for="male">Férfi</label><br>
+            <input type="radio" id="female" name="gender" value="female" (change)="updateImage('female')">
+            <label for="female">Női</label><br>
+            <input type="radio" id="default" name="gender" value="default" (change)="updateImage('default')">
+            <label for="default">Általános</label><br>
+        </div>        
         <div class="card-body">
             <form action="#" method="post">
                 <table>

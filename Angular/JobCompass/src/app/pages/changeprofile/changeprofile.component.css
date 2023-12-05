@@ -92,23 +92,6 @@ button:hover {
     padding: 8px; /* Adjust padding as needed */
     font-size: 16px; /* Adjust font size as needed */
 }
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 50%;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    font-size: 30px;
-    text-align: center;
-    z-index: 1; /* Set a higher z-index to appear over the image */
-}
 
 .image-container {
     position: relative; /* Set the parent container to relative */
