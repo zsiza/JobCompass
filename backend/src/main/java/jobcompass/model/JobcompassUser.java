@@ -23,7 +23,7 @@ public class JobcompassUser implements Serializable {
 
     public JobcompassUser() {}
 
-    public JobcompassUser(String firstName, String lastName, String username, String email, String password, Long profileId, boolean admin, Long sellerId, double balance, boolean online) {
+    public JobcompassUser(String firstName, String lastName, String username, String email, String password, boolean admin, double balance, boolean online) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.username = username;
