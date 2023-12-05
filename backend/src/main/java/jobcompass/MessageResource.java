@@ -15,7 +15,6 @@ import java.util.Random;
 @RestController @RequestMapping("/message") @Transactional
 public class MessageResource {
     private final MessageService messageService;
-    private final Random random = new Random();
 
     public MessageResource(MessageService messageService) {
         this.messageService = messageService;
@@ -35,8 +34,6 @@ public class MessageResource {
 
     @PostMapping("/add")
     public ResponseEntity<Message> addMessage(@RequestBody Message message) {;
-        message.setSenderId(random.nextLong());
-        message.setReceiverId(random.nextLong());
         message.setTimestamp(new Timestamp(new Date().getTime()));
         Message newMessage = messageService.addMessage(message);
         return new ResponseEntity<>(newMessage, HttpStatus.CREATED);

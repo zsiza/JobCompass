@@ -15,7 +15,6 @@ import java.util.Random;
 @RestController @RequestMapping("/purchase") @Transactional
 public class PurchaseResource {
     private final PurchaseService purchaseService;
-    private final Random random = new Random();
 
     public PurchaseResource(PurchaseService purchaseService) {
         this.purchaseService = purchaseService;
@@ -35,8 +34,6 @@ public class PurchaseResource {
 
     @PostMapping("/add")
     public ResponseEntity<Purchase> addPurchase(@RequestBody Purchase purchase) {
-        purchase.setBuyerId(random.nextLong());
-        purchase.setServiceId(random.nextLong());
         purchase.setPurchaseTime(new Timestamp(new Date().getTime()));
         purchase.setStatus("Szolgáltatás kifizetve");
         Purchase newPurchase = purchaseService.addPurchase(purchase);

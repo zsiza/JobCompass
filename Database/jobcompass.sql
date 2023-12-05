@@ -1,4 +1,4 @@
-DROP TABLE if exists "Review", "Message", "Purchase", "Service", "Category", "User", "Profile";
+DROP TABLE if exists "Review", "Message", "Purchase", "Service", "Category", "JobcompassUser", "Profile";
 
 CREATE SEQUENCE profile_id_seq START 1;
 CREATE SEQUENCE users_id_seq START 1;
@@ -20,14 +20,13 @@ CREATE TABLE "Profile" (
     profile_picture TEXT
 );
 
-CREATE TABLE "User" (
+CREATE TABLE "JobcompassUser" (
     id BIGINT PRIMARY KEY DEFAULT nextval('users_id_seq'),
     email VARCHAR(100) NOT NULL,
     firstname TEXT,
     lastname TEXT,
     username TEXT,
     password VARCHAR(100) NOT NULL,
-    profile_ID BIGINT,
     admin BOOLEAN NOT NULL,
     balance DECIMAL(10, 2),
 	FOREIGN KEY (profile_ID) REFERENCES "Profile"(id) ON DELETE CASCADE
@@ -48,7 +47,7 @@ CREATE TABLE "Service" (
     category_ID BIGINT NOT NULL,
 	seller_ID BIGINT NOT NULL,
 	FOREIGN KEY (category_ID) REFERENCES "Category"(id) ON DELETE CASCADE, 
-	FOREIGN KEY (seller_ID) REFERENCES "User"(id) ON DELETE CASCADE
+	FOREIGN KEY (seller_ID) REFERENCES "JobcompassUser"(id) ON DELETE CASCADE
 );
 
 CREATE TABLE "Purchase" (
@@ -57,7 +56,7 @@ CREATE TABLE "Purchase" (
     service_ID BIGINT,
     purchase_time TIMESTAMP NOT NULL,
     status VARCHAR(50) NOT NULL,
-	FOREIGN KEY (buyer_ID) REFERENCES "User"(id) ON DELETE CASCADE,
+	FOREIGN KEY (buyer_ID) REFERENCES "JobcompassUser"(id) ON DELETE CASCADE,
 	FOREIGN KEY (service_ID) REFERENCES "Service"(id) ON DELETE CASCADE
 );
 
@@ -67,8 +66,8 @@ CREATE TABLE "Message" (
     receiver_ID BIGINT,
     content TEXT NOT NULL,
     timestamp TIMESTAMP NOT NULL,
-	FOREIGN KEY (sender_ID) REFERENCES "User"(id) ON DELETE CASCADE,
-	FOREIGN KEY (receiver_ID) REFERENCES "User"(id) ON DELETE CASCADE
+	FOREIGN KEY (sender_ID) REFERENCES "JobcompassUser"(id) ON DELETE CASCADE,
+	FOREIGN KEY (receiver_ID) REFERENCES "JobcompassUser"(id) ON DELETE CASCADE
 );
 
 CREATE TABLE "Review" (
@@ -78,6 +77,6 @@ CREATE TABLE "Review" (
     description TEXT NOT NULL,
     reviewer_ID BIGINT,
     reviewed_ID BIGINT,
-	FOREIGN KEY (reviewer_ID) REFERENCES "User"(id) ON DELETE CASCADE,
+	FOREIGN KEY (reviewer_ID) REFERENCES "JobcompassUser"(id) ON DELETE CASCADE,
 	FOREIGN KEY (reviewed_ID) REFERENCES "Service"(id) ON DELETE CASCADE
 );

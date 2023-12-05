@@ -17,9 +17,7 @@ public class JobcompassUser implements Serializable {
     private String username;
     private String email;
     private String password;
-    private Long profileId;
     private boolean admin;
-    private Long sellerId;
     private double balance;
     private boolean online;
 
@@ -31,9 +29,7 @@ public class JobcompassUser implements Serializable {
         this.username = username;
         this.email = email;
         this.password = password;
-        this.profileId = profileId;
         this.admin = admin;
-        this.sellerId = sellerId;
         this.balance = balance;
         this.online = online;
     }
@@ -62,28 +58,12 @@ public class JobcompassUser implements Serializable {
         this.password = password;
     }
 
-    public Long getProfileId() {
-        return profileId;
-    }
-
-    public void setProfileId(Long profileId) {
-        this.profileId = profileId;
-    }
-
     public boolean isAdmin() {
         return admin;
     }
 
     public void setAdmin(boolean admin) {
         this.admin = admin;
-    }
-
-    public Long getSellerId() {
-        return sellerId;
-    }
-
-    public void setSellerId(Long sellerId) {
-        this.sellerId = sellerId;
     }
 
     public double getBalance() {
@@ -135,9 +115,7 @@ public class JobcompassUser implements Serializable {
                 ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
-                ", profileId=" + profileId +
                 ", admin=" + admin +
-                ", sellerId=" + sellerId +
                 ", balance=" + balance +
                 ", online=" + online +
                 '}';
