@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { ServiceComponent } from './pages/service/service.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ChangeprofileComponent } from './pages/changeprofile/changeprofile.component';
+import { AlertComponent } from './pages/alert/alert.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ChangeprofileComponent } from './pages/changeprofile/changeprofile.comp
     AboutComponent,
     ServiceComponent,
     ProfileComponent,
-    ChangeprofileComponent
+    ChangeprofileComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
