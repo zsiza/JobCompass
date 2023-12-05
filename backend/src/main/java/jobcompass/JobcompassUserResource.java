@@ -4,20 +4,18 @@ import jakarta.transaction.Transactional;
 import jobcompass.exception.JobcompassUserException;
 import jobcompass.model.JobcompassUser;
 import jobcompass.service.JobcompassUserService;
-import org.jasypt.util.text.StrongTextEncryptor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Random;
 import java.util.regex.Pattern;
 
 @RestController @RequestMapping("/jobcompass_user") @Transactional
 public class JobcompassUserResource {
     private final JobcompassUserService jobcompassUserService;
-
-    private final Random random = new Random();
+    private final PasswordEncoder passwordEncoder;
 
     public static boolean patternMatches(String emailAddress, String regexPattern) {
         return Pattern.compile(regexPattern)
@@ -25,11 +23,10 @@ public class JobcompassUserResource {
                 .matches();
     }
 
-    public JobcompassUserResource(JobcompassUserService jobcompassUserService) {
+    public JobcompassUserResource(JobcompassUserService jobcompassUserService, PasswordEncoder passwordEncoder) {
         this.jobcompassUserService = jobcompassUserService;
+        this.passwordEncoder = passwordEncoder;
     }
-
-
 
     @GetMapping("/all")
     public ResponseEntity<List<JobcompassUser>> getAllUsers() {
@@ -43,17 +40,28 @@ public class JobcompassUserResource {
         return new ResponseEntity<>(jobcompassUser, HttpStatus.OK);
     }
 
+    @GetMapping("/find/{username}")
+    public ResponseEntity<JobcompassUser> getUserByUserId(@PathVariable("username") String username) {
+        JobcompassUser jobcompassUser = jobcompassUserService.findUserByUsername(username);
+        return new ResponseEntity<>(jobcompassUser, HttpStatus.OK);
+    }
+
     @PostMapping("/add")
     public ResponseEntity<?> addUser(@RequestBody JobcompassUser jobcompassUser) {
-        StrongTextEncryptor passwordEncryptor = new StrongTextEncryptor();
-        if (jobcompassUser.getFirstName() == null || jobcompassUser.getLastName() == null || jobcompassUser.getUsername() == null || jobcompassUser.getEmail() == null || jobcompassUser.getPassword() == null || !jobcompassUser.getEmail().matches("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$")) {
-            return new ResponseEntity<>(new JobcompassUserException("Nem adtál meg minden paramétert!"), HttpStatus.BAD_REQUEST);
+        if (!jobcompassUser.getEmail().matches("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$")) {
+            return new ResponseEntity<>(new JobcompassUserException("Hibás email cím!"), HttpStatus.BAD_REQUEST);
         }
-        passwordEncryptor.setPassword("jobcompass");
-        jobcompassUser.setPassword(passwordEncryptor.encrypt(jobcompassUser.getPassword())); // TODO: ez egyelőre nem használható verifikációra
-        jobcompassUser.setProfileId(random.nextLong());   // TODO: ennél kb. csak jobb megoldás van :D
+        List<JobcompassUser> jobcompassUsers = jobcompassUserService.findAllUsers();
+        for (JobcompassUser user : jobcompassUsers) {
+            if (user.getUsername().equals(jobcompassUser.getUsername())) {
+                return new ResponseEntity<>(new JobcompassUserException("Ez a felhasználónév már foglalt!"), HttpStatus.BAD_REQUEST);
+            }
+            if (user.getEmail().equals(jobcompassUser.getEmail())) {
+                return new ResponseEntity<>(new JobcompassUserException("Ez az email cím már foglalt!"), HttpStatus.BAD_REQUEST);
+            }
+        }
+        jobcompassUser.setPassword(passwordEncoder.encode(jobcompassUser.getPassword()));
         jobcompassUser.setAdmin(false);
-        jobcompassUser.setSellerId(random.nextLong());
         jobcompassUser.setBalance(0);
         jobcompassUser.setOnline(false);
         JobcompassUser newJobcompassUser = jobcompassUserService.addUser(jobcompassUser);
@@ -61,7 +69,23 @@ public class JobcompassUserResource {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<JobcompassUser> updateUser(@RequestBody JobcompassUser jobcompassUser) { //TODO: adatok ellenőrzése, pl. pozitív egyenleg
+    public ResponseEntity<?> updateUser(@RequestBody JobcompassUser jobcompassUser) {
+        List<JobcompassUser> jobcompassUsers = jobcompassUserService.findAllUsers();
+        if (!jobcompassUser.isAdmin()) {
+            boolean adminExists = false;
+            for (JobcompassUser user : jobcompassUsers) {
+                if (user.getId().equals(jobcompassUser.getId()) && user.isAdmin()) {
+                    adminExists = true;
+                    break;
+                }
+            }
+            if (!adminExists) {
+                return new ResponseEntity<>(new JobcompassUserException("Legalább egy felhasználónak adminnak kell lennie!"), HttpStatus.BAD_REQUEST);
+            }
+        }
+        if (jobcompassUser.getBalance() < 0) {
+            return new ResponseEntity<>(new JobcompassUserException("A felhasználó egyenlege nem lehet negatív!"), HttpStatus.BAD_REQUEST);
+        }
         JobcompassUser updatedJobcompassUser = jobcompassUserService.updateUser(jobcompassUser);
         return new ResponseEntity<>(updatedJobcompassUser, HttpStatus.OK);
     }

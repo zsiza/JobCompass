@@ -36,6 +36,11 @@ public class JobcompassUserService {
                 .orElseThrow(() -> new JobcompassUserException("Nincs " + id + " azonosíójú felhasználó!"));
     }
 
+    public JobcompassUser findUserByUsername(String username) throws JobcompassUserException {
+        return jobcompassUserRepo.findUserByUsername(username)
+                .orElseThrow(() -> new JobcompassUserException("Nincs " + username + " nevű felhasználó!"));
+    }
+
     public void deleteUser(Long id) {
         jobcompassUserRepo.deleteUserById(id);
     }

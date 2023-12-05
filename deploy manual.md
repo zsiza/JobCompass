@@ -12,4 +12,8 @@
 ## Backend:
 
 ### src/main/java/resources/application.properties:
-	21-24. sor komment be
+	23-26. sor komment be
+	
+
+Frontend online: https://jobcompassproject-093a905f1154.herokuapp.com/
+Backend online: https://jobcompass-7acffce134ad.herokuapp.com/
