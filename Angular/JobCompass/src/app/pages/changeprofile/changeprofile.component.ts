@@ -10,12 +10,12 @@ export class ChangeprofileComponent {
   selectedImage = 'assets/Group 1.png'; // default image
 
   updateImage(gender: string) {
-    if (gender === 'male') {
+    if (gender === '1') {
       this.selectedImage = 'assets/male.png'; // update to male image
-    } else if (gender === 'female') {
+    } else if (gender === '2') {
       this.selectedImage = 'assets/female.png'; // update to female image
     }
-     else if (gender === 'default') {
+     else if (gender === '3') {
     this.selectedImage = 'assets/Group 1.png'; // update to default image
     }
   }
