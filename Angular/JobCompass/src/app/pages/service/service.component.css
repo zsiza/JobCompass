@@ -79,7 +79,7 @@ body{
   }
 
   #options {
-    width: 600px;
+    width: 100%;
     font-family: Arial, sans-serif; /* Betűtípus */
     font-size: 16px; /* Betűméret */
     color: #333; /* Betűszín */
@@ -107,4 +107,29 @@ body{
 .plus-button:hover {
   background-color: #3a6bdc;
   color: white;
+}
+
+
+@media(max-width: 972px) {  /* Stílusok 972px-nél kisebb képernyőkhöz */
+  .form {
+    font-size: 16px;
+    width: 600px;
+    transition: all 1s;
+  }
+}
+
+@media(max-width: 805px) {  /* Stílusok 805px-nél kisebb képernyőkhöz */
+  .form {
+    font-size: 14px;
+    width: 500px;
+    transition: all 1s;
+  }
+}
+
+@media(max-width: 695px) {  /* Stílusok 695px-nél kisebb képernyőkhöz */
+  .form {
+    font-size: 12px;
+    width: 450px;
+    transition: all 1s;
+  }
 }
