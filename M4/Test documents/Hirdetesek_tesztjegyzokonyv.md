@@ -33,3 +33,91 @@ Az alábbi tesztdokumentum a `JobCompass` projekthez tartozó `8.4.6 Hirdetések
     3. lépés: A leírás mezőbe beírunk egy `LEIRAS` szöveget
     4. lépés: A munkavégzéshez szükséges napok száma mezőbe beírjuk a `NAPOK` számot
     5. lépés: Az ár mezőbe beírjuk a `AR` számot
+
+## 2. Teszesetek (TC)
+
+### 2.1. Szolgáltatások oldal 
+
+#### 2.1.1. TC-01
+- TP: TP-01
+- Leírás: Szolgáltatások oldal betöltésének tesztelése
+- Bemenet: `TYPE1` = Logó Készítés   
+- Művelet: Megnyomjuk a Kiválaszt gombot 
+- Elvárt kimenet: Továbbítás az adatbázis felé
+
+#### 2.1.2. TC-02
+- TP: TP-01
+- Leírás: Szolgáltatások oldal betöltésének tesztelése
+- Bemenet: `TYPE1` = Business
+- Művelet: Megnyomjuk a Kiválaszt gombot  
+- Elvárt kimenet: Továbbítás az adatbázis felé 
+
+
+#### 2.1.3. TC-03
+- TP: TP-01
+- Leírás: Szolgáltatások oldal betöltésének tesztelése
+- Bemenet:  `TYPE1` = Fényképezés
+- Művelet: Megnyomjuk a Kiválaszt gombot
+- Elvárt kimenet: Továbbítás az adatbázis felé
+
+#### 2.1.4. TC-04
+- TP: TP-01
+- Leírás: Szolgáltatások oldal betöltésének tesztelése
+- Bemenet:  `TYPE1` = End-To-End Projektek
+- Művelet: Megnyomjuk a Kiválaszt gombot
+- Elvárt kimenet: Továbbítás az adatbázis felé
+
+
+#### 2.1.5. TC-05
+- TP: TP-01
+- Leírás: Szolgáltatások oldal betöltésének tesztelése
+- Bemenet:  `TYPE1` = Adatkezelés
+- Művelet: Megnyomjuk a Kiválaszt gombot
+- Elvárt kimenet: Továbbítás az adatbázis felé
+
+### 2.2. Gomb tesztelése 
+
+#### 2.2.1. TC-06
+- TP: TP-02
+- Leírás: Gomb tesztelése  
+- Művelet: Megnyomjuk a `+` gombot 
+- Elvárt kimenet: Megjelenik a Hirdetések kezelése oldal
+
+
+### 2.3. Plusz gomb megnyomása után megjelenő létrehozás oldal tesztelése
+
+#### 2.3.1. TC-07
+- TP: TP-03
+- Leírás: Helyesen kitöltött INPUT mezők
+- Bemenet: `TYPE2` = Logó Készítés ; `CIM` = Cica logó ; `LEIRAS` = Cicás logó gyártása ; `NAPOK` = 126 ; `AR` = 100000  
+- Művelet: Megnyomjuk a Létrehoz gombot 
+- Elvárt kimenet: Sikeres hirdetés létrehozás. Továbbítás az adatbázis felé
+
+#### 2.3.2. TC-08
+- TP: TP-03
+- Leírás: Helytelenül kitöltött INPUT mezők (az árhoz betű is kerül)
+- Bemenet: `TYPE2` = Logó Készítés ; `CIM` = Cica logó ; `LEIRAS` = Cicás logó gyártása ; `NAPOK` = 126 ; `AR` = ezerFT  
+- Művelet: Megnyomjuk a Létrehoz gombot  
+- Elvárt kimenet: Sikertelen hirdetés létrehozás. Hibaüzenet: "Az ár mezőbe csak számok írhatók!" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
