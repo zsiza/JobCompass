@@ -14,7 +14,7 @@ public class Service implements Serializable {
     private String title;
     private String description;
     private double price;
-    private LocalDate deliveryTime;
+    private int deliveryTime;
     @Column(nullable = false, updatable = false)
     private Long categoryId;
     @Column(nullable = false, updatable = false)
@@ -22,7 +22,7 @@ public class Service implements Serializable {
 
     public Service() {}
 
-    public Service(Long id, String title, String description, double price, LocalDate deliveryTime, Long categoryId, Long sellerId) {
+    public Service(Long id, String title, String description, double price, int deliveryTime, Long categoryId, Long sellerId) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -64,11 +64,11 @@ public class Service implements Serializable {
         this.price = price;
     }
 
-    public LocalDate getDeliveryTime() {
+    public int getDeliveryTime() {
         return deliveryTime;
     }
 
-    public void setDeliveryTime(LocalDate deliveryTime) {
+    public void setDeliveryTime(int deliveryTime) {
         this.deliveryTime = deliveryTime;
     }
 
