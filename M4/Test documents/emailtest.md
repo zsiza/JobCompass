@@ -1,4 +1,3 @@
-Természetesen, örömmel segítek a tesztdokumentum elkészítésében. Az alábbiakban található a napi értesítő e-mail küldésének tesztelésére vonatkozó tesztdokumentum vázlata:
 
 # Tesztjegyzőkönyv - `Napi értesítő e-mail küldésének tesztelése`
 
