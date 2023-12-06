@@ -25,28 +25,38 @@ export class RegisterComponent {
   constructor(private userService: UserService, private router: Router) {}
 
   onAddUser(addForm: NgForm): void {
-    const formValues = addForm.value;
+  const formValues = addForm.value;
 
-    const newUser: User = {
-      id: this.id,
-      profileId: this.profileId,
-      sellerId: this.sellerId,
-      balance: 0,
-      online: false,
-      admin: false,
-      firstName: formValues.firstname,
-      lastName: formValues.lastname,
-      username: formValues.username,
-      email: formValues.email,
-      password: formValues.password
-    };
+  const newUser: User = {
+    id: this.id,
+    profileId: this.profileId,
+    sellerId: this.sellerId,
+    balance: 0,
+    online: false,
+    admin: false,
+    firstName: formValues.firstname,
+    lastName: formValues.lastname,
+    username: formValues.username,
+    email: formValues.email,
+    password: formValues.password
+  };
 
-    this.id = this.id + 1;
-    this.profileId = this.id;
-    this.sellerId = this.id;
+  this.id = this.id + 1;
+  this.profileId = this.id;
+  this.sellerId = this.id;
 
-    console.log('New User:', newUser);
-    this.userService.addUser(newUser);
-    this.router.navigate(['']);
-  }
+  console.log('New User:', newUser);
+
+
+  this.userService.addUser(newUser).subscribe(
+    () => {
+      console.log('Register successful! YIP');
+      this.router.navigate(['']);
+    },
+    (error) => {
+      console.error('Error adding user', error);
+    }
+  );
+}
+
 }

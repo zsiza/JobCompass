@@ -20,6 +20,7 @@ export class LoginComponent implements OnInit {
     const formValues = addForm.value;
     const username = formValues.username;
     const password = formValues.password;
+    console.log('Login successful! YIP');
     this.userService.login(username, password);
     this.router.navigate(['']);
   }

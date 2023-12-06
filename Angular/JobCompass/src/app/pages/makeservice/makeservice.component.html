@@ -1,37 +1,30 @@
 <div class="form">
     <h2>Hirdetés létrehozása</h2>
   
-    <form method="POST">
-        <label for="category">Kategória:</label><br>
-        <select id="category" name="selectedCategoryInt">
-            <option selected>--Válassz a listából--</option>
-            <option value="1">Grafika & Design</option>
-            <option value="2">Digitális Marketing</option>
-            <option value="3">Írás & Fordítás</option>
-            <option value="4">Videó & Animáció</option>
-            <option value="5">Logó Készítés</option>
-            <option value="6">Programozás & Tech</option>
-            <option value="7">Adatkezelés</option>
-            <option value="8">Business</option>
-            <option value="9">Életstílus</option>
-            <option value="10">Zene & Audió</option>
-            <option value="11">Fényképezés</option>
-            <option value="12">End-To-End Projektek</option>
-        </select><br><br>
-        <label for="title">Cím:</label><br>
-        <input type="text" id="title" name="title"/> <br/><br/>
-        <label for="description">Leírás:</label> <br/>
-        <textarea id="description" name="description" maxlength="400"></textarea> <br/><br>
-        <div class="form-row">
-            <label for="days">Munkavégzéshez szükséges napok száma:</label>
-            <input type="number" id="days" name="days" min="1" max="365" step="1"><br><br>
-        </div>
-        <div class="form-row">
-            <label for="price">Ár:</label>
-            <input type="text" id="price" name="price"/> <br/><br/>
-        </div>
-       
-        
-        <input type="submit" name="submit-btn" value="Létrehoz"/>
+    <form #addForm="ngForm" (ngSubmit)="onAddService(addForm)" method="POST">
+      <label for="category">Kategória:</label><br>
+      <select id="category" name="selectedCategoryInt" [(ngModel)]="newService.categoryId" required>
+        <option value="" disabled selected>--Válassz a listából--</option>
+        <option *ngFor="let category of categories" [value]="category.id">{{ category.name }}</option>
+      </select><br><br>
+  
+      <label for="title">Cím:</label><br>
+      <input type="text" id="title" name="title" [(ngModel)]="newService.title" required/> <br/><br/>
+  
+      <label for="description">Leírás:</label> <br/>
+      <textarea id="description" name="description" [(ngModel)]="newService.description" maxlength="400" required></textarea> <br/><br>
+  
+      <div class="form-row">
+        <label for="days">Munkavégzéshez szükséges napok száma:</label>
+        <input type="number" id="days" name="days" [(ngModel)]="newService.deliveryTime" min="1" max="365" step="1" required><br><br>
+      </div>
+  
+      <div class="form-row">
+        <label for="price">Ár:</label>
+        <input type="number" id="price" name="price" [(ngModel)]="newService.price" required> <br/><br/>
+      </div>
+  
+      <input type="submit" name="submit-btn" value="Létrehoz" [disabled]="addForm.invalid"/>
     </form>
-</div>
+  </div>
+  

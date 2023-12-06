@@ -3,7 +3,7 @@ export interface Service{
     title: string;
     description: string;
     price: number;
-    deliveryTime: Date;
+    deliveryTime: number;
     categoryId: number;
     sellerId: number;
 }
