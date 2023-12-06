@@ -2,14 +2,14 @@
 <div class="login-container">
     <h2>Bejelentkezés</h2>
 
-    <form method="POST">
-    <label for="email">Email cím</label>
-    <input type="text" id="email" placeholder="Email cím" name="email" required>
+    <form #addForm="ngForm" (ngSubmit)="onLogin(addForm)" method="POST">
+    <label for="username">Felhasználó név</label>
+    <input type="text" id="username" placeholder="Felhasználó név" name="username" ngModel required>
 
     <label for="password">Jelszó</label>
-    <input type="password" id="password" placeholder="Jelszó" name="password" required>
+    <input type="password" id="password" placeholder="Jelszó" name="password" ngModel required>
 
-   <button routerLink="" type="submit">BEJELENTKEZÉS</button>
+   <button [disabled]="addForm.invalid" type="submit">BEJELENTKEZÉS</button>
 
    <p>Nincs még fiókod? <a href="register">Regisztrálj most!</a></p>
 

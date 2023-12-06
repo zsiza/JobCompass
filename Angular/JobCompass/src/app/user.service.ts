@@ -6,7 +6,7 @@ import { environment } from "src/environments/environment";
 
 @Injectable({providedIn: 'root'})
 export class UserService {
-    private apiServerUrl = environment.apiBaseUrl; // backend linkelése, maybe?
+    private apiServerUrl = environment.apiBaseUrl;
 
     constructor(private http: HttpClient) { }
 
@@ -25,4 +25,9 @@ export class UserService {
     public deleteUser(userid: number): Observable<void> {
         return this.http.delete<void>(`${this.apiServerUrl}/jobcompass_user/delete/${userid}`);
     }
+
+    login(username: string, password: string): Observable<any> {
+        const loginData = { username, password };
+        return this.http.post(`${this.apiServerUrl}/login`, loginData);
+      }
 }

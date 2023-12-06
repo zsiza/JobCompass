@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { User } from 'src/app/user';
 import { UserService } from 'src/app/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -21,7 +22,7 @@ export class RegisterComponent {
   email = "";
   password = "";
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private router: Router) {}
 
   onAddUser(addForm: NgForm): void {
     const formValues = addForm.value;
@@ -46,5 +47,6 @@ export class RegisterComponent {
 
     console.log('New User:', newUser);
     this.userService.addUser(newUser);
+    this.router.navigate(['']);
   }
 }
