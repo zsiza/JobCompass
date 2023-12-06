@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { OptionSelectionService } from '../../../option-selection.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,10 @@ import { OptionSelectionService } from '../../../option-selection.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private optionSelectionService: OptionSelectionService) {}
+  constructor(private router: Router) {}
 
   onSelectOption(value: string) {
-    this.optionSelectionService.selectOption(value);
+    this.router.navigate(['/service'], { queryParams: { option: value } });
+    console.log(value);
   }
 }
