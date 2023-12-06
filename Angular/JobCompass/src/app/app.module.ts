@@ -17,6 +17,7 @@ import { ServiceComponent } from './pages/service/service.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ChangeprofileComponent } from './pages/changeprofile/changeprofile.component';
 import { AlertComponent } from './pages/alert/alert.component';
+import { MakeserviceComponent } from './pages/makeservice/makeservice.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { AlertComponent } from './pages/alert/alert.component';
     ServiceComponent,
     ProfileComponent,
     ChangeprofileComponent,
-    AlertComponent
+    AlertComponent,
+    MakeserviceComponent
   ],
   imports: [
     BrowserModule,

@@ -1,3 +1,4 @@
+import { MakeserviceComponent } from './pages/makeservice/makeservice.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'service', component:ServiceComponent},
   {path:'profile', component:ProfileComponent},
   {path:'changeprofile', component:ChangeprofileComponent},
-  {path:'alert', component:AlertComponent}
+  {path:'alert', component:AlertComponent},
+  {path:'makeservice', component:MakeserviceComponent}
 
   
 ];
