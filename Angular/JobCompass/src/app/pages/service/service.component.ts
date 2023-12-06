@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Service } from 'src/service';
 import { ServiceService } from 'src/service.service';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-service',
@@ -10,8 +11,10 @@ import { HttpErrorResponse } from '@angular/common/http';
 })
 export class ServiceComponent implements OnInit {
   public services: Service[] = [];
-  public selectedCategories: number[] = [1,2,3,4,5,6,7,8,9,10,11,12];
-  constructor(private serviceService: ServiceService) {}
+  public selectedOptionInt: number = 0; // praseInt()
+
+
+  constructor(private route: ActivatedRoute, private serviceService: ServiceService) {}
 
   ngOnInit() {
     this.getServices();
@@ -72,44 +75,34 @@ export class ServiceComponent implements OnInit {
     );
   }
 
-  public onCheckboxChange(categoryId: number): void {
-    if (this.selectedCategories.includes(categoryId)) {
-      this.selectedCategories = this.selectedCategories.filter(
-        (id) => id !== categoryId
-      );
+  public onSubmit(categoryId: number): void {
 
-      const hideThis = document.querySelectorAll(
-        `.id${categoryId}`
-      ) as NodeListOf<HTMLElement>;
+    const hideThis = document.querySelectorAll(
+      `service`
+    ) as NodeListOf<HTMLElement>;
 
-      for (let index = 0; index < hideThis.length; index++) {
-        hideThis[index].style.display = 'none';
-      }
-    } else {
-      this.selectedCategories.push(categoryId);
-
-      const hideThis = document.querySelectorAll(
-        `.id${categoryId}`
-      ) as NodeListOf<HTMLElement>;
-
-      for (let index = 0; index < hideThis.length; index++) {
+    for (let index = 0; index < hideThis.length; index++) {
+      if(hideThis[index].classList.contains(`id${this.selectedOptionInt}`)){
         hideThis[index].style.display = 'block';
       }
+      else{
+        hideThis[index].style.display = 'none';
+      }
     }
-    console.log(this.selectedCategories);
-    this.updateContainer();
+    // this.updateContainer(); maybe nem kell, idk nem teszteltem 2:06 van jelenleg NAAAUUURR
   }
 
-  public updateContainer() {
+  /*public updateContainer() {
+
     for (let index = 0; index < this.services.length; index++) {
       const hideThis = document.querySelector(
         `.idd${this.services[index].categoryId}`
       );
       console.log(this.services[index].categoryId);
-      if (this.selectedCategories.includes(this.services[index].categoryId)) {
+      if (this.selectedOptionInt == this.services[index].categoryId) {
       } else {
         hideThis?.classList.add('hidden');
       }
     }
-  }
+  }*/
 }
