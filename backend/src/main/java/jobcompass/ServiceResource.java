@@ -33,7 +33,7 @@ public class ServiceResource {
 
     @PostMapping("/add")
     public ResponseEntity<?> addService(@RequestBody Service service) {
-        if (service.getTitle() == null || service.getDescription() == null || service.getPrice() == 0 || service.getDeliveryTime() == null || service.getCategoryId() == null) {
+        if (service.getTitle() == null || service.getDescription() == null || service.getPrice() == 0 || service.getDeliveryTime() == 0 || service.getCategoryId() == null) {
             return new ResponseEntity<>(new ServiceException("Nem adtál meg minden paramétert!"), HttpStatus.BAD_REQUEST);
         }
         Service newService = serviceService.addService(service);
