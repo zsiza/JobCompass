@@ -22,7 +22,7 @@ public class EmailScheduler {
         for(JobcompassUser jobcompassUser : jobcompassUsers){
             String to = jobcompassUser.getEmail();
             String subject = "Napi értesítő";
-            String body = "Szia!\n\nLesd meg a profilod, hátha kaptál új megbízást!";
+            String body = "Szia!\n\nLesd meg a profilod, hátha kaptál új megbízást!\n\nÜdv.,\nA JobCompass csapata";
 
             // Send the email
             emailService.sendEmail(to, subject, body);
