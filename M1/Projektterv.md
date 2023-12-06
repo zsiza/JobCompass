@@ -160,6 +160,42 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
  - `Résztvevők: Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Sötét Petra`
  - `Érintett témák: 1. mérföldkő feladatainak részletes megbeszélése, kiosztása; a megkezdett feladatok átnézése`
 
+ `5. Megbeszélés:`
+ - `Időpont: 2023.10.24.`
+ - `Hely: SZTE TIK – Szeged`
+ - `Résztvevők:  Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Mérföldkő beadása előtti egyeztetés a késve elkészült vállalásokról`
+
+ `6. megbeszélés:`
+ - `Időpont: 2023.10.26.`
+ - `Hely: Cool Club - Szeged, Londoni krt. 22`
+ - `Résztvevők: Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: A következő mérföldkőre vállalt feladatok részletes megbeszélése, ötletelés a megvalósításhoz`
+
+  `7. Megbeszélés:`
+ - `Időpont: 2023.11.03.`
+ - `Hely: Discord`
+ - `Résztvevők:  Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Helyzetjelentés a feladatokkal kapcsolatban, ki mit készített el, mi van hátra. Csapaton belüli problémák átbeszélése`
+
+  `8. Megbeszélés:`
+ - `Időpont: 2023.11.15.`
+ - `Hely: Discord`
+ - `Résztvevők:  Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Mérföldkő beadása előtti megbeszélés, készülés a deploy-ra`
+
+   `9. Megbeszélés:`
+ - `Időpont: 2023.11.30.`
+ - `Hely: Discord`
+ - `Résztvevők:  Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Helyzetjelentés a vállalt feladatok állapotáról`
+
+   `10. Megbeszélés:`
+ - `Időpont: 2023.12.06.`
+ - `Hely: Discord`
+ - `Résztvevők:  Fodor Döme, Kovács Bence, Kromek Bálint Dániel, Zsemberi Izabella, Nagy Szilvia Kamilla, Sötét Petra, Madai Zsuzsanna Jusztina`
+ - `Érintett témák: Mérföldkő beadása előtti utolsó megbeszélés`
+
 ### 6.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
