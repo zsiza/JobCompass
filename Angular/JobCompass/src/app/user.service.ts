@@ -11,18 +11,18 @@ export class UserService {
     constructor(private http: HttpClient) { }
 
     public getUsers(): Observable<User[]> {
-        return this.http.get<User[]>(`${this.apiServerUrl}/user/all`);
+        return this.http.get<User[]>(`${this.apiServerUrl}/jobcompass_user/all`);
     }
 
     public addUser(user: User): Observable<User> {
-        return this.http.post<User>(`${this.apiServerUrl}/user/add`, user);
+        return this.http.post<User>(`${this.apiServerUrl}/jobcompass_user/add`, user);
     }
 
     public updateUser(user: User): Observable<User> {
-        return this.http.put<User>(`${this.apiServerUrl}/user/update`, user);
+        return this.http.put<User>(`${this.apiServerUrl}/jobcompass_user/update`, user);
     }
 
     public deleteUser(userid: number): Observable<void> {
-        return this.http.delete<void>(`${this.apiServerUrl}/user/delete/${userid}`);
+        return this.http.delete<void>(`${this.apiServerUrl}/jobcompass_user/delete/${userid}`);
     }
 }

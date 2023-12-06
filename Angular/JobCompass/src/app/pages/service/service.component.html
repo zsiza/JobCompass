@@ -4,34 +4,26 @@
       
         <form method="POST">
             <label for="options">Név</label><br>
-            <select id="options">
+            <select id="options" [(ngModel)]="selectedOptionInt" name="selectedOptionInt">
                 <option selected>--Válassz a listából--</option>
-                <option value="GrafikaEsDesign">Grafika & Design</option>
-                <option value="DigitalisMarketing">Digitális Marketing</option>
-                <option value="IrasEsForditas">Írás & Fordítás</option>
-                <option value="VideoEsAnimacio">Videó & Animáció</option>
-                <option value="LogoKeszites">Logó Készítés</option>
-                <option value="ProgramozasEsTech">Programozás & Tech</option>
-                <option value="Adatkezeles">Adatkezelés</option>
-                <option value="Business">Business</option>
-                <option value="Eletstilus">Életstílus</option>
-                <option value="ZeneEsAudio">Zene & Audió</option>
-                <option value="Fenykepezes">Fényképezés</option>
-                <option value="EndToEnd">End-To-End Projektek</option>
+                <option value="1">Grafika & Design</option>
+                <option value="2">Digitális Marketing</option>
+                <option value="3">Írás & Fordítás</option>
+                <option value="4">Videó & Animáció</option>
+                <option value="5">Logó Készítés</option>
+                <option value="6">Programozás & Tech</option>
+                <option value="7">Adatkezelés</option>
+                <option value="8">Business</option>
+                <option value="9">Életstílus</option>
+                <option value="10">Zene & Audió</option>
+                <option value="11">Fényképezés</option>
+                <option value="12">End-To-End Projektek</option>
             </select><br>
-            <input type="submit" name="submit-btn" value="Kiválaszt"/>
+            <input (click)="onSubmit(selectedOptionInt)" type="submit" name="submit-btn" value="Kiválaszt"/>
         </form>
     </div>
 
-    <div class="form">
-        <form #addForm="ngForm" method="POST">    
-
-        <label>Leírás</label><br>
-      
-        <label>Ár</label><br>
-        <input type="submit" name="submit-btn" value="Kiválaszt"/>
-      
-        </form>
+    <div class="service-box">
         
     </div>
 </body>
