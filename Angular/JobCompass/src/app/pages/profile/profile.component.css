@@ -1,8 +1,4 @@
 
-* {
-    margin: 0;
-}
-
 /* Main */
 .main {
     margin: 5% auto;
@@ -36,9 +32,10 @@
 }
 .main .card-body{
     order: 2;
+    margin-left: 35px;
 }
 img {
-    width: 200px;
+    width: 300px;
   }
 .main .card table {
     border: none;
@@ -73,4 +70,45 @@ img {
     text-shadow: 1px 1px 2px black;
     transition: text-shadow 0.3s ease; /* Add a transition for a smooth effect */
 }
-/* End */
+@media screen and (max-width: 1270px) {
+    .main .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main .image-container,
+    .main .card-body {
+        order: 0;
+        padding: 20px;
+        margin-left: 0;
+    }
+    img {
+        width: 200px;
+    }
+    .main .card {
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 640px) {
+    .main {
+        width: 80%;
+    }
+    .main .card {
+        width: 100%;
+        padding: 10px;
+        margin:0px;
+    }
+    .main .card-body {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .main .card table {
+        width: 100%;
+        margin: 0%; 
+
+    }
+    .main .card table td {
+        display: block;
+       
+    }
+}
+
