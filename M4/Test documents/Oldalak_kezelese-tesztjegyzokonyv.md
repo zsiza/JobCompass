@@ -102,3 +102,72 @@ Az alábbi tesztdokumentum a `JobCompass` projekthez tartozó `8.4.5 Oldalak kez
 - Leírás: A footer Kérdések gombjának tesztelése
 - Művelet: nyomjuk meg az "Kérdések" gombot 
 - Elvárt kimenet: a kérdések oldal tartalma látható
+
+---
+
+## 3. Tesztriportok (TR)
+
+### 3.1. Navigáció tesztriportjai
+
+#### 3.1.1. TR-01 (TC-01)
+- TP: TP-01
+    1. lépés: megnyomtam a JobCompass menüpontot
+    2. lépés: megkaptam a főoldalt
+    
+#### 3.1.2. TR-02 (TC-02)
+- TP: TP-01
+    1. lépés: megnyomtam a Regisztráció menüpontot
+    2. lépés: megkaptam a regisztrációs oldalt
+
+#### 3.1.3. TR-03 (TC-03)
+- TP: TP-01
+    1. lépés: megnyomtam a Bejelentkezés menüpontot
+    2. lépés: megkaptam a bejelentkezés oldalt
+
+#### 3.1.4. TR-04 (TC-04)
+- TP: TP-01
+    1. lépés: megnyomtam a Szolgáltatások menüpontot
+    2. lépés: megkaptam a szolgáltatások oldalt
+
+#### 3.1.5. TR-05 (TC-05)
+- TP: TP-01
+    1. lépés: megnyomtam a Rólunk menüpontot
+    2. lépés: megkaptam a rólunk oldalt
+
+#### 3.1.6. TR-06 (TC-06)
+- TP: TP-01
+    1. lépés: megnyomtam a Profil menüpontot
+    2. lépés: megkaptam a profil oldalt
+    
+#### 3.1.7. TR-07 (TC-07)
+- TP: TP-01
+    1. lépés: megnyomtam a Balance menüpontot
+    2. lépés: megkaptam a balance oldalt
+
+
+### 3.2. Footer tesztriportjai
+
+#### 3.2.1. TR-08 (TC-08)
+- TP: TP-02
+    1. lépés: megnyomtam a Főoldal gombot a footerben
+    2. lépés: megkaptam a főoldalt
+
+#### 3.2.2. TR-09 (TC-09)
+- TP: TP-02
+    1. lépés: megnyomtam a Rólunk gombot a footerben
+    2. lépés: megkaptam a rólunk oldalt
+
+#### 3.2.3. TR-10 (TC-10)
+- TP: TP-02
+    1. lépés: megnyomtam a Regisztráció gombot a footerben
+    2. lépés: megkaptam a regisztráció oldalt
+
+#### 3.2.4. TR-11 (TC-11)
+- TP: TP-02
+    1. lépés: megnyomtam a Bejelentkezés gombot a footerben
+    2. lépés: megkaptam a bejelentkezés oldalt
+
+#### 3.2.5. TR-12 (TC-12)
+- TP: TP-02
+    1. lépés: megnyomtam a Kérdések gombot a footerben
+    2. lépés: hiba: megkaptam a főoldalt
