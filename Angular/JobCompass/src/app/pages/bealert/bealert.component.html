@@ -1,0 +1,5 @@
+<!-- alert.component.html -->
+<div class="alert" [ngClass]="{'hide': hideAlert}" *ngIf="showAlert">
+    <span class="closebtn" (click)="closeAlert()">&times;</span> 
+    <strong>Sikeresen</strong> bejelentkezett!
+</div>

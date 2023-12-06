@@ -1,3 +1,4 @@
+<app-regalert></app-regalert>
 <div class="register-container">
   <h2>Regisztráció</h2>
 
@@ -17,10 +18,8 @@
   <label for="password">Jelszó</label>
   <input type="password" ngModel id="password" placeholder="Jelszó" name="password" required>
 
-<!--  <input type="reset" name="reset-btn" value="Reset"/>-->
-  <button [disabled]="addForm.invalid" type="submit">REGISZTRÁLJ</button>
-
+  <button routerLink="" [disabled]="addForm.invalid" type="submit">REGISZTRÁLJ</button>
   </form>
-  
+
   </div>
 

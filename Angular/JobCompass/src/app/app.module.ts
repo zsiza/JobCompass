@@ -18,6 +18,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { ChangeprofileComponent } from './pages/changeprofile/changeprofile.component';
 import { AlertComponent } from './pages/alert/alert.component';
 import { MakeserviceComponent } from './pages/makeservice/makeservice.component';
+import { BealertComponent } from './pages/bealert/bealert.component';
+import { RegalertComponent } from './pages/regalert/regalert.component';
 
 
 @NgModule({
@@ -34,7 +36,9 @@ import { MakeserviceComponent } from './pages/makeservice/makeservice.component'
     ProfileComponent,
     ChangeprofileComponent,
     AlertComponent,
-    MakeserviceComponent
+    MakeserviceComponent,
+    BealertComponent,
+    RegalertComponent
   ],
   imports: [
     BrowserModule,
